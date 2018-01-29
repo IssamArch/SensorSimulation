@@ -2,6 +2,7 @@
 <model ref="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)">
   <persistence version="9" />
   <languages>
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -174,6 +175,133 @@
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="7cTSnSp600H" role="37wK5m">
                 <property role="Xl_RC" value="#!/bin/bash" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4Y5JsIIt70i" role="3cqZAp" />
+        <node concept="3clFbF" id="4Y5JsIIt7L1" role="3cqZAp">
+          <node concept="2OqwBi" id="4Y5JsIIt8yr" role="3clFbG">
+            <node concept="10M0yZ" id="4Y5JsIIt8bC" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="4Y5JsIIt8SN" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="4Y5JsIIt8TD" role="37wK5m">
+                <property role="Xl_RC" value="function readJson {  " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Y5JsIIt9s9" role="3cqZAp">
+          <node concept="2OqwBi" id="4Y5JsIItafI" role="3clFbG">
+            <node concept="10M0yZ" id="4Y5JsIIt9SA" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="4Y5JsIItaAr" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="4Y5JsIItfdy" role="37wK5m">
+                <property role="Xl_RC" value="   VALUE=`grep -m 1 \&quot;\\\&quot;${2}\\\&quot;\&quot; ${1} | sed -r 's/^ *//;S/.*: *\&quot;//;s/\&quot;,?//'` " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Y5JsIItr3L" role="3cqZAp">
+          <node concept="2OqwBi" id="4Y5JsIItrQP" role="3clFbG">
+            <node concept="10M0yZ" id="4Y5JsIItrvm" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="4Y5JsIItsdT" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="4Y5JsIItseR" role="37wK5m">
+                <property role="Xl_RC" value="    if [ ! \&quot;$VALUE\&quot; ]; then" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Y5JsIItsPD" role="3cqZAp">
+          <node concept="2OqwBi" id="4Y5JsIIttDx" role="3clFbG">
+            <node concept="10M0yZ" id="4Y5JsIItthH" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="4Y5JsIItu0U" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="4Y5JsIItu1S" role="37wK5m">
+                <property role="Xl_RC" value="       echo \&quot;Error: Cannot find \\\&quot;${2}\\\&quot; in ${1}\&quot; &gt;&amp;2;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Y5JsIItuPo" role="3cqZAp">
+          <node concept="2OqwBi" id="4Y5JsIItvE4" role="3clFbG">
+            <node concept="10M0yZ" id="4Y5JsIItvhV" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="4Y5JsIItw1M" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="4Y5JsIItw2O" role="37wK5m">
+                <property role="Xl_RC" value="       exit 1;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Y5JsIItwEZ" role="3cqZAp">
+          <node concept="2OqwBi" id="4Y5JsIItxwv" role="3clFbG">
+            <node concept="10M0yZ" id="4Y5JsIItx81" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="4Y5JsIItxSy" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="4Y5JsIItxTw" role="37wK5m">
+                <property role="Xl_RC" value="    else" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Y5JsIItyyI" role="3cqZAp">
+          <node concept="2OqwBi" id="4Y5JsIItzp2" role="3clFbG">
+            <node concept="10M0yZ" id="4Y5JsIItyVP" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="4Y5JsIItzLq" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="4Y5JsIItzMo" role="37wK5m">
+                <property role="Xl_RC" value="        echo $VALUE" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Y5JsIIt_6p" role="3cqZAp">
+          <node concept="2OqwBi" id="4Y5JsIIt_Xx" role="3clFbG">
+            <node concept="10M0yZ" id="4Y5JsIIt_$p" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="4Y5JsIItAme" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="4Y5JsIItAnc" role="37wK5m">
+                <property role="Xl_RC" value="    fi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Y5JsIItAYS" role="3cqZAp">
+          <node concept="2OqwBi" id="4Y5JsIItBQO" role="3clFbG">
+            <node concept="10M0yZ" id="4Y5JsIItBtn" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="4Y5JsIItCfQ" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="4Y5JsIItCgO" role="37wK5m">
+                <property role="Xl_RC" value="}" />
               </node>
             </node>
           </node>
@@ -423,29 +551,22 @@
             </node>
             <node concept="liA8E" id="7cTSnSp9EEY" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="7cTSnSpaj$h" role="37wK5m">
-                <node concept="Xl_RD" id="7cTSnSpaj_l" role="3uHU7w">
-                  <property role="Xl_RC" value="source" />
-                  <node concept="17Uvod" id="7cTSnSpajXv" role="lGtFl">
-                    <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-                    <property role="2qtEX9" value="value" />
-                    <node concept="3zFVjK" id="7cTSnSpajXw" role="3zH0cK">
-                      <node concept="3clFbS" id="7cTSnSpajXx" role="2VODD2">
-                        <node concept="3clFbF" id="7cTSnSpakat" role="3cqZAp">
-                          <node concept="2OqwBi" id="7cTSnSpakoX" role="3clFbG">
-                            <node concept="30H73N" id="7cTSnSpakas" role="2Oq$k0" />
-                            <node concept="3TrcHB" id="7cTSnSpakEn" role="2OqNvi">
-                              <ref role="3TsBF5" to="uxew:7cTSnSp6u40" resolve="source" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="7cTSnSp9EIr" role="3uHU7B">
-                  <property role="Xl_RC" value="#ici les jsonFile" />
-                </node>
+              <node concept="Xl_RD" id="7cTSnSp9EIr" role="37wK5m">
+                <property role="Xl_RC" value="NAME=`readJson package.json e` || exit 1; " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Y5JsIIt4Xu" role="3cqZAp">
+          <node concept="2OqwBi" id="4Y5JsIIt5k3" role="3clFbG">
+            <node concept="10M0yZ" id="4Y5JsIIt4Yb" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="4Y5JsIIt5Dn" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="4Y5JsIIt5DX" role="37wK5m">
+                <property role="Xl_RC" value="echo \&quot;$NAME\&quot;" />
               </node>
             </node>
           </node>

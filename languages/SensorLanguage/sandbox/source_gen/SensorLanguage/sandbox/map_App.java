@@ -8,6 +8,16 @@ public class map_App {
 
     System.out.println("#!/bin/bash");
 
+    System.out.println("function readJson {  ");
+    System.out.println("   VALUE=`grep -m 1 \"\\\"${2}\\\"\" ${1} | sed -r 's/^ *//;S/.*: *\"//;s/\",?//'` ");
+    System.out.println("    if [ ! \"$VALUE\" ]; then");
+    System.out.println("       echo \"Error: Cannot find \\\"${2}\\\" in ${1}\" >&2;");
+    System.out.println("       exit 1;");
+    System.out.println("    else");
+    System.out.println("        echo $VALUE");
+    System.out.println("    fi");
+    System.out.println("}");
+
     System.out.println("file1" + "=" + "\"" + "/home/user/Bureau/testShel/exemple.csv" + "\"");
     System.out.println("# Set \",\" as the field separator using $IFS");
     System.out.println("# and read line by line using while read combo");
@@ -15,12 +25,7 @@ public class map_App {
     System.out.println("do");
     System.out.println(" echo \"$f1 $f2 $f3 $f4 $f5 $f6 $f7 \"  ");
     System.out.println("done < \"$" + "file1" + "\"");
-    System.out.println("file2" + "=" + "\"" + "/home/user/Bureau/testShel/exemple2.csv" + "\"");
-    System.out.println("# Set \",\" as the field separator using $IFS");
-    System.out.println("# and read line by line using while read combo");
-    System.out.println("while IFS=',' read -r f1 f2 f3 f4 f5 f6 f7");
-    System.out.println("do");
-    System.out.println(" echo \"$f1 $f2 $f3 $f4 $f5 $f6 $f7 \"  ");
-    System.out.println("done < \"$" + "file2" + "\"");
+    System.out.println("NAME=`readJson package.json e` || exit 1; ");
+    System.out.println("echo \"$NAME\"");
   }
 }
