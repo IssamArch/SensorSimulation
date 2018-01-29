@@ -8,7 +8,6 @@
   <imports />
   <registry>
     <language id="0976c57d-85cc-4413-a01a-155ebd2f878f" name="SensorLanguage">
-      <concept id="8302915319738208112" name="SensorLanguage.structure.FileCsv" flags="ng" index="1E7eSe" />
       <concept id="8302915319738208288" name="SensorLanguage.structure.FileJson" flags="ng" index="1E7f5u" />
       <concept id="8302915319737475177" name="SensorLanguage.structure.Replay" flags="ng" index="1E804n">
         <property id="8302915319737475328" name="source" index="1E801Y" />
@@ -25,10 +24,6 @@
   </registry>
   <node concept="1EbyNe" id="7cTSnSp6Pco">
     <property role="TrG5h" value="APP" />
-    <node concept="1E7eSe" id="7cTSnSpa9KU" role="1E8060">
-      <property role="TrG5h" value="file1" />
-      <property role="1E801Y" value="/home/user/Bureau/testShel/exemple.csv" />
-    </node>
     <node concept="1E7f5u" id="4Y5JsIIt33C" role="1E8060">
       <property role="TrG5h" value="file2" />
       <property role="1E801Y" value="/home/user/Bureau/testShel/package.json" />
