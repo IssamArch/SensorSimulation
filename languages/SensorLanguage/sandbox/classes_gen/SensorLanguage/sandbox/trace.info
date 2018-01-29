@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:4eaca1c8-8624-40f4-bcf7-581c14f52ac9(SensorLanguage.sandbox)/8302915319737570072">
+    <file name="map_App.java">
+      <node id="8302915319737570072" at="7,42,8,0" concept="1" />
+      <node id="8302915319737570072" at="8,0,9,38" concept="0" />
+      <node id="8302915319737570072" at="9,38,10,0" concept="1" />
+      <node id="8302915319737570072" at="10,0,11,95" concept="0" />
+      <node id="8302915319737570072" at="11,95,12,72" concept="0" />
+      <node id="8302915319737570072" at="12,72,13,73" concept="0" />
+      <node id="8302915319737570072" at="13,73,14,69" concept="0" />
+      <node id="8302915319737570072" at="14,69,15,29" concept="0" />
+      <node id="8302915319737570072" at="15,29,16,67" concept="0" />
+      <node id="8302915319737570072" at="16,67,17,54" concept="0" />
+      <node id="8302915319737570072" at="17,54,18,96" concept="0" />
+      <node id="8302915319737570072" at="18,96,19,72" concept="0" />
+      <node id="8302915319737570072" at="19,72,20,73" concept="0" />
+      <node id="8302915319737570072" at="20,73,21,69" concept="0" />
+      <node id="8302915319737570072" at="21,69,22,29" concept="0" />
+      <node id="8302915319737570072" at="22,29,23,67" concept="0" />
+      <node id="8302915319737570072" at="23,67,24,54" concept="0" />
+      <node id="8302915319737570072" at="7,0,26,0" concept="2" trace="main#([Ljava/lang/String;)V" />
+      <scope id="8302915319737570072" at="7,42,24,54" />
+      <scope id="8302915319737570072" at="7,0,26,0">
+        <var name="args" id="8302915319737570072" />
+      </scope>
+      <unit id="8302915319737570072" at="6,0,27,0" name="SensorLanguage.sandbox.map_App" />
+    </file>
+  </root>
+</debug-info>
+
