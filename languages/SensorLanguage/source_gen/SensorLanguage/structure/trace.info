@@ -17,7 +17,7 @@
       <unit at="10,0,36,0" name="SensorLanguage.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="14,0,97,0" name="SensorLanguage.structure.StructureAspectDescriptor" />
+      <unit at="14,0,100,0" name="SensorLanguage.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/8302915319737475333">

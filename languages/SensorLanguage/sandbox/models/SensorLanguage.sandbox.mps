@@ -8,7 +8,11 @@
   <imports />
   <registry>
     <language id="0976c57d-85cc-4413-a01a-155ebd2f878f" name="SensorLanguage">
-      <concept id="8302915319738208288" name="SensorLanguage.structure.FileJson" flags="ng" index="1E7f5u" />
+      <concept id="8302915319738208112" name="SensorLanguage.structure.FileCsv" flags="ng" index="1E7eSe">
+        <property id="455728957999985759" name="t" index="2p8qtd" />
+        <property id="455728957999985761" name="s" index="2p8qtN" />
+        <property id="455728957999985838" name="v" index="2p8quW" />
+      </concept>
       <concept id="8302915319737475177" name="SensorLanguage.structure.Replay" flags="ng" index="1E804n">
         <property id="8302915319737475328" name="source" index="1E801Y" />
       </concept>
@@ -24,9 +28,12 @@
   </registry>
   <node concept="1EbyNe" id="7cTSnSp6Pco">
     <property role="TrG5h" value="APP" />
-    <node concept="1E7f5u" id="pj4LavszSz" role="1E8060">
-      <property role="TrG5h" value="fileJ" />
-      <property role="1E801Y" value="/home/user/Bureau/testShel/package.json" />
+    <node concept="1E7eSe" id="pj4LavsD40" role="1E8060">
+      <property role="TrG5h" value="file1" />
+      <property role="1E801Y" value="/home/user/Bureau/testShel/exemple.csv" />
+      <property role="2p8qtd" value="2" />
+      <property role="2p8qtN" value="1" />
+      <property role="2p8quW" value="3" />
     </node>
   </node>
 </model>

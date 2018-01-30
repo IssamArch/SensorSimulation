@@ -9,16 +9,27 @@ public class map_App {
     System.out.println("#!/bin/bash");
 
 
-    System.out.println("function readJson { ");
-    System.out.println("   VALUE=`grep -m 1 \"\\\"${2}\\\"\" ${1} | sed -r 's/^ *//;s/.*: *\"//;s/\",?//'`");
-    System.out.println("   if [ ! \"$VALUE\"  ]; then ");
-    System.out.println("      echo \"Error: Cannot find \\\"${2}\\\" in ${1}\" >&2;");
-    System.out.println("      exit 1;");
-    System.out.println("   else");
-    System.out.println("      echo $VALUE");
-    System.out.println("   fi");
-    System.out.println("}");
-    System.out.println("NAME=`readJson " + "/home/user/Bureau/testShel/package.json" + " name` || exit 1; ");
-    System.out.println("echo \"$NAME\"");
+    System.out.println("file1" + "=" + "\"" + "/home/user/Bureau/testShel/exemple.csv" + "\"");
+    System.out.println("# Set \",\" as the field separator using $IFS");
+    System.out.println("# and read line by line using while read combo");
+    System.out.println("while IFS=',' read -r f1 f2 f3 f4 f5 f6 f7");
+    System.out.println("do");
+    System.out.println("  sensor=$f" + 1 + ";");
+    System.out.println("  value=$f" + 3 + ";");
+    System.out.println("  time=$f" + 2 + ";");
+    System.out.println("  curl -i -XPOST 'http://localhost:8086/write?db=my_database' \\");
+    System.out.println("                   --data-binary \"$sensor value=$value $time\";");
+    System.out.println("done < \"$" + "file1" + "\"");
+    System.out.println("file2" + "=" + "\"" + "/home/fiel.csv" + "\"");
+    System.out.println("# Set \",\" as the field separator using $IFS");
+    System.out.println("# and read line by line using while read combo");
+    System.out.println("while IFS=',' read -r f1 f2 f3 f4 f5 f6 f7");
+    System.out.println("do");
+    System.out.println("  sensor=$f" + 2 + ";");
+    System.out.println("  value=$f" + 3 + ";");
+    System.out.println("  time=$f" + 1 + ";");
+    System.out.println("  curl -i -XPOST 'http://localhost:8086/write?db=my_database' \\");
+    System.out.println("                   --data-binary \"$sensor value=$value $time\";");
+    System.out.println("done < \"$" + "file2" + "\"");
   }
 }

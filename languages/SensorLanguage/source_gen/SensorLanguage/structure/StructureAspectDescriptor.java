@@ -66,6 +66,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("SensorLanguage.structure.Replay", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7339e17e1919e069L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/8302915319738208112");
+    b.prop("t", 0x65313129f72b45fL, "455728957999985759");
+    b.prop("s", 0x65313129f72b461L, "455728957999985761");
+    b.prop("v", 0x65313129f72b4aeL, "455728957999985838");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFileJson() {

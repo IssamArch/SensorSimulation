@@ -56,6 +56,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -362,8 +365,34 @@
             </node>
             <node concept="liA8E" id="pj4LavqYsn" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="pj4LavqYsT" role="37wK5m">
-                <property role="Xl_RC" value="  sensor=$f1;" />
+              <node concept="3cpWs3" id="pj4LavsMdt" role="37wK5m">
+                <node concept="Xl_RD" id="pj4LavsMJb" role="3uHU7w">
+                  <property role="Xl_RC" value=";" />
+                </node>
+                <node concept="3cpWs3" id="pj4LavsJr8" role="3uHU7B">
+                  <node concept="Xl_RD" id="pj4LavqYsT" role="3uHU7B">
+                    <property role="Xl_RC" value="  sensor=$f" />
+                  </node>
+                  <node concept="3cmrfG" id="pj4Lavt246" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
+                    <node concept="17Uvod" id="pj4Lavt5As" role="lGtFl">
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
+                      <property role="2qtEX9" value="value" />
+                      <node concept="3zFVjK" id="pj4Lavt5At" role="3zH0cK">
+                        <node concept="3clFbS" id="pj4Lavt5Au" role="2VODD2">
+                          <node concept="3clFbF" id="pj4Lavt6cF" role="3cqZAp">
+                            <node concept="2OqwBi" id="pj4Lavt6vw" role="3clFbG">
+                              <node concept="30H73N" id="pj4Lavt6cE" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="pj4Lavt6T$" role="2OqNvi">
+                                <ref role="3TsBF5" to="uxew:pj4LavsFhx" resolve="s" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -376,8 +405,34 @@
             </node>
             <node concept="liA8E" id="pj4LavqZUU" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="pj4LavqZVt" role="37wK5m">
-                <property role="Xl_RC" value="  value=$f2;" />
+              <node concept="3cpWs3" id="pj4LavsRDM" role="37wK5m">
+                <node concept="Xl_RD" id="pj4LavsSbO" role="3uHU7w">
+                  <property role="Xl_RC" value=";" />
+                </node>
+                <node concept="3cpWs3" id="pj4LavsOiA" role="3uHU7B">
+                  <node concept="Xl_RD" id="pj4LavqZVt" role="3uHU7B">
+                    <property role="Xl_RC" value="  value=$f" />
+                  </node>
+                  <node concept="3cmrfG" id="pj4Lavt34U" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
+                    <node concept="17Uvod" id="pj4Lavt7HK" role="lGtFl">
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
+                      <property role="2qtEX9" value="value" />
+                      <node concept="3zFVjK" id="pj4Lavt7HL" role="3zH0cK">
+                        <node concept="3clFbS" id="pj4Lavt7HM" role="2VODD2">
+                          <node concept="3clFbF" id="pj4Lavt8kx" role="3cqZAp">
+                            <node concept="2OqwBi" id="pj4Lavt8Bm" role="3clFbG">
+                              <node concept="30H73N" id="pj4Lavt8kw" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="pj4Lavt91q" role="2OqNvi">
+                                <ref role="3TsBF5" to="uxew:pj4LavsFiI" resolve="v" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -390,8 +445,34 @@
             </node>
             <node concept="liA8E" id="pj4Lavr1pw" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="pj4Lavr1q2" role="37wK5m">
-                <property role="Xl_RC" value="  time=$f3;" />
+              <node concept="3cpWs3" id="pj4LavsXre" role="37wK5m">
+                <node concept="Xl_RD" id="pj4LavsXX$" role="3uHU7w">
+                  <property role="Xl_RC" value=";" />
+                </node>
+                <node concept="3cpWs3" id="pj4LavsUjz" role="3uHU7B">
+                  <node concept="Xl_RD" id="pj4Lavr1q2" role="3uHU7B">
+                    <property role="Xl_RC" value="  time=$f" />
+                  </node>
+                  <node concept="3cmrfG" id="pj4Lavt5fY" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
+                    <node concept="17Uvod" id="pj4Lavt9PJ" role="lGtFl">
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
+                      <property role="2qtEX9" value="value" />
+                      <node concept="3zFVjK" id="pj4Lavt9PK" role="3zH0cK">
+                        <node concept="3clFbS" id="pj4Lavt9PL" role="2VODD2">
+                          <node concept="3clFbF" id="pj4Lavtat2" role="3cqZAp">
+                            <node concept="2OqwBi" id="pj4LavtaJR" role="3clFbG">
+                              <node concept="30H73N" id="pj4Lavtat1" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="pj4Lavtb9V" role="2OqNvi">
+                                <ref role="3TsBF5" to="uxew:pj4LavsFhv" resolve="t" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
