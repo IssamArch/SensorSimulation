@@ -13,6 +13,10 @@
         <property id="455728957999985761" name="s" index="2p8qtN" />
         <property id="455728957999985838" name="v" index="2p8quW" />
       </concept>
+      <concept id="8302915319738208288" name="SensorLanguage.structure.FileJson" flags="ng" index="1E7f5u">
+        <property id="4391107579154890633" name="v" index="YZiqt" />
+        <property id="4391107579154885552" name="t" index="YZja$" />
+      </concept>
       <concept id="8302915319737475177" name="SensorLanguage.structure.Replay" flags="ng" index="1E804n">
         <property id="8302915319737475328" name="source" index="1E801Y" />
       </concept>
@@ -34,6 +38,12 @@
       <property role="2p8qtd" value="2" />
       <property role="2p8qtN" value="1" />
       <property role="2p8quW" value="3" />
+    </node>
+    <node concept="1E7f5u" id="3NKmhg26IP$" role="1E8060">
+      <property role="TrG5h" value="example.json" />
+      <property role="1E801Y" value="example.json" />
+      <property role="YZja$" value="4" />
+      <property role="YZiqt" value="5" />
     </node>
   </node>
 </model>
