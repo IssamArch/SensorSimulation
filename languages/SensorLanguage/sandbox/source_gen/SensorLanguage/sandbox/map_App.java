@@ -8,17 +8,17 @@ public class map_App {
 
     System.out.println("#!/bin/bash");
 
-    System.out.println("function readJson {  ");
-    System.out.println("   VALUE=`grep -m 1 \"\\\"${2}\\\"\" ${1} | sed -r 's/^ *//;S/.*: *\"//;s/\",?//'` ");
-    System.out.println("    if [ ! \"$VALUE\" ]; then");
-    System.out.println("       echo \"Error: Cannot find \\\"${2}\\\" in ${1}\" >&2;");
-    System.out.println("       exit 1;");
-    System.out.println("    else");
-    System.out.println("        echo $VALUE");
-    System.out.println("    fi");
-    System.out.println("}");
 
-    System.out.println("readJson NAME=`" + "/home/user/Bureau/testShel/package.json" + " name` || exit 1; ");
+    System.out.println("function readJson { ");
+    System.out.println("   VALUE=`grep -m 1 \"\\\"${2}\\\"\" ${1} | sed -r 's/^ *//;s/.*: *\"//;s/\",?//'`");
+    System.out.println("   if [ ! \"$VALUE\"  ]; then ");
+    System.out.println("      echo \"Error: Cannot find \\\"${2}\\\" in ${1}\" >&2;");
+    System.out.println("      exit 1;");
+    System.out.println("   else");
+    System.out.println("      echo $VALUE");
+    System.out.println("   fi");
+    System.out.println("}");
+    System.out.println("NAME=`readJson " + "/home/user/Bureau/testShel/package.json" + " name` || exit 1; ");
     System.out.println("echo \"$NAME\"");
   }
 }

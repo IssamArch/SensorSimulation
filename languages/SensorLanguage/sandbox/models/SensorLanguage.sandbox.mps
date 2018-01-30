@@ -24,8 +24,8 @@
   </registry>
   <node concept="1EbyNe" id="7cTSnSp6Pco">
     <property role="TrG5h" value="APP" />
-    <node concept="1E7f5u" id="4Y5JsIIt33C" role="1E8060">
-      <property role="TrG5h" value="file2" />
+    <node concept="1E7f5u" id="pj4LavszSz" role="1E8060">
+      <property role="TrG5h" value="fileJ" />
       <property role="1E801Y" value="/home/user/Bureau/testShel/package.json" />
     </node>
   </node>
