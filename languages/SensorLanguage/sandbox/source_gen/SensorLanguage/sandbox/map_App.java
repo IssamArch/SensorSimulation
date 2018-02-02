@@ -70,6 +70,18 @@ public class map_App {
     System.out.println("  thread.start();");
     System.out.println("}");
 
+    System.out.println("public static void createfilelow(final String file,int n_sensor,int n_value,int n_time,String dataSource){");
+    System.out.println("     switch (dataSource){");
+    System.out.println("          case \"csv\":");
+    System.out.println("              createCSVLow(file,n_sensor,n_value,n_time);");
+    System.out.println("              break;");
+    System.out.println("          case \"json\":");
+    System.out.println("              System.out.println(\"traitement pour json\");");
+    System.out.println("              break;");
+    System.out.println("          default:");
+    System.out.println("               System.out.println(\"not valide low file\");");
+    System.out.println("      }");
+    System.out.println("}");
 
 
     System.out.println("  public static void main(String[] args){");
