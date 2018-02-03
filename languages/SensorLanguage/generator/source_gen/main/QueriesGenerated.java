@@ -16,6 +16,12 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_887164873056026104(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
+  public static Object propertyMacro_GetPropertyValue_9108234181292347276(final PropertyMacroContext _context) {
+    return " " + _context.getSessionObject("name of lot");
+  }
+  public static Object propertyMacro_GetPropertyValue_9108234181291229676(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e79cL, 0xc4fd7c06bb2e7e9L, "sensorNumber"));
+  }
   public static Object propertyMacro_GetPropertyValue_219761989218432552(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e79cL, 0xc4fd7c06bb2e7ebL, "simulationDuration"));
   }
@@ -44,6 +50,7 @@ public class QueriesGenerated {
     return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7339e17e1917cdb0L, 0xc4fd7c06bb2ec57L, "sensorLots"));
   }
   public static Iterable<SNode> sourceNodesQuery_219761989218641545(final SourceSubstituteMacroNodesContext _context) {
+    _context.putSessionObject("name of lot", SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e79cL, 0xc4fd7c06bb2e9ffL, "sensors"));
   }
 }

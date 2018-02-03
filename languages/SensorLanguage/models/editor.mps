@@ -69,11 +69,11 @@
         <ref role="1NtTu8" to="uxew:LfPW1FGIvD" resolve="sensorNumber" />
       </node>
       <node concept="3F0ifn" id="LfPW1FH3RG" role="3EZMnx">
-        <property role="3F0ifm" value="Low" />
+        <property role="3F0ifm" value="Low " />
       </node>
-      <node concept="3F2HdR" id="LfPW1FH468" role="3EZMnx">
+      <node concept="3F2HdR" id="7TAWFFV0GGf" role="3EZMnx">
         <ref role="1NtTu8" to="uxew:LfPW1FGIBZ" resolve="sensors" />
-        <node concept="2iRfu4" id="LfPW1FH46a" role="2czzBx" />
+        <node concept="2iRfu4" id="7TAWFFV0GGh" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="LfPW1FH95m" role="3EZMnx">
         <property role="3F0ifm" value="Duration" />
@@ -88,10 +88,10 @@
     <ref role="1XX52x" to="uxew:LfPW1FGIvM" resolve="Sensor" />
     <node concept="3EZMnI" id="ccK5PAzehD" role="2wV5jI">
       <node concept="2iRfu4" id="ccK5PAzehE" role="2iSdaV" />
-      <node concept="1iCGBv" id="ccK5PAzehH" role="3EZMnx">
+      <node concept="1iCGBv" id="7TAWFFV0R0v" role="3EZMnx">
         <ref role="1NtTu8" to="uxew:ccK5PAzbF8" resolve="low" />
-        <node concept="1sVBvm" id="ccK5PAzehI" role="1sWHZn">
-          <node concept="3F0A7n" id="ccK5PAzehN" role="2wV5jI">
+        <node concept="1sVBvm" id="7TAWFFV0R0x" role="1sWHZn">
+          <node concept="3F0A7n" id="7TAWFFV0R0D" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
