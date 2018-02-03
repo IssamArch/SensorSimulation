@@ -46,11 +46,11 @@
     </node>
     <node concept="3IuW4i" id="uD2UBDOJQ3" role="1BZ5on">
       <property role="TrG5h" value="f4" />
-      <property role="3IuZox" value="/home/user/Bureau/testShel/exemple.csv" />
+      <property role="3IuZox" value="/home/user/Bureau/testShel/data1.csv" />
       <property role="3IuW2x" value="csv" />
       <property role="3IvmcA" value="1" />
-      <property role="3Ivmc4" value="2" />
-      <property role="3Ivmcr" value="3" />
+      <property role="3Ivmc4" value="8" />
+      <property role="3Ivmcr" value="0" />
     </node>
     <node concept="1BZjIp" id="2Z$C75YkP4e" role="1BZ5on">
       <property role="TrG5h" value="55" />
@@ -59,16 +59,8 @@
       <property role="TrG5h" value="issam" />
       <property role="1BZj0D" value="2" />
       <property role="1BZj0F" value="3" />
-      <node concept="1BZj0M" id="6GLE0h3wgD9" role="1BZjSZ">
-        <ref role="1_w7El" node="ccK5PAxXFz" resolve="f3" />
-      </node>
-    </node>
-    <node concept="1BZj1s" id="6GLE0h3wxvk" role="1BZjIn">
-      <property role="TrG5h" value="wared" />
-      <property role="1BZj0D" value="13" />
-      <property role="1BZj0F" value="15" />
-      <node concept="1BZj0M" id="6GLE0h3wxvq" role="1BZjSZ">
-        <ref role="1_w7El" node="ccK5PAxXFz" resolve="f3" />
+      <node concept="1BZj0M" id="6GLE0h3wE7r" role="1BZjSZ">
+        <ref role="1_w7El" node="uD2UBDOJQ3" resolve="f4" />
       </node>
     </node>
   </node>

@@ -20,6 +20,11 @@ public class map_App {
     System.out.println("import java.io.FileNotFoundException;");
     System.out.println("import java.io.FileReader;");
     System.out.println("import java.io.IOException;");
+    System.out.println("import org.apache.commons.csv.CSVFormat;");
+    System.out.println("import org.apache.commons.csv.CSVParser;");
+    System.out.println("import org.apache.commons.csv.CSVRecord;");
+    System.out.println("import java.io.*;");
+    System.out.println("import java.nio.charset.Charset;");
 
     System.out.println("public class " + "App2" + " { ");
 
@@ -84,13 +89,6 @@ public class map_App {
     System.out.println("       influxDB.write(batchPoints);");
     System.out.println("   }");
 
-    System.out.println(" public static ArrayList<String> randomNameSensor(int nbre){");
-    System.out.println("   ArrayList<String> temp = new ArrayList<String>();");
-    System.out.println("   for(int i = 0;i<nbre;i++){");
-    System.out.println("     temp.add(UUID.randomUUID().toString());");
-    System.out.println("   }");
-    System.out.println("   return temp;");
-    System.out.println(" }");
 
     System.out.println("public static Measurement createrandomLow(String nameS) {");
     System.out.println("   String name = nameS;");
@@ -101,45 +99,38 @@ public class map_App {
     System.out.println("   return measurement;");
     System.out.println("}");
 
-    System.out.println(" public static void createCSVLow(final String file,int n_sensor,int n_value,int n_time) {");
+    System.out.println(" public static Measurement createCSVLow(final String path,int n_sensor,int n_value,int n_time,int t) {");
     System.out.println("      try {");
-    System.out.println("           BufferedReader fichier_source = new BufferedReader(new FileReader(file));");
-    System.out.println("           String chaine;");
-    System.out.println("           int i = 1;");
-    System.out.println("            while((chaine = fichier_source.readLine())!= null ){");
-    System.out.println("                 if(i > 1){");
-    System.out.println("                     String[] tabChaine = chaine.split(\",\");");
-    System.out.println("                     String name = tabChaine[n_sensor];");
-    System.out.println("                     long timestamp = Long.parseLong(tabChaine[n_time]);");
-    System.out.println("                     float value = Float.parseFloat(tabChaine[n_value]);");
-    System.out.println("                     System.out.println(\"name \"+ name);");
-    System.out.println("                     System.out.println(\"value \"+ value);");
-    System.out.println("                     System.out.println(\"timestamp \"+ timestamp);");
-    System.out.println("                     //sendToInfluxDB(name,timestamp,value);");
-    System.out.println("                  }");
-    System.out.println("                  i++;");
-    System.out.println("              }");
-    System.out.println("        } catch (FileNotFoundException e) {");
-    System.out.println("            e.printStackTrace();");
-    System.out.println("        } catch (IOException e) {");
-    System.out.println("            e.printStackTrace();");
-    System.out.println("        }");
-    System.out.println(" }");
+    System.out.println("           File data = new File(path);");
+    System.out.println("           CSVParser parser = CSVParser.parse(data, Charset.defaultCharset(), CSVFormat.DEFAULT);");
+    System.out.println("          List<CSVRecord> list = parser.getRecords();");
+    System.out.println("          list.remove(0);");
+    System.out.println("          if (list.size() <= t) {");
+    System.out.println("             return null;");
+    System.out.println("          }");
+    System.out.println("          CSVRecord ligne = list.get(t);");
+    System.out.println("          return new Measurement<>(ligne.get(n_sensor).trim(),Long.parseLong(ligne.get(n_time).trim()),ligne.get(n_value).trim());");
+    System.out.println("          } catch (IOException e) {");
+    System.out.println("               e.printStackTrace();");
+    System.out.println("          }");
+    System.out.println("               return null;");
+    System.out.println("       }");
 
 
 
 
-    System.out.println("public static void createfilelow(final String file,int n_sensor,int n_value,int n_time,String dataSource){");
+    System.out.println("public static Measurement createfilelow(final String file,int n_sensor,int n_value,int n_time,String dataSource,int t){");
     System.out.println("     switch (dataSource){");
     System.out.println("          case \"csv\":");
-    System.out.println("              createCSVLow(file,n_sensor,n_value,n_time);");
-    System.out.println("              break;");
+    System.out.println("              Measurement measurement = createCSVLow(file,n_sensor,n_value,n_time,t);");
+    System.out.println("              return measurement;");
     System.out.println("          case \"json\":");
     System.out.println("              System.out.println(\"traitement pour json\");");
     System.out.println("              break;");
     System.out.println("          default:");
     System.out.println("               System.out.println(\"not valide low file\");");
     System.out.println("      }");
+    System.out.println("      return null;");
     System.out.println("}");
 
 
@@ -156,31 +147,8 @@ public class map_App {
     System.out.println("            for(int i = 0; i < " + 2 + ";i++){");
     System.out.println("              String sensName;");
 
-    System.out.println("              sensName = \"" + " issam" + "\"+Integer.toString(i);");
-    System.out.println("              Measurement measurement = createrandomLow(sensName);");
-
-    System.out.println("              measurements.add(measurement);");
-
-
-    System.out.println("              try {");
-    System.out.println("                Thread.sleep(5000);");
-    System.out.println("              } catch (InterruptedException e) {");
-    System.out.println("                e.printStackTrace();");
-    System.out.println("              }");
-    System.out.println("             }");
-    System.out.println("             System.out.println(measurements);");
-    System.out.println("             sendToInfluxDB(measurements);");
-    System.out.println("          }");
-
-
-    System.out.println("        // ArrayList<String> namesSensors =randomNameSensor(" + 13 + ");");
-    System.out.println("         for(int t =0; t < " + 15 + ";t++){");
-    System.out.println("         List<Measurement> measurements = new ArrayList<>();           ");
-    System.out.println("            for(int i = 0; i < " + 13 + ";i++){");
-    System.out.println("              String sensName;");
-
-    System.out.println("              sensName = \"" + " wared" + "\"+Integer.toString(i);");
-    System.out.println("              Measurement measurement = createrandomLow(sensName);");
+    System.out.println("              sensName =\"" + " issam" + "\"+Integer.toString(i);");
+    System.out.println("              Measurement measurement = createfilelow(\"" + "/home/user/Bureau/testShel/data1.csv" + "\"," + 1 + "," + 8 + "," + 0 + ",\"" + "csv" + "\",t);");
 
     System.out.println("              measurements.add(measurement);");
 
