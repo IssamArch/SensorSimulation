@@ -13,6 +13,7 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptApp = createDescriptorForApp();
+  /*package*/ final ConceptDescriptor myConceptCondValue = createDescriptorForCondValue();
   /*package*/ final ConceptDescriptor myConceptFileLaw = createDescriptorForFileLaw();
   /*package*/ final ConceptDescriptor myConceptFunctionLow = createDescriptorForFunctionLow();
   /*package*/ final ConceptDescriptor myConceptLaw = createDescriptorForLaw();
@@ -27,7 +28,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptApp, myConceptFileLaw, myConceptFunctionLow, myConceptLaw, myConceptRandomLow, myConceptSensor, myConceptSensorLot);
+    return Arrays.asList(myConceptApp, myConceptCondValue, myConceptFileLaw, myConceptFunctionLow, myConceptLaw, myConceptRandomLow, myConceptSensor, myConceptSensorLot);
   }
 
   @Override
@@ -36,6 +37,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myConceptIndex.index(id)) {
       case LanguageConceptSwitch.App:
         return myConceptApp;
+      case LanguageConceptSwitch.CondValue:
+        return myConceptCondValue;
       case LanguageConceptSwitch.FileLaw:
         return myConceptFileLaw;
       case LanguageConceptSwitch.FunctionLow:
@@ -67,6 +70,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("lows", 0xc4fd7c06bb381d7L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2ea01L).optional(false).ordered(true).multiple(true).origin("887164873055896023").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForCondValue() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SensorLanguage", "CondValue", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x345c81b7bf895e99L);
+    b.class_(false, false, false);
+    b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/3773033214022082201");
+    b.prop("condition", 0x345c81b7bf895fb4L, "3773033214022082484");
+    b.prop("valeur", 0x345c81b7bf895fb6L, "3773033214022082486");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForFileLaw() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SensorLanguage", "FileLaw", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7a90ba9e9d2cabbL);
     b.class_(false, false, false);
@@ -86,6 +97,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("SensorLanguage.structure.Law", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2ea01L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/219761989218885976");
+    b.aggregate("poly", 0x345c81b7bf895fb9L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x345c81b7bf895e99L).optional(false).ordered(true).multiple(true).origin("3773033214022082489").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLaw() {

@@ -179,16 +179,22 @@
         <ref role="v9R2y" node="LfPW1FJDF4" resolve="reduce_SensorLot" />
       </node>
     </node>
-    <node concept="3aamgX" id="ccK5PAzrtW" role="3acgRq">
-      <ref role="30HIoZ" to="uxew:ccK5PAxA5o" resolve="FunctionLow" />
-      <node concept="j$656" id="ccK5PAzru8" role="1lVwrX">
-        <ref role="v9R2y" node="ccK5PAzru6" resolve="reduce_functionLow" />
-      </node>
-    </node>
     <node concept="3aamgX" id="uD2UBDOR6i" role="3acgRq">
       <ref role="30HIoZ" to="uxew:uD2UBDOGEV" resolve="FileLaw" />
       <node concept="j$656" id="uD2UBDOR6w" role="1lVwrX">
         <ref role="v9R2y" node="uD2UBDOR6u" resolve="reduce_FileLaw" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="3hswruZy$jw" role="3acgRq">
+      <ref role="30HIoZ" to="uxew:ccK5PAxA5o" resolve="FunctionLow" />
+      <node concept="j$656" id="3hswruZy$jK" role="1lVwrX">
+        <ref role="v9R2y" node="3hswruZy$jI" resolve="reduce_FunctionLow" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="3hswruZyT6A" role="3acgRq">
+      <ref role="30HIoZ" to="uxew:3hswruZylUp" resolve="CondValue" />
+      <node concept="j$656" id="3hswruZyT6Q" role="1lVwrX">
+        <ref role="v9R2y" node="3hswruZyT6O" resolve="reduce_CondValue" />
       </node>
     </node>
     <node concept="3lhOvk" id="7cTSnSp5WZK" role="3lj3bC">
@@ -2199,6 +2205,20 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hswruZzmkR" role="3cqZAp">
+          <node concept="2OqwBi" id="3hswruZznhN" role="3clFbG">
+            <node concept="10M0yZ" id="3hswruZzmVV" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="3hswruZznB3" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="3hswruZznB_" role="37wK5m">
+                <property role="Xl_RC" value="         Map&lt;String,String&gt; listPoly =  new HashMap&lt;&gt;();" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="ccK5PAvN3K" role="3cqZAp">
           <node concept="2OqwBi" id="ccK5PAvNAr" role="3clFbG">
             <node concept="10M0yZ" id="ccK5PAvNgz" role="2Oq$k0">
@@ -2448,29 +2468,6 @@
       </node>
     </node>
   </node>
-  <node concept="13MO4I" id="ccK5PAzru6">
-    <property role="TrG5h" value="reduce_functionLow" />
-    <ref role="3gUMe" to="uxew:ccK5PAxA5o" resolve="FunctionLow" />
-    <node concept="9aQIb" id="ccK5PAzry_" role="13RCb5">
-      <node concept="3clFbS" id="ccK5PAzryB" role="9aQI4">
-        <node concept="raruj" id="ccK5PAzryD" role="lGtFl" />
-        <node concept="3clFbF" id="ccK5PAzryG" role="3cqZAp">
-          <node concept="2OqwBi" id="ccK5PAzrSJ" role="3clFbG">
-            <node concept="10M0yZ" id="ccK5PAzryP" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="ccK5PAzsdZ" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="ccK5PAzsrh" role="37wK5m">
-                <property role="Xl_RC" value="                Measurement measurement = createfunctionlow();" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="13MO4I" id="uD2UBDOR6u">
     <property role="TrG5h" value="reduce_FileLaw" />
     <ref role="3gUMe" to="uxew:uD2UBDOGEV" resolve="FileLaw" />
@@ -2609,6 +2606,132 @@
                               <node concept="30H73N" id="uD2UBDQcWw" role="2Oq$k0" />
                               <node concept="3TrcHB" id="uD2UBDQdsr" role="2OqNvi">
                                 <ref role="3TsBF5" to="uxew:uD2UBDOGG8" resolve="typeData" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="3hswruZy$jI">
+    <property role="TrG5h" value="reduce_FunctionLow" />
+    <ref role="3gUMe" to="uxew:ccK5PAxA5o" resolve="FunctionLow" />
+    <node concept="9aQIb" id="3hswruZy_4C" role="13RCb5">
+      <node concept="raruj" id="3hswruZy_4G" role="lGtFl" />
+      <node concept="3clFbS" id="3hswruZy_4L" role="9aQI4">
+        <node concept="3clFbF" id="3hswruZyS46" role="3cqZAp">
+          <node concept="2OqwBi" id="3hswruZySq$" role="3clFbG">
+            <node concept="10M0yZ" id="3hswruZyS4G" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="3hswruZySJO" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="3hswruZySKm" role="37wK5m">
+                <property role="Xl_RC" value="get Condition value et remplir une liste  " />
+              </node>
+            </node>
+          </node>
+          <node concept="2b32R4" id="3hswruZySYl" role="lGtFl">
+            <node concept="3JmXsc" id="3hswruZySYo" role="2P8S$">
+              <node concept="3clFbS" id="3hswruZySYp" role="2VODD2">
+                <node concept="3clFbF" id="3hswruZySYv" role="3cqZAp">
+                  <node concept="2OqwBi" id="3hswruZySYq" role="3clFbG">
+                    <node concept="3Tsc0h" id="3hswruZySYt" role="2OqNvi">
+                      <ref role="3TtcxE" to="uxew:3hswruZylYT" resolve="poly" />
+                    </node>
+                    <node concept="30H73N" id="3hswruZySYu" role="2Oq$k0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3hswruZy_4J" role="3cqZAp">
+          <node concept="2OqwBi" id="3hswruZy_qO" role="3clFbG">
+            <node concept="10M0yZ" id="3hswruZy_4U" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="3hswruZy_K4" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="3hswruZy_KA" role="37wK5m">
+                <property role="Xl_RC" value="              Measurement measurement= createlowFunction(listPoly,t); " />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="3hswruZyT6O">
+    <property role="TrG5h" value="reduce_CondValue" />
+    <ref role="3gUMe" to="uxew:3hswruZylUp" resolve="CondValue" />
+    <node concept="9aQIb" id="3hswruZyTbj" role="13RCb5">
+      <node concept="3clFbS" id="3hswruZyTbo" role="9aQI4">
+        <node concept="raruj" id="3hswruZz752" role="lGtFl" />
+        <node concept="3clFbF" id="3hswruZzohL" role="3cqZAp">
+          <node concept="2OqwBi" id="3hswruZzoRO" role="3clFbG">
+            <node concept="10M0yZ" id="3hswruZzoxW" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="3hswruZzpd4" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="3hswruZzxlo" role="37wK5m">
+                <node concept="Xl_RD" id="3hswruZzxO3" role="3uHU7w">
+                  <property role="Xl_RC" value=")" />
+                </node>
+                <node concept="3cpWs3" id="3hswruZzv$y" role="3uHU7B">
+                  <node concept="3cpWs3" id="3hswruZzulu" role="3uHU7B">
+                    <node concept="3cpWs3" id="3hswruZzt3q" role="3uHU7B">
+                      <node concept="Xl_RD" id="3hswruZzpdA" role="3uHU7B">
+                        <property role="Xl_RC" value="              listPoly.put(" />
+                      </node>
+                      <node concept="Xl_RD" id="3hswruZztk5" role="3uHU7w">
+                        <property role="Xl_RC" value="cond" />
+                        <node concept="17Uvod" id="3hswruZzyv_" role="lGtFl">
+                          <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                          <property role="2qtEX9" value="value" />
+                          <node concept="3zFVjK" id="3hswruZzyvA" role="3zH0cK">
+                            <node concept="3clFbS" id="3hswruZzyvB" role="2VODD2">
+                              <node concept="3clFbF" id="3hswruZzyKB" role="3cqZAp">
+                                <node concept="2OqwBi" id="3hswruZzyXs" role="3clFbG">
+                                  <node concept="30H73N" id="3hswruZzyKA" role="2Oq$k0" />
+                                  <node concept="3TrcHB" id="3hswruZzzc5" role="2OqNvi">
+                                    <ref role="3TsBF5" to="uxew:3hswruZylYO" resolve="condition" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="3hswruZzuMX" role="3uHU7w">
+                      <property role="Xl_RC" value="," />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="3hswruZzw2B" role="3uHU7w">
+                    <property role="Xl_RC" value="value" />
+                    <node concept="17Uvod" id="3hswruZzzAB" role="lGtFl">
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                      <property role="2qtEX9" value="value" />
+                      <node concept="3zFVjK" id="3hswruZzzAC" role="3zH0cK">
+                        <node concept="3clFbS" id="3hswruZzzAD" role="2VODD2">
+                          <node concept="3clFbF" id="3hswruZzzSb" role="3cqZAp">
+                            <node concept="2OqwBi" id="3hswruZz$50" role="3clFbG">
+                              <node concept="30H73N" id="3hswruZzzSa" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="3hswruZz$jD" role="2OqNvi">
+                                <ref role="3TsBF5" to="uxew:3hswruZylYQ" resolve="valeur" />
                               </node>
                             </node>
                           </node>

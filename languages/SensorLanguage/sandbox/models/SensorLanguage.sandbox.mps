@@ -8,7 +8,13 @@
   <imports />
   <registry>
     <language id="0976c57d-85cc-4413-a01a-155ebd2f878f" name="SensorLanguage">
-      <concept id="219761989218885976" name="SensorLanguage.structure.FunctionLow" flags="ng" index="1_yE45" />
+      <concept id="3773033214022082201" name="SensorLanguage.structure.CondValue" flags="ng" index="2bPtWI">
+        <property id="3773033214022082486" name="valeur" index="2bPtS1" />
+        <property id="3773033214022082484" name="condition" index="2bPtS3" />
+      </concept>
+      <concept id="219761989218885976" name="SensorLanguage.structure.FunctionLow" flags="ng" index="1_yE45">
+        <child id="3773033214022082489" name="poly" index="2bPtSe" />
+      </concept>
       <concept id="887164873055856626" name="SensorLanguage.structure.Sensor" flags="ng" index="1BZj0M">
         <reference id="219761989219302088" name="low" index="1_w7El" />
       </concept>
@@ -38,9 +44,6 @@
   </registry>
   <node concept="1EbyNe" id="7cTSnSp6Pco">
     <property role="TrG5h" value="App2" />
-    <node concept="1_yE45" id="ccK5PAxCDa" role="1BZ5on">
-      <property role="TrG5h" value="f1" />
-    </node>
     <node concept="1BZjIp" id="ccK5PAxXFz" role="1BZ5on">
       <property role="TrG5h" value="f3" />
     </node>
@@ -52,15 +55,34 @@
       <property role="3Ivmc4" value="8" />
       <property role="3Ivmcr" value="0" />
     </node>
-    <node concept="1BZjIp" id="2Z$C75YkP4e" role="1BZ5on">
-      <property role="TrG5h" value="55" />
+    <node concept="1_yE45" id="3hswruZyoe4" role="1BZ5on">
+      <property role="TrG5h" value="foncton1" />
+      <node concept="2bPtWI" id="3hswruZyoe6" role="2bPtSe">
+        <property role="2bPtS3" value="x&lt;8" />
+        <property role="2bPtS1" value="0 " />
+      </node>
+      <node concept="2bPtWI" id="3hswruZyqpj" role="2bPtSe">
+        <property role="2bPtS3" value="x&gt;8" />
+        <property role="2bPtS1" value="2" />
+      </node>
+      <node concept="2bPtWI" id="3hswruZyqtK" role="2bPtSe">
+        <property role="2bPtS3" value="x&gt;18" />
+        <property role="2bPtS1" value="0" />
+      </node>
     </node>
-    <node concept="1BZj1s" id="7TAWFFV0Z5i" role="1BZjIn">
-      <property role="TrG5h" value="issam" />
-      <property role="1BZj0D" value="2" />
-      <property role="1BZj0F" value="3" />
-      <node concept="1BZj0M" id="6GLE0h3wE7r" role="1BZjSZ">
-        <ref role="1_w7El" node="uD2UBDOJQ3" resolve="f4" />
+    <node concept="1_yE45" id="3hswruZyysV" role="1BZ5on">
+      <property role="TrG5h" value="low2" />
+      <node concept="2bPtWI" id="3hswruZyysX" role="2bPtSe">
+        <property role="2bPtS3" value="x&gt;8" />
+        <property role="2bPtS1" value="13" />
+      </node>
+    </node>
+    <node concept="1BZj1s" id="3hswruZyjNI" role="1BZjIn">
+      <property role="TrG5h" value="parking" />
+      <property role="1BZj0D" value="14" />
+      <property role="1BZj0F" value="44" />
+      <node concept="1BZj0M" id="3hswruZzhEj" role="1BZjSZ">
+        <ref role="1_w7El" node="3hswruZyoe4" resolve="foncton1" />
       </node>
     </node>
   </node>

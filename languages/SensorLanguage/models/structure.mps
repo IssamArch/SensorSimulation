@@ -168,6 +168,13 @@
     <node concept="PrWs8" id="ccK5PAxA9N" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="3hswruZylYT" role="1TKVEi">
+      <property role="IQ2ns" value="3773033214022082489" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="poly" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3hswruZylUp" resolve="CondValue" />
+    </node>
   </node>
   <node concept="AxPO7" id="uD2UBDOlCx">
     <property role="TrG5h" value="TypeData" />
@@ -212,6 +219,21 @@
       <property role="IQ2nx" value="551985253729986738" />
       <property role="TrG5h" value="n_time" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3hswruZylUp">
+    <property role="EcuMT" value="3773033214022082201" />
+    <property role="TrG5h" value="CondValue" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3hswruZylYO" role="1TKVEl">
+      <property role="IQ2nx" value="3773033214022082484" />
+      <property role="TrG5h" value="condition" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3hswruZylYQ" role="1TKVEl">
+      <property role="IQ2nx" value="3773033214022082486" />
+      <property role="TrG5h" value="valeur" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

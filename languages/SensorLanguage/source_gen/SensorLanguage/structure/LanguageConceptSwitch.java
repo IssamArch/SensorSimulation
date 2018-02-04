@@ -10,16 +10,18 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int App = 0;
-  public static final int FileLaw = 1;
-  public static final int FunctionLow = 2;
-  public static final int Law = 3;
-  public static final int RandomLow = 4;
-  public static final int Sensor = 5;
-  public static final int SensorLot = 6;
+  public static final int CondValue = 1;
+  public static final int FileLaw = 2;
+  public static final int FunctionLow = 3;
+  public static final int Law = 4;
+  public static final int RandomLow = 5;
+  public static final int Sensor = 6;
+  public static final int SensorLot = 7;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x976c57d85cc4413L, 0xa01a155ebd2f878fL);
     builder.put(0x7339e17e1917cdb0L, App);
+    builder.put(0x345c81b7bf895e99L, CondValue);
     builder.put(0x7a90ba9e9d2cabbL, FileLaw);
     builder.put(0x30cc05d66866158L, FunctionLow);
     builder.put(0xc4fd7c06bb2ea01L, Law);

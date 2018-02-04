@@ -10,6 +10,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_App;
+  private ConceptPresentation props_CondValue;
   private ConceptPresentation props_FileLaw;
   private ConceptPresentation props_FunctionLow;
   private ConceptPresentation props_Law;
@@ -29,6 +30,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_App = cpb.create();
         }
         return props_App;
+      case LanguageConceptSwitch.CondValue:
+        if (props_CondValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("CondValue");
+          props_CondValue = cpb.create();
+        }
+        return props_CondValue;
       case LanguageConceptSwitch.FileLaw:
         if (props_FileLaw == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

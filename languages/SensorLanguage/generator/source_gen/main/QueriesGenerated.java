@@ -43,6 +43,12 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_551985253730272845(final PropertyMacroContext _context) {
     return SPropertyOperations.getString_def(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7a90ba9e9d2cabbL, 0x7a90ba9e9d2cb08L, "typeData"), "csv");
   }
+  public static Object propertyMacro_GetPropertyValue_3773033214022395878(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x345c81b7bf895e99L, 0x345c81b7bf895fb4L, "condition"));
+  }
+  public static Object propertyMacro_GetPropertyValue_3773033214022400424(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x345c81b7bf895e99L, 0x345c81b7bf895fb6L, "valeur"));
+  }
   public static SNode sourceNodeQuery_219761989219347370(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e7f2L, 0x30cc05d668cbac8L, "low"));
   }
@@ -52,5 +58,8 @@ public class QueriesGenerated {
   public static Iterable<SNode> sourceNodesQuery_219761989218641545(final SourceSubstituteMacroNodesContext _context) {
     _context.putSessionObject("name of lot", SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e79cL, 0xc4fd7c06bb2e9ffL, "sensors"));
+  }
+  public static Iterable<SNode> sourceNodesQuery_3773033214022225816(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x30cc05d66866158L, 0x345c81b7bf895fb9L, "poly"));
   }
 }
