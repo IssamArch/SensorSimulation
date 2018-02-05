@@ -1392,7 +1392,7 @@
             <node concept="liA8E" id="7TAWFFUUZWm" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="7TAWFFUUZXb" role="37wK5m">
-                <property role="Xl_RC" value="   measurement.toString();" />
+                <property role="Xl_RC" value="   System.out.println(\&quot;      new measurement for \&quot; + name + \&quot; from random law !\&quot; );" />
               </node>
             </node>
           </node>
@@ -2019,6 +2019,20 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3hswruZArOR" role="3cqZAp">
+          <node concept="2OqwBi" id="3hswruZAuDa" role="3clFbG">
+            <node concept="10M0yZ" id="3hswruZAtlz" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="3hswruZAvWi" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="3hswruZAvX7" role="37wK5m">
+                <property role="Xl_RC" value="    System.out.println(\&quot;      new measurement for \&quot; + sensName + \&quot; from function law ! :\&quot; );" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="3hswruZA3Ek" role="3cqZAp">
           <node concept="2OqwBi" id="3hswruZA6uB" role="3clFbG">
             <node concept="10M0yZ" id="3hswruZA5b0" role="2Oq$k0">
@@ -2028,7 +2042,7 @@
             <node concept="liA8E" id="3hswruZA7Fu" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="3hswruZA7M$" role="37wK5m">
-                <property role="Xl_RC" value="     System.out.println(\&quot;     \&quot;+ e.getExpressionString()+ \&quot;=\&quot;+ result + \&quot; when x = \&quot; + x.getArgumentValue()) ;" />
+                <property role="Xl_RC" value="     System.out.println(\&quot;       \&quot;+ e.getExpressionString()+ \&quot;=\&quot;+ result + \&quot; when x = \&quot; + x.getArgumentValue()) ;" />
               </node>
             </node>
           </node>
@@ -2711,7 +2725,7 @@
             <node concept="liA8E" id="3hswruZAbWM" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="3hswruZAbXk" role="37wK5m">
-                <property role="Xl_RC" value="             System.out.println(\&quot;send measurements to influxDB : \&quot;+ measurements);" />
+                <property role="Xl_RC" value="            System.out.println(\&quot;send list n° \&quot;+ t + \&quot; of measurements to influxDB : \&quot;+ measurements);" />
               </node>
             </node>
           </node>

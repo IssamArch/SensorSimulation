@@ -89,6 +89,14 @@
         <ref role="1_w7El" node="3hswruZyoe4" resolve="foncton1" />
       </node>
     </node>
+    <node concept="1BZj1s" id="3hswruZAmZ6" role="1BZjIn">
+      <property role="TrG5h" value="jardin" />
+      <property role="1BZj0D" value="2" />
+      <property role="1BZj0F" value="3" />
+      <node concept="1BZj0M" id="3hswruZAn3A" role="1BZjSZ">
+        <ref role="1_w7El" node="ccK5PAxXFz" resolve="f3" />
+      </node>
+    </node>
   </node>
 </model>
 

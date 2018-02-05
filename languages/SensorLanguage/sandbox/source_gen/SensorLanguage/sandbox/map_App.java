@@ -99,7 +99,7 @@ public class map_App {
     System.out.println("   long timestamp = System.currentTimeMillis();");
     System.out.println("   int value = new Random().nextInt() % 10;");
     System.out.println("   Measurement measurement = new Measurement(name,timestamp,value);");
-    System.out.println("   measurement.toString();");
+    System.out.println("   System.out.println(\"      new measurement for \" + name + \" from random law !\" );");
     System.out.println("   return measurement;");
     System.out.println("}");
 
@@ -150,7 +150,8 @@ public class map_App {
     System.out.println("    x.setArgumentValue(t);");
     System.out.println("    Expression e = new Expression(s, x);");
     System.out.println("    double result  = e.calculate();");
-    System.out.println("     System.out.println(\"     \"+ e.getExpressionString()+ \"=\"+ result + \" when x = \" + x.getArgumentValue()) ;");
+    System.out.println("    System.out.println(\"      new measurement for \" + sensName + \" from function law ! :\" );");
+    System.out.println("     System.out.println(\"       \"+ e.getExpressionString()+ \"=\"+ result + \" when x = \" + x.getArgumentValue()) ;");
     System.out.println("    value = result;");
     System.out.println("    return new Measurement(sensName, System.currentTimeMillis(), value);");
     System.out.println("  }");
@@ -184,7 +185,31 @@ public class map_App {
     System.out.println("                e.printStackTrace();");
     System.out.println("              }");
     System.out.println("             }");
-    System.out.println("             System.out.println(\"send measurements to influxDB : \"+ measurements);");
+    System.out.println("            System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
+    System.out.println("             sendToInfluxDB(measurements);");
+    System.out.println("          }");
+
+
+    System.out.println("        // ArrayList<String> namesSensors =randomNameSensor(" + 2 + ");");
+    System.out.println("         for(int t =0; t < " + 3 + ";t++){");
+    System.out.println("         List<Measurement> measurements = new ArrayList<>();           ");
+    System.out.println("         Map<String,String> listPoly =  new HashMap<>();");
+    System.out.println("            for(int i = 0; i < " + 2 + ";i++){");
+    System.out.println("              String sensName;");
+
+    System.out.println("              sensName =\"" + " jardin" + "\"+Integer.toString(i);");
+    System.out.println("              Measurement measurement = createrandomLow(sensName);");
+
+    System.out.println("              measurements.add(measurement);");
+
+
+    System.out.println("              try {");
+    System.out.println("                Thread.sleep(5000);");
+    System.out.println("              } catch (InterruptedException e) {");
+    System.out.println("                e.printStackTrace();");
+    System.out.println("              }");
+    System.out.println("             }");
+    System.out.println("            System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
     System.out.println("             sendToInfluxDB(measurements);");
     System.out.println("          }");
 
