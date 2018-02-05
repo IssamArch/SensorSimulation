@@ -2414,7 +2414,7 @@
             <node concept="liA8E" id="3hswruZCoMq" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="3hswruZCoU5" role="37wK5m">
-                <property role="Xl_RC" value="             public void run(){" />
+                <property role="Xl_RC" value="         public void run(){" />
               </node>
             </node>
           </node>
@@ -2428,7 +2428,7 @@
             <node concept="liA8E" id="3hswruZCrcH" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="3hswruZCrpZ" role="37wK5m">
-                <property role="Xl_RC" value="                System.out.println(\&quot;run by: \&quot; + getName());" />
+                <property role="Xl_RC" value="         System.out.println(\&quot;run by: \&quot; + getName());" />
               </node>
             </node>
           </node>
@@ -2483,7 +2483,7 @@
             <node concept="liA8E" id="6GLE0h3wubp" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="6GLE0h3wubV" role="37wK5m">
-                <property role="Xl_RC" value="         List&lt;Measurement&gt; measurements = new ArrayList&lt;&gt;();           " />
+                <property role="Xl_RC" value="         List&lt;Measurement&gt; measurements = new ArrayList&lt;&gt;(); " />
               </node>
             </node>
           </node>
@@ -2727,7 +2727,7 @@
             <node concept="liA8E" id="3jSYJW1IeHH" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="3jSYJW1IeIf" role="37wK5m">
-                <property role="Xl_RC" value="             sendToInfluxDB(measurements);" />
+                <property role="Xl_RC" value="           sendToInfluxDB(measurements);" />
               </node>
             </node>
           </node>

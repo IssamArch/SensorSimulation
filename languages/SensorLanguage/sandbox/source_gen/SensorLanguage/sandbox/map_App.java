@@ -161,11 +161,11 @@ public class map_App {
     System.out.println("");
 
     System.out.println("         Thread " + "parking" + " = new Thread(\"" + "parking" + "\") { ");
-    System.out.println("             public void run(){");
-    System.out.println("                System.out.println(\"run by: \" + getName());");
+    System.out.println("         public void run(){");
+    System.out.println("         System.out.println(\"run by: \" + getName());");
 
     System.out.println("         for(int t =0; t < " + 3 + ";t++){");
-    System.out.println("         List<Measurement> measurements = new ArrayList<>();           ");
+    System.out.println("         List<Measurement> measurements = new ArrayList<>(); ");
     System.out.println("         Map<String,String> listPoly =  new HashMap<>();");
     System.out.println("            for(int i = 0; i < " + 2 + ";i++){");
     System.out.println("              String sensName;");
@@ -186,7 +186,7 @@ public class map_App {
     System.out.println("              }");
     System.out.println("             }");
     System.out.println("            System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
-    System.out.println("             sendToInfluxDB(measurements);");
+    System.out.println("           sendToInfluxDB(measurements);");
     System.out.println("          }");
     System.out.println("       }");
     System.out.println("    };");
@@ -194,11 +194,11 @@ public class map_App {
 
 
     System.out.println("         Thread " + "jardin" + " = new Thread(\"" + "jardin" + "\") { ");
-    System.out.println("             public void run(){");
-    System.out.println("                System.out.println(\"run by: \" + getName());");
+    System.out.println("         public void run(){");
+    System.out.println("         System.out.println(\"run by: \" + getName());");
 
     System.out.println("         for(int t =0; t < " + 3 + ";t++){");
-    System.out.println("         List<Measurement> measurements = new ArrayList<>();           ");
+    System.out.println("         List<Measurement> measurements = new ArrayList<>(); ");
     System.out.println("         Map<String,String> listPoly =  new HashMap<>();");
     System.out.println("            for(int i = 0; i < " + 2 + ";i++){");
     System.out.println("              String sensName;");
@@ -216,7 +216,7 @@ public class map_App {
     System.out.println("              }");
     System.out.println("             }");
     System.out.println("            System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
-    System.out.println("             sendToInfluxDB(measurements);");
+    System.out.println("           sendToInfluxDB(measurements);");
     System.out.println("          }");
     System.out.println("       }");
     System.out.println("    };");
