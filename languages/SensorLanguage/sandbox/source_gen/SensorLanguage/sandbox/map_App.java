@@ -25,6 +25,10 @@ public class map_App {
     System.out.println("import org.apache.commons.csv.CSVRecord;");
     System.out.println("import java.io.*;");
     System.out.println("import java.nio.charset.Charset;");
+    System.out.println("import org.mariuszgromada.math.mxparser.Argument;");
+    System.out.println("import org.mariuszgromada.math.mxparser.Expression;");
+    System.out.println("import java.util.HashMap;");
+
 
     System.out.println("public class " + "App2" + " { ");
 
@@ -133,6 +137,23 @@ public class map_App {
     System.out.println("      return null;");
     System.out.println("}");
 
+    System.out.println("  public static Measurement createLawFunction(String sensName, Map<String,String> funcs, int t ) {");
+    System.out.println("    Object value;");
+    System.out.println("    String function = \"iff(\";");
+    System.out.println("    for(Map.Entry<String,String> entry : funcs.entrySet()){");
+    System.out.println("       function+= entry.getKey() +\",\" + entry.getValue()+\",\";");
+    System.out.println("    }");
+    System.out.println("    function +=\")\";");
+    System.out.println("    String s = function.substring(0,function.length()-2);");
+    System.out.println("    s+=\")\";");
+    System.out.println("    Argument x = new Argument(\"x\");");
+    System.out.println("    x.setArgumentValue(t);");
+    System.out.println("    Expression e = new Expression(s, x);");
+    System.out.println("    double result  = e.calculate();");
+    System.out.println("     System.out.println(\"     \"+ e.getExpressionString()+ \"=\"+ result + \" when x = \" + x.getArgumentValue()) ;");
+    System.out.println("    value = result;");
+    System.out.println("    return new Measurement(sensName, System.currentTimeMillis(), value);");
+    System.out.println("  }");
 
     System.out.println("  public static void main(String[] args){");
     System.out.println("    Thread thread = new Thread(\"Thread App\") {");
@@ -141,18 +162,18 @@ public class map_App {
     System.out.println("         System.out.println(\"run by: \" + getName());");
     System.out.println("");
 
-    System.out.println("        // ArrayList<String> namesSensors =randomNameSensor(" + 14 + ");");
-    System.out.println("         for(int t =0; t < " + 44 + ";t++){");
+    System.out.println("        // ArrayList<String> namesSensors =randomNameSensor(" + 2 + ");");
+    System.out.println("         for(int t =0; t < " + 3 + ";t++){");
     System.out.println("         List<Measurement> measurements = new ArrayList<>();           ");
     System.out.println("         Map<String,String> listPoly =  new HashMap<>();");
-    System.out.println("            for(int i = 0; i < " + 14 + ";i++){");
+    System.out.println("            for(int i = 0; i < " + 2 + ";i++){");
     System.out.println("              String sensName;");
 
     System.out.println("              sensName =\"" + " parking" + "\"+Integer.toString(i);");
-    System.out.println("              listPoly.put(" + "x<8" + "," + "0 " + ")");
-    System.out.println("              listPoly.put(" + "x>8" + "," + "2" + ")");
-    System.out.println("              listPoly.put(" + "x>18" + "," + "0" + ")");
-    System.out.println("              Measurement measurement= createlowFunction(listPoly,t); ");
+    System.out.println("              listPoly.put(\"" + "x<2" + "\",\"" + "0 " + "\");");
+    System.out.println("              listPoly.put(\"" + "x>=2 && x<=5" + "\",\"" + "2" + "\");");
+    System.out.println("              listPoly.put(\"" + "x>5" + "\",\"" + "x+1" + "\");");
+    System.out.println("              Measurement measurement= createLawFunction(sensName,listPoly,t); ");
 
     System.out.println("              measurements.add(measurement);");
 
@@ -163,7 +184,7 @@ public class map_App {
     System.out.println("                e.printStackTrace();");
     System.out.println("              }");
     System.out.println("             }");
-    System.out.println("             System.out.println(measurements);");
+    System.out.println("             System.out.println(\"send measurements to influxDB : \"+ measurements);");
     System.out.println("             sendToInfluxDB(measurements);");
     System.out.println("          }");
 

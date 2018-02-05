@@ -58,29 +58,33 @@
     <node concept="1_yE45" id="3hswruZyoe4" role="1BZ5on">
       <property role="TrG5h" value="foncton1" />
       <node concept="2bPtWI" id="3hswruZyoe6" role="2bPtSe">
-        <property role="2bPtS3" value="x&lt;8" />
+        <property role="2bPtS3" value="x&lt;2" />
         <property role="2bPtS1" value="0 " />
       </node>
       <node concept="2bPtWI" id="3hswruZyqpj" role="2bPtSe">
-        <property role="2bPtS3" value="x&gt;8" />
+        <property role="2bPtS3" value="x&gt;=2 &amp;&amp; x&lt;=5" />
         <property role="2bPtS1" value="2" />
       </node>
       <node concept="2bPtWI" id="3hswruZyqtK" role="2bPtSe">
-        <property role="2bPtS3" value="x&gt;18" />
-        <property role="2bPtS1" value="0" />
+        <property role="2bPtS3" value="x&gt;5" />
+        <property role="2bPtS1" value="x+1" />
       </node>
     </node>
     <node concept="1_yE45" id="3hswruZyysV" role="1BZ5on">
       <property role="TrG5h" value="low2" />
       <node concept="2bPtWI" id="3hswruZyysX" role="2bPtSe">
-        <property role="2bPtS3" value="x&gt;8" />
-        <property role="2bPtS1" value="13" />
+        <property role="2bPtS3" value="x&lt;8" />
+        <property role="2bPtS1" value="0" />
+      </node>
+      <node concept="2bPtWI" id="3hswruZ_Yem" role="2bPtSe">
+        <property role="2bPtS3" value="x&gt;=8" />
+        <property role="2bPtS1" value="2" />
       </node>
     </node>
     <node concept="1BZj1s" id="3hswruZyjNI" role="1BZjIn">
       <property role="TrG5h" value="parking" />
-      <property role="1BZj0D" value="14" />
-      <property role="1BZj0F" value="44" />
+      <property role="1BZj0D" value="2" />
+      <property role="1BZj0F" value="3" />
       <node concept="1BZj0M" id="3hswruZzhEj" role="1BZjSZ">
         <ref role="1_w7El" node="3hswruZyoe4" resolve="foncton1" />
       </node>

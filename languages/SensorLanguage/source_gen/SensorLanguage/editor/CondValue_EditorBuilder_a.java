@@ -41,7 +41,6 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
     editorCell.addEditorCell(createProperty_4vbpry_a0());
     editorCell.addEditorCell(createConstant_4vbpry_b0());
     editorCell.addEditorCell(createProperty_4vbpry_c0());
-    editorCell.addEditorCell(createConstant_4vbpry_d0());
     return editorCell;
   }
   private EditorCell createProperty_4vbpry_a0() {
@@ -78,12 +77,6 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
       EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
       return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
     } else
-    return editorCell;
-  }
-  private EditorCell createConstant_4vbpry_d0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ";");
-    editorCell.setCellId("Constant_4vbpry_d0");
-    editorCell.setDefaultText("");
     return editorCell;
   }
 }

@@ -190,9 +190,6 @@
       <node concept="3F0A7n" id="3hswruZyuu_" role="3EZMnx">
         <ref role="1NtTu8" to="uxew:3hswruZylYQ" resolve="valeur" />
       </node>
-      <node concept="3F0ifn" id="3hswruZyuuP" role="3EZMnx">
-        <property role="3F0ifm" value=";" />
-      </node>
     </node>
   </node>
 </model>
