@@ -30,7 +30,7 @@ public class map_App {
     System.out.println("import java.util.HashMap;");
 
 
-    System.out.println("public class " + "App2" + " { ");
+    System.out.println("public class " + "5App2" + " { ");
 
     System.out.println("  public static class Measurement<T> {");
     System.out.println("    private String sensorName;");
@@ -103,7 +103,7 @@ public class map_App {
     System.out.println("   return measurement;");
     System.out.println("}");
 
-    System.out.println(" public static Measurement createCSVLow(final String path,int n_sensor,int n_value,int n_time,int t) {");
+    System.out.println(" public static Measurement createCSVLow(final String path,int n_sensor,int n_value,int n_time,int t,int n_offset) {");
     System.out.println("      try {");
     System.out.println("           File data = new File(path);");
     System.out.println("           CSVParser parser = CSVParser.parse(data, Charset.defaultCharset(), CSVFormat.DEFAULT);");
@@ -113,7 +113,7 @@ public class map_App {
     System.out.println("             return null;");
     System.out.println("          }");
     System.out.println("          CSVRecord ligne = list.get(t);");
-    System.out.println("          return new Measurement<>(ligne.get(n_sensor).trim(),Long.parseLong(ligne.get(n_time).trim()),ligne.get(n_value).trim());");
+    System.out.println("          return new Measurement<>(ligne.get(n_sensor).trim(),Long.parseLong(ligne.get(n_time).trim()),ligne.get(n_value).trim() + ligne.get(n_offset).trim();");
     System.out.println("          } catch (IOException e) {");
     System.out.println("               e.printStackTrace();");
     System.out.println("          }");
@@ -123,10 +123,10 @@ public class map_App {
 
 
 
-    System.out.println("public static Measurement createfilelow(final String file,int n_sensor,int n_value,int n_time,String dataSource,int t){");
+    System.out.println("public static Measurement createfilelow(final String file,int n_sensor,int n_value,int n_time,String dataSource,int t,int n_offset){");
     System.out.println("     switch (dataSource){");
     System.out.println("          case \"csv\":");
-    System.out.println("              Measurement measurement = createCSVLow(file,n_sensor,n_value,n_time,t);");
+    System.out.println("              Measurement measurement = createCSVLow(file,n_sensor,n_value,n_time,t,n_offset);");
     System.out.println("              return measurement;");
     System.out.println("          case \"json\":");
     System.out.println("              System.out.println(\"traitement pour json\");");

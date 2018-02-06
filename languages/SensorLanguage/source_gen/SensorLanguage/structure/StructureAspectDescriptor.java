@@ -89,6 +89,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.prop("n_sensor", 0x7a90ba9e9d4688fL, "551985253729986703");
     b.prop("n_value", 0x7a90ba9e9d468adL, "551985253729986733");
     b.prop("n_time", 0x7a90ba9e9d468b2L, "551985253729986738");
+    b.prop("offset", 0x67f677f8cf7628fL, "468206683793351311");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFunctionLow() {

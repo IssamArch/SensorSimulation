@@ -49,6 +49,9 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_551985253730272845(final PropertyMacroContext _context) {
     return SPropertyOperations.getString_def(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7a90ba9e9d2cabbL, 0x7a90ba9e9d2cb08L, "typeData"), "csv");
   }
+  public static Object propertyMacro_GetPropertyValue_468206683793553091(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7a90ba9e9d2cabbL, 0x67f677f8cf7628fL, "offset"));
+  }
   public static Object propertyMacro_GetPropertyValue_3773033214022395878(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x345c81b7bf895e99L, 0x345c81b7bf895fb4L, "condition"));
   }

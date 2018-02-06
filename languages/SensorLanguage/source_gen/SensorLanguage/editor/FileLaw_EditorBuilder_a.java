@@ -50,6 +50,9 @@ import jetbrains.mps.nodeEditor.EditorManager;
     editorCell.addEditorCell(createProperty_o48blv_j0());
     editorCell.addEditorCell(createConstant_o48blv_k0());
     editorCell.addEditorCell(createProperty_o48blv_l0());
+    editorCell.addEditorCell(createConstant_o48blv_m0());
+    editorCell.addEditorCell(createConstant_o48blv_n0());
+    editorCell.addEditorCell(createProperty_o48blv_o0());
     return editorCell;
   }
   private EditorCell createConstant_o48blv_a0() {
@@ -170,6 +173,33 @@ import jetbrains.mps.nodeEditor.EditorManager;
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("property_n_time");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
+    return editorCell;
+  }
+  private EditorCell createConstant_o48blv_m0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "with");
+    editorCell.setCellId("Constant_o48blv_m0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_o48blv_n0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "offset");
+    editorCell.setCellId("Constant_o48blv_n0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_o48blv_o0() {
+    CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
+    provider.setRole("offset");
+    provider.setNoTargetText("<no offset>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(getEditorContext());
+    editorCell.setCellId("property_offset");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {
