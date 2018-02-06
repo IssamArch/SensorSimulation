@@ -113,7 +113,8 @@ public class map_App {
     System.out.println("             return null;");
     System.out.println("          }");
     System.out.println("          CSVRecord ligne = list.get(t);");
-    System.out.println("          return new Measurement<>(ligne.get(n_sensor).trim(),Long.parseLong(ligne.get(n_time).trim()),ligne.get(n_value).trim());");
+    System.out.println("           System.out.println(\"      new measurement for \" + ligne.get(n_sensor).trim() + \" from file csv law !\" );");
+    System.out.println("          return new Measurement<>(ligne.get(n_sensor).trim(),System.currentTimeMillis(),Integer.parseInt(ligne.get(n_value).trim()));");
     System.out.println("          } catch (IOException e) {");
     System.out.println("               e.printStackTrace();");
     System.out.println("          }");
@@ -160,21 +161,18 @@ public class map_App {
     System.out.println("         createDataBase(\"my_database\",8086);");
     System.out.println("");
 
-    System.out.println("         Thread " + "parking" + " = new Thread(\"" + "parking" + "\") { ");
+    System.out.println("         Thread " + "Bureau" + " = new Thread(\"" + "Bureau" + "\") { ");
     System.out.println("         public void run(){");
     System.out.println("         System.out.println(\"run by: \" + getName());");
 
-    System.out.println("         for(int t =0; t < " + 3 + ";t++){");
+    System.out.println("         for(int t =0; t < " + 15 + ";t++){");
     System.out.println("         List<Measurement> measurements = new ArrayList<>(); ");
     System.out.println("         Map<String,String> listPoly =  new HashMap<>();");
-    System.out.println("            for(int i = 0; i < " + 2 + ";i++){");
+    System.out.println("            for(int i = 0; i < " + 1 + ";i++){");
     System.out.println("              String sensName;");
 
-    System.out.println("              sensName =\"" + " parking" + "\"+Integer.toString(i);");
-    System.out.println("              listPoly.put(\"" + "x<2" + "\",\"" + "0 " + "\");");
-    System.out.println("              listPoly.put(\"" + "x>=2 && x<=5" + "\",\"" + "2" + "\");");
-    System.out.println("              listPoly.put(\"" + "x>5" + "\",\"" + "x+1" + "\");");
-    System.out.println("              Measurement measurement= createLawFunction(sensName,listPoly,t); ");
+    System.out.println("              sensName =\"" + " Bureau" + "\"+Integer.toString(i);");
+    System.out.println("              Measurement measurement = createfilelow(\"" + "/home/user/Bureau/testShel/data1.csv" + "\"," + 1 + "," + 8 + "," + 0 + ",\"" + "csv" + "\",t);");
 
     System.out.println("              measurements.add(measurement);");
 
@@ -190,37 +188,7 @@ public class map_App {
     System.out.println("          }");
     System.out.println("       }");
     System.out.println("    };");
-    System.out.println("parking" + ".start();");
-
-
-    System.out.println("         Thread " + "jardin" + " = new Thread(\"" + "jardin" + "\") { ");
-    System.out.println("         public void run(){");
-    System.out.println("         System.out.println(\"run by: \" + getName());");
-
-    System.out.println("         for(int t =0; t < " + 3 + ";t++){");
-    System.out.println("         List<Measurement> measurements = new ArrayList<>(); ");
-    System.out.println("         Map<String,String> listPoly =  new HashMap<>();");
-    System.out.println("            for(int i = 0; i < " + 2 + ";i++){");
-    System.out.println("              String sensName;");
-
-    System.out.println("              sensName =\"" + " jardin" + "\"+Integer.toString(i);");
-    System.out.println("              Measurement measurement = createrandomLow(sensName);");
-
-    System.out.println("              measurements.add(measurement);");
-
-
-    System.out.println("              try {");
-    System.out.println("                Thread.sleep(5000);");
-    System.out.println("              } catch (InterruptedException e) {");
-    System.out.println("                e.printStackTrace();");
-    System.out.println("              }");
-    System.out.println("             }");
-    System.out.println("            System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
-    System.out.println("           sendToInfluxDB(measurements);");
-    System.out.println("          }");
-    System.out.println("       }");
-    System.out.println("    };");
-    System.out.println("jardin" + ".start();");
+    System.out.println("Bureau" + ".start();");
 
 
 

@@ -1566,6 +1566,20 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="7RBz2JSbEPM" role="3cqZAp">
+          <node concept="2OqwBi" id="7RBz2JSbHky" role="3clFbG">
+            <node concept="10M0yZ" id="7RBz2JSbG8P" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7RBz2JSbIA9" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7RBz2JSbIAY" role="37wK5m">
+                <property role="Xl_RC" value="           System.out.println(\&quot;      new measurement for \&quot; + ligne.get(n_sensor).trim() + \&quot; from file csv law !\&quot; );" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="3jSYJW1DEC2" role="3cqZAp">
           <node concept="2OqwBi" id="3jSYJW1DGCU" role="3clFbG">
             <node concept="10M0yZ" id="3jSYJW1DFAG" role="2Oq$k0">
@@ -1575,7 +1589,7 @@
             <node concept="liA8E" id="3jSYJW1DHED" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="3jSYJW1DHFu" role="37wK5m">
-                <property role="Xl_RC" value="          return new Measurement&lt;&gt;(ligne.get(n_sensor).trim(),Long.parseLong(ligne.get(n_time).trim()),ligne.get(n_value).trim());" />
+                <property role="Xl_RC" value="          return new Measurement&lt;&gt;(ligne.get(n_sensor).trim(),System.currentTimeMillis(),Integer.parseInt(ligne.get(n_value).trim()));" />
               </node>
             </node>
           </node>
