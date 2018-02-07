@@ -44,7 +44,7 @@
     </language>
   </registry>
   <node concept="1EbyNe" id="7cTSnSp6Pco">
-    <property role="TrG5h" value="5App2" />
+    <property role="TrG5h" value="App2" />
     <node concept="1BZjIp" id="ccK5PAxXFz" role="1BZ5on">
       <property role="TrG5h" value="f3" />
     </node>

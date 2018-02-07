@@ -34,6 +34,9 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_3773033214023915231(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
+  public static Object propertyMacro_GetPropertyValue_3696791112969995166(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7a90ba9e9d2cabbL, 0x67f677f8cf7628fL, "offset"));
+  }
   public static Object propertyMacro_GetPropertyValue_551985253730266296(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7a90ba9e9d2cabbL, 0x7a90ba9e9d2fd88L, "path"));
   }
@@ -48,9 +51,6 @@ public class QueriesGenerated {
   }
   public static Object propertyMacro_GetPropertyValue_551985253730272845(final PropertyMacroContext _context) {
     return SPropertyOperations.getString_def(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7a90ba9e9d2cabbL, 0x7a90ba9e9d2cb08L, "typeData"), "csv");
-  }
-  public static Object propertyMacro_GetPropertyValue_468206683793553091(final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7a90ba9e9d2cabbL, 0x67f677f8cf7628fL, "offset"));
   }
   public static Object propertyMacro_GetPropertyValue_3773033214022395878(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x345c81b7bf895e99L, 0x345c81b7bf895fb4L, "condition"));
