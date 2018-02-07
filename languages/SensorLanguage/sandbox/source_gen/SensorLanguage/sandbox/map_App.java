@@ -97,8 +97,17 @@ public class map_App {
     System.out.println("public static Measurement createrandomLow(String nameS) {");
     System.out.println("   String name = nameS;");
     System.out.println("   long timestamp = System.currentTimeMillis();");
+    System.out.println("   Random random = new Random();");
+    System.out.println("   int randomNumber = random.nextInt(100000000 + 1 - 50000000) + 50000000;");
+    System.out.println("   int r =random.nextInt(2)+1;");
+    System.out.println("   Long t ;");
+    System.out.println("   if(r==1) {");
+    System.out.println("     t = timestamp + randomNumber;");
+    System.out.println("   }else{");
+    System.out.println("      t= timestamp - randomNumber;");
+    System.out.println("   }");
     System.out.println("   int value = new Random().nextInt() % 10;");
-    System.out.println("   Measurement measurement = new Measurement(name,timestamp,value);");
+    System.out.println("   Measurement measurement = new Measurement(name,t,value);");
     System.out.println("   System.out.println(\"      new measurement for \" + name + \" from random law !\" );");
     System.out.println("   return measurement;");
     System.out.println("}");
@@ -161,18 +170,18 @@ public class map_App {
     System.out.println("         createDataBase(\"my_database\",8086);");
     System.out.println("");
 
-    System.out.println("         Thread " + "Bureau" + " = new Thread(\"" + "Bureau" + "\") { ");
+    System.out.println("         Thread " + "l" + " = new Thread(\"" + "l" + "\") { ");
     System.out.println("         public void run(){");
     System.out.println("         System.out.println(\"run by: \" + getName());");
 
-    System.out.println("         for(int t =0; t < " + 15 + ";t++){");
+    System.out.println("         for(int t =0; t < " + 10 + ";t++){");
     System.out.println("         List<Measurement> measurements = new ArrayList<>(); ");
     System.out.println("         Map<String,String> listPoly =  new HashMap<>();");
-    System.out.println("            for(int i = 0; i < " + 1 + ";i++){");
+    System.out.println("            for(int i = 0; i < " + 2 + ";i++){");
     System.out.println("              String sensName;");
 
-    System.out.println("              sensName =\"" + " Bureau" + "\"+Integer.toString(i);");
-    System.out.println("              Measurement measurement = createfilelow(\"" + "/home/user/Bureau/testShel/data1.csv" + "\"," + 1 + "," + 8 + "," + 0 + ",\"" + "csv" + "\"," + 5 + ",t);");
+    System.out.println("              sensName =\"" + " l" + "\"+Integer.toString(i);");
+    System.out.println("              Measurement measurement = createrandomLow(sensName);");
 
     System.out.println("              measurements.add(measurement);");
 
@@ -188,7 +197,7 @@ public class map_App {
     System.out.println("          }");
     System.out.println("       }");
     System.out.println("    };");
-    System.out.println("Bureau" + ".start();");
+    System.out.println("l" + ".start();");
 
 
 
