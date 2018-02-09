@@ -40,14 +40,14 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_551985253730266296(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7a90ba9e9d2cabbL, 0x7a90ba9e9d2fd88L, "path"));
   }
-  public static Object propertyMacro_GetPropertyValue_551985253730124767(final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7a90ba9e9d2cabbL, 0x7a90ba9e9d4688fL, "n_sensor"));
+  public static Object propertyMacro_GetPropertyValue_5537505225978778925(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7a90ba9e9d2cabbL, 0x7a90ba9e9d4688fL, "n_sensor"));
   }
-  public static Object propertyMacro_GetPropertyValue_551985253730131895(final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7a90ba9e9d2cabbL, 0x7a90ba9e9d468adL, "n_value"));
+  public static Object propertyMacro_GetPropertyValue_5537505225978785779(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7a90ba9e9d2cabbL, 0x7a90ba9e9d468adL, "n_value"));
   }
-  public static Object propertyMacro_GetPropertyValue_551985253730139214(final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7a90ba9e9d2cabbL, 0x7a90ba9e9d468b2L, "n_time"));
+  public static Object propertyMacro_GetPropertyValue_5537505225978792420(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7a90ba9e9d2cabbL, 0x7a90ba9e9d468b2L, "n_time"));
   }
   public static Object propertyMacro_GetPropertyValue_551985253730272845(final PropertyMacroContext _context) {
     return SPropertyOperations.getString_def(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7a90ba9e9d2cabbL, 0x7a90ba9e9d2cb08L, "typeData"), "csv");

@@ -208,17 +208,17 @@
     <node concept="1TJgyi" id="uD2UBDP6yf" role="1TKVEl">
       <property role="IQ2nx" value="551985253729986703" />
       <property role="TrG5h" value="n_sensor" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="uD2UBDP6yH" role="1TKVEl">
       <property role="IQ2nx" value="551985253729986733" />
       <property role="TrG5h" value="n_value" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="uD2UBDP6yM" role="1TKVEl">
       <property role="IQ2nx" value="551985253729986738" />
       <property role="TrG5h" value="n_time" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="pZpRYcXQaf" role="1TKVEl">
       <property role="IQ2nx" value="468206683793351311" />

@@ -28,9 +28,13 @@ public class map_App {
     System.out.println("import org.mariuszgromada.math.mxparser.Argument;");
     System.out.println("import org.mariuszgromada.math.mxparser.Expression;");
     System.out.println("import java.util.HashMap;");
+    System.out.println("import org.json.simple.JSONArray;");
+    System.out.println("import org.json.simple.JSONObject;");
+    System.out.println("import org.json.simple.parser.JSONParser;");
+    System.out.println("import org.json.simple.parser.ParseException;");
 
 
-    System.out.println("public class " + "App2" + " { ");
+    System.out.println("public class " + "App" + " { ");
 
     System.out.println("  public static class Measurement<T> {");
     System.out.println("    private String sensorName;");
@@ -112,7 +116,7 @@ public class map_App {
     System.out.println("   return measurement;");
     System.out.println("}");
 
-    System.out.println(" public static Measurement createCSVLow(final String path,int n_sensor,int n_value,int n_time,int n_offset,int t) {");
+    System.out.println(" public static Measurement createCSVLow(final String path,String n_sensor,String n_value,String n_time,int n_offset,int t) {");
     System.out.println("      try {");
     System.out.println("           File data = new File(path);");
     System.out.println("           CSVParser parser = CSVParser.parse(data, Charset.defaultCharset(), CSVFormat.DEFAULT);");
@@ -122,8 +126,8 @@ public class map_App {
     System.out.println("             return null;");
     System.out.println("          }");
     System.out.println("          CSVRecord ligne = list.get(t);");
-    System.out.println("           System.out.println(\"      new measurement for \" + ligne.get(n_sensor).trim() + \" from file csv law !\" );");
-    System.out.println("          return new Measurement<>(ligne.get(n_sensor).trim(),Long.parseLong(ligne.get(n_time).trim()),Integer.parseInt(ligne.get(n_value).trim()) + n_offset);");
+    System.out.println("           System.out.println(\"      new measurement for \" + ligne.get(Integer.parseInt(n_sensor)).trim() + \" from file csv law !\" );");
+    System.out.println("          return new Measurement<>(ligne.get(Integer.parseInt(n_sensor)).trim(),Long.parseLong(ligne.get(Integer.parseInt(n_time)).trim()),Integer.parseInt(ligne.get(Integer.parseInt(n_value)).trim()) + n_offset);");
     System.out.println("          } catch (IOException e) {");
     System.out.println("               e.printStackTrace();");
     System.out.println("          }");
@@ -131,16 +135,39 @@ public class map_App {
     System.out.println("       }");
 
 
+    System.out.println("     public static Measurement createJSONLow(final String path,String n_sensor,String n_value,String n_time,int n_offset,int t) {");
+    System.out.println("     try {");
+    System.out.println("         JSONParser parser = new JSONParser();");
+    System.out.println("         JSONArray jsonArray = (JSONArray) parser.parse(new FileReader(path));");
+    System.out.println("         if(t >= 0 && t <= jsonArray.size() - 1) {");
+    System.out.println("            Object o = jsonArray.get(t);");
+    System.out.println("            JSONObject person = (JSONObject) o;");
+    System.out.println("            String sensorName = (String) person.get(n_sensor);");
+    System.out.println("            Object value = (Object) person.get(n_value);");
+    System.out.println("            Long time = (Long) person.get( n_time);");
+    System.out.println("            System.out.println(\"      new measurement for \" + n_sensor + \" from file json law !\" );");
+    System.out.println("           return new Measurement<>(sensorName,time,value);");
+    System.out.println("         }");
+    System.out.println("      } catch (FileNotFoundException e) {");
+    System.out.println("         e.printStackTrace();");
+    System.out.println("      } catch (ParseException e) {");
+    System.out.println("         e.printStackTrace();");
+    System.out.println("      } catch (IOException e) {");
+    System.out.println("e.printStackTrace();");
+    System.out.println("    }");
+    System.out.println("  return null;");
+    System.out.println(" }");
 
 
-    System.out.println("public static Measurement createfilelow(final String file,int n_sensor,int n_value,int n_time,String dataSource,int n_offset,int t){");
+
+    System.out.println("public static Measurement createfilelow(final String file,String n_sensor,String n_value,String n_time,String dataSource,int n_offset,int t){");
     System.out.println("     switch (dataSource){");
     System.out.println("          case \"csv\":");
     System.out.println("              Measurement measurement = createCSVLow(file,n_sensor,n_value,n_time,n_offset,t);");
     System.out.println("              return measurement;");
     System.out.println("          case \"json\":");
-    System.out.println("              System.out.println(\"traitement pour json\");");
-    System.out.println("              break;");
+    System.out.println("              Measurement measurement1 =createJSONLow(file,n_sensor,n_value,n_time,n_offset,t) ;");
+    System.out.println("              return measurement1;");
     System.out.println("          default:");
     System.out.println("               System.out.println(\"not valide low file\");");
     System.out.println("      }");
@@ -170,22 +197,24 @@ public class map_App {
     System.out.println("         createDataBase(\"my_database\",8086);");
     System.out.println("");
 
-    System.out.println("         Thread " + "l" + " = new Thread(\"" + "l" + "\") { ");
+    System.out.println("         Thread " + "fileLlot" + " = new Thread(\"" + "fileLlot" + "\") { ");
     System.out.println("         public void run(){");
     System.out.println("         System.out.println(\"run by: \" + getName());");
 
     System.out.println("         for(int t =0; t < " + 10 + ";t++){");
     System.out.println("         List<Measurement> measurements = new ArrayList<>(); ");
     System.out.println("         Map<String,String> listPoly =  new HashMap<>();");
-    System.out.println("            for(int i = 0; i < " + 2 + ";i++){");
+    System.out.println("            for(int i = 0; i < " + 1 + ";i++){");
     System.out.println("              String sensName;");
 
-    System.out.println("              sensName =\"" + " l" + "\"+Integer.toString(i);");
-    System.out.println("              Measurement measurement = createrandomLow(sensName);");
+    System.out.println("              sensName =\"" + " fileLlot" + "\"+Integer.toString(i);");
+    System.out.println("              Measurement measurement = createfilelow(\"" + "/home/user/Bureau/testShel/ex.json" + "\",\"" + "sensorName" + "\",\"" + "value" + "\",\"" + "time" + "\",\"" + "json" + "\"," + 0 + ",t);");
 
+
+    System.out.println("              if (measurement == null) {");
+    System.out.println("                  continue;");
+    System.out.println("              }");
     System.out.println("              measurements.add(measurement);");
-
-
     System.out.println("              try {");
     System.out.println("                Thread.sleep(5000);");
     System.out.println("              } catch (InterruptedException e) {");
@@ -197,7 +226,39 @@ public class map_App {
     System.out.println("          }");
     System.out.println("       }");
     System.out.println("    };");
-    System.out.println("l" + ".start();");
+    System.out.println("fileLlot" + ".start();");
+
+
+    System.out.println("         Thread " + "csvLot" + " = new Thread(\"" + "csvLot" + "\") { ");
+    System.out.println("         public void run(){");
+    System.out.println("         System.out.println(\"run by: \" + getName());");
+
+    System.out.println("         for(int t =0; t < " + 10 + ";t++){");
+    System.out.println("         List<Measurement> measurements = new ArrayList<>(); ");
+    System.out.println("         Map<String,String> listPoly =  new HashMap<>();");
+    System.out.println("            for(int i = 0; i < " + 1 + ";i++){");
+    System.out.println("              String sensName;");
+
+    System.out.println("              sensName =\"" + " csvLot" + "\"+Integer.toString(i);");
+    System.out.println("              Measurement measurement = createfilelow(\"" + "/home/user/Bureau/testShel/data4.csv" + "\",\"" + "1" + "\",\"" + "8" + "\",\"" + "0" + "\",\"" + "csv" + "\"," + 0 + ",t);");
+
+
+    System.out.println("              if (measurement == null) {");
+    System.out.println("                  continue;");
+    System.out.println("              }");
+    System.out.println("              measurements.add(measurement);");
+    System.out.println("              try {");
+    System.out.println("                Thread.sleep(5000);");
+    System.out.println("              } catch (InterruptedException e) {");
+    System.out.println("                e.printStackTrace();");
+    System.out.println("              }");
+    System.out.println("             }");
+    System.out.println("            System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
+    System.out.println("           sendToInfluxDB(measurements);");
+    System.out.println("          }");
+    System.out.println("       }");
+    System.out.println("    };");
+    System.out.println("csvLot" + ".start();");
 
 
 

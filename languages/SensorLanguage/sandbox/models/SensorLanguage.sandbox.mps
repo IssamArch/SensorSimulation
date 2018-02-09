@@ -30,6 +30,7 @@
       </concept>
       <concept id="551985253729880763" name="SensorLanguage.structure.FileLaw" flags="ng" index="3IuW4i">
         <property id="468206683793351311" name="offset" index="2ay0nK" />
+        <property id="551985253729880840" name="typeData" index="3IuW2x" />
         <property id="551985253729893768" name="path" index="3IuZox" />
         <property id="551985253729986733" name="n_value" index="3Ivmc4" />
         <property id="551985253729986738" name="n_time" index="3Ivmcr" />
@@ -43,35 +44,44 @@
     </language>
   </registry>
   <node concept="1EbyNe" id="7cTSnSp6Pco">
-    <property role="TrG5h" value="App2" />
+    <property role="TrG5h" value="App" />
     <node concept="1BZjIp" id="ccK5PAxXFz" role="1BZ5on">
-      <property role="TrG5h" value="f3" />
+      <property role="TrG5h" value="randomLaw" />
     </node>
     <node concept="3IuW4i" id="4jpZqu4tIyY" role="1BZ5on">
       <property role="TrG5h" value="fileLow" />
-      <property role="3IuZox" value="/home/user/Bureau/testShel/data2.csv" />
+      <property role="3IuZox" value="/home/user/Bureau/testShel/data4.csv" />
       <property role="3IvmcA" value="1" />
       <property role="3Ivmc4" value="8" />
       <property role="3Ivmcr" value="0" />
       <property role="2ay0nK" value="0" />
     </node>
+    <node concept="3IuW4i" id="4NpaUC0rrIf" role="1BZ5on">
+      <property role="TrG5h" value="jsonlow" />
+      <property role="3IuZox" value="/home/user/Bureau/testShel/ex.json" />
+      <property role="3IuW2x" value="json" />
+      <property role="3IvmcA" value="sensorName" />
+      <property role="3Ivmc4" value="value" />
+      <property role="3Ivmcr" value="time" />
+      <property role="2ay0nK" value="0" />
+    </node>
     <node concept="1_yE45" id="3hswruZyoe4" role="1BZ5on">
-      <property role="TrG5h" value="foncton1" />
+      <property role="TrG5h" value="fonction1" />
       <node concept="2bPtWI" id="3hswruZyoe6" role="2bPtSe">
-        <property role="2bPtS3" value="x&lt;2" />
+        <property role="2bPtS3" value="x&lt;1" />
         <property role="2bPtS1" value="0 " />
       </node>
       <node concept="2bPtWI" id="3hswruZyqpj" role="2bPtSe">
-        <property role="2bPtS3" value="x&gt;=2 &amp;&amp; x&lt;=5" />
+        <property role="2bPtS3" value="x&gt;=1 &amp;&amp; x&lt;=3" />
         <property role="2bPtS1" value="2" />
       </node>
       <node concept="2bPtWI" id="3hswruZyqtK" role="2bPtSe">
-        <property role="2bPtS3" value="x&gt;5" />
+        <property role="2bPtS3" value="x&gt;3" />
         <property role="2bPtS1" value="x+2" />
       </node>
     </node>
     <node concept="1_yE45" id="3hswruZyysV" role="1BZ5on">
-      <property role="TrG5h" value="low2" />
+      <property role="TrG5h" value="donction2" />
       <node concept="2bPtWI" id="3hswruZyysX" role="2bPtSe">
         <property role="2bPtS3" value="x&lt;8" />
         <property role="2bPtS1" value="0" />
@@ -81,12 +91,35 @@
         <property role="2bPtS1" value="2" />
       </node>
     </node>
-    <node concept="1BZj1s" id="4jpZqu4tIz9" role="1BZjIn">
-      <property role="TrG5h" value="l" />
-      <property role="1BZj0D" value="2" />
+    <node concept="1_yE45" id="4NpaUC0kYTY" role="1BZ5on">
+      <property role="TrG5h" value="function3" />
+      <node concept="2bPtWI" id="4NpaUC0kYUd" role="2bPtSe">
+        <property role="2bPtS3" value="x&lt;1" />
+        <property role="2bPtS1" value="0" />
+      </node>
+      <node concept="2bPtWI" id="4NpaUC0kYUf" role="2bPtSe">
+        <property role="2bPtS3" value="x&gt;=1 &amp;&amp; x&lt;=2" />
+        <property role="2bPtS1" value="abs(-2*x^2+5*x)" />
+      </node>
+      <node concept="2bPtWI" id="4NpaUC0kYUi" role="2bPtSe">
+        <property role="2bPtS3" value="x&gt;2" />
+        <property role="2bPtS1" value="0" />
+      </node>
+    </node>
+    <node concept="1BZj1s" id="4NpaUC0lbXd" role="1BZjIn">
+      <property role="1BZj0D" value="1" />
       <property role="1BZj0F" value="10" />
-      <node concept="1BZj0M" id="4jpZqu4tSI8" role="1BZjSZ">
-        <ref role="1_w7El" node="ccK5PAxXFz" resolve="f3" />
+      <property role="TrG5h" value="fileLlot" />
+      <node concept="1BZj0M" id="4NpaUC0ru92" role="1BZjSZ">
+        <ref role="1_w7El" node="4NpaUC0rrIf" resolve="jsonlow" />
+      </node>
+    </node>
+    <node concept="1BZj1s" id="4NpaUC0rME_" role="1BZjIn">
+      <property role="TrG5h" value="csvLot" />
+      <property role="1BZj0D" value="1" />
+      <property role="1BZj0F" value="10" />
+      <node concept="1BZj0M" id="4NpaUC0rMEF" role="1BZjSZ">
+        <ref role="1_w7El" node="4jpZqu4tIyY" resolve="fileLow" />
       </node>
     </node>
   </node>
