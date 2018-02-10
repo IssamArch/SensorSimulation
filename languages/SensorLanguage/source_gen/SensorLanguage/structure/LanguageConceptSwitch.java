@@ -11,23 +11,31 @@ public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int App = 0;
   public static final int CondValue = 1;
-  public static final int FileLaw = 2;
-  public static final int FunctionLow = 3;
-  public static final int Law = 4;
-  public static final int RandomLow = 5;
-  public static final int Sensor = 6;
-  public static final int SensorLot = 7;
+  public static final int CoupleProb = 2;
+  public static final int FileLaw = 3;
+  public static final int FunctionLow = 4;
+  public static final int Law = 5;
+  public static final int RandomLow = 6;
+  public static final int Sensor = 7;
+  public static final int SensorLot = 8;
+  public static final int State = 9;
+  public static final int Transition = 10;
+  public static final int markovLow = 11;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x976c57d85cc4413L, 0xa01a155ebd2f878fL);
     builder.put(0x7339e17e1917cdb0L, App);
     builder.put(0x345c81b7bf895e99L, CondValue);
+    builder.put(0x722e15f413698b4aL, CoupleProb);
     builder.put(0x7a90ba9e9d2cabbL, FileLaw);
     builder.put(0x30cc05d66866158L, FunctionLow);
     builder.put(0xc4fd7c06bb2ea01L, Law);
     builder.put(0xc4fd7c06bb2ec59L, RandomLow);
     builder.put(0xc4fd7c06bb2e7f2L, Sensor);
     builder.put(0xc4fd7c06bb2e79cL, SensorLot);
+    builder.put(0x722e15f413698912L, State);
+    builder.put(0x722e15f413698a2fL, Transition);
+    builder.put(0x722e15f4136987f5L, markovLow);
     myIndex = builder.seal();
   }
 

@@ -14,12 +14,16 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptApp = createDescriptorForApp();
   /*package*/ final ConceptDescriptor myConceptCondValue = createDescriptorForCondValue();
+  /*package*/ final ConceptDescriptor myConceptCoupleProb = createDescriptorForCoupleProb();
   /*package*/ final ConceptDescriptor myConceptFileLaw = createDescriptorForFileLaw();
   /*package*/ final ConceptDescriptor myConceptFunctionLow = createDescriptorForFunctionLow();
   /*package*/ final ConceptDescriptor myConceptLaw = createDescriptorForLaw();
   /*package*/ final ConceptDescriptor myConceptRandomLow = createDescriptorForRandomLow();
   /*package*/ final ConceptDescriptor myConceptSensor = createDescriptorForSensor();
   /*package*/ final ConceptDescriptor myConceptSensorLot = createDescriptorForSensorLot();
+  /*package*/ final ConceptDescriptor myConceptState = createDescriptorForState();
+  /*package*/ final ConceptDescriptor myConceptTransition = createDescriptorForTransition();
+  /*package*/ final ConceptDescriptor myConceptmarkovLow = createDescriptorFormarkovLow();
   private final LanguageConceptSwitch myConceptIndex;
 
   public StructureAspectDescriptor() {
@@ -28,7 +32,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptApp, myConceptCondValue, myConceptFileLaw, myConceptFunctionLow, myConceptLaw, myConceptRandomLow, myConceptSensor, myConceptSensorLot);
+    return Arrays.asList(myConceptApp, myConceptCondValue, myConceptCoupleProb, myConceptFileLaw, myConceptFunctionLow, myConceptLaw, myConceptRandomLow, myConceptSensor, myConceptSensorLot, myConceptState, myConceptTransition, myConceptmarkovLow);
   }
 
   @Override
@@ -39,6 +43,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptApp;
       case LanguageConceptSwitch.CondValue:
         return myConceptCondValue;
+      case LanguageConceptSwitch.CoupleProb:
+        return myConceptCoupleProb;
       case LanguageConceptSwitch.FileLaw:
         return myConceptFileLaw;
       case LanguageConceptSwitch.FunctionLow:
@@ -51,6 +57,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptSensor;
       case LanguageConceptSwitch.SensorLot:
         return myConceptSensorLot;
+      case LanguageConceptSwitch.State:
+        return myConceptState;
+      case LanguageConceptSwitch.Transition:
+        return myConceptTransition;
+      case LanguageConceptSwitch.markovLow:
+        return myConceptmarkovLow;
       default:
         return null;
     }
@@ -76,6 +88,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/3773033214022082201");
     b.prop("condition", 0x345c81b7bf895fb4L, "3773033214022082484");
     b.prop("valeur", 0x345c81b7bf895fb6L, "3773033214022082486");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForCoupleProb() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SensorLanguage", "CoupleProb", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x722e15f413698b4aL);
+    b.class_(false, false, false);
+    b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/8227537707294362442");
+    b.prop("prob", 0x722e15f413698c65L, "8227537707294362725");
+    b.associate("target", 0x722e15f413698c67L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x722e15f413698912L).optional(false).origin("8227537707294362727").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFileLaw() {
@@ -133,6 +153,31 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.prop("sensorNumber", 0xc4fd7c06bb2e7e9L, "887164873055856617");
     b.prop("simulationDuration", 0xc4fd7c06bb2e7ebL, "887164873055856619");
     b.aggregate("sensors", 0xc4fd7c06bb2e9ffL).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e7f2L).optional(false).ordered(true).multiple(true).origin("887164873055857151").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForState() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SensorLanguage", "State", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x722e15f413698912L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/8227537707294361874");
+    b.aggregate("transitions", 0x722e15f413698c6bL).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x722e15f413698a2fL).optional(false).ordered(true).multiple(false).origin("8227537707294362731").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTransition() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SensorLanguage", "Transition", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x722e15f413698a2fL);
+    b.class_(false, false, false);
+    b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/8227537707294362159");
+    b.aggregate("coupleProb", 0x722e15f413698c6dL).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x722e15f413698b4aL).optional(false).ordered(true).multiple(true).origin("8227537707294362733").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorFormarkovLow() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SensorLanguage", "markovLow", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x722e15f4136987f5L);
+    b.class_(false, false, false);
+    b.super_("SensorLanguage.structure.Law", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2ea01L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/8227537707294361589");
+    b.associate("state_int", 0x722e15f4136d7ee5L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x722e15f413698912L).optional(false).origin("8227537707294621413").done();
+    b.aggregate("states", 0x722e15f413698c69L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x722e15f413698912L).optional(false).ordered(true).multiple(true).origin("8227537707294362729").done();
     return b.create();
   }
 }

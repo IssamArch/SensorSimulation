@@ -11,12 +11,16 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_App;
   private ConceptPresentation props_CondValue;
+  private ConceptPresentation props_CoupleProb;
   private ConceptPresentation props_FileLaw;
   private ConceptPresentation props_FunctionLow;
   private ConceptPresentation props_Law;
   private ConceptPresentation props_RandomLow;
   private ConceptPresentation props_Sensor;
   private ConceptPresentation props_SensorLot;
+  private ConceptPresentation props_State;
+  private ConceptPresentation props_Transition;
+  private ConceptPresentation props_markovLow;
 
   @Override
   @Nullable
@@ -37,6 +41,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_CondValue = cpb.create();
         }
         return props_CondValue;
+      case LanguageConceptSwitch.CoupleProb:
+        if (props_CoupleProb == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x722e15f413698b4aL, 0x722e15f413698c67L, "target", "", "");
+          props_CoupleProb = cpb.create();
+        }
+        return props_CoupleProb;
       case LanguageConceptSwitch.FileLaw:
         if (props_FileLaw == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -78,6 +89,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SensorLot = cpb.create();
         }
         return props_SensorLot;
+      case LanguageConceptSwitch.State:
+        if (props_State == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_State = cpb.create();
+        }
+        return props_State;
+      case LanguageConceptSwitch.Transition:
+        if (props_Transition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Transition");
+          props_Transition = cpb.create();
+        }
+        return props_Transition;
+      case LanguageConceptSwitch.markovLow:
+        if (props_markovLow == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_markovLow = cpb.create();
+        }
+        return props_markovLow;
     }
     return null;
   }
