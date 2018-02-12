@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class markovLow_Editor extends DefaultNodeEditor {
+public class Markov_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new markovLow_EditorBuilder_a(editorContext, node).createCell();
+    return new Markov_EditorBuilder_a(editorContext, node).createCell();
   }
 }

@@ -241,28 +241,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="78I5vgjqovP">
-    <property role="EcuMT" value="8227537707294361589" />
-    <property role="TrG5h" value="markovLow" />
-    <ref role="1TJDcQ" node="LfPW1FGIC1" resolve="Law" />
-    <node concept="PrWs8" id="78I5vgjqo$g" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="78I5vgjqoLD" role="1TKVEi">
-      <property role="IQ2ns" value="8227537707294362729" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="states" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="78I5vgjqo$i" resolve="State" />
-    </node>
-    <node concept="1TJgyj" id="78I5vgjrnV_" role="1TKVEi">
-      <property role="IQ2ns" value="8227537707294621413" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="state_int" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="78I5vgjqo$i" resolve="State" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="78I5vgjqo$i">
     <property role="EcuMT" value="8227537707294361874" />
     <property role="TrG5h" value="State" />
@@ -304,6 +282,18 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="78I5vgjqo$i" resolve="State" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3wkzhNJaKwa">
+    <property role="EcuMT" value="4041009921069352970" />
+    <property role="TrG5h" value="Markov" />
+    <ref role="1TJDcQ" node="LfPW1FGIC1" resolve="Law" />
+    <node concept="1TJgyj" id="3wkzhNJaRtu" role="1TKVEi">
+      <property role="IQ2ns" value="4041009921069381470" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="states" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="78I5vgjqo$i" resolve="State" />
     </node>
   </node>

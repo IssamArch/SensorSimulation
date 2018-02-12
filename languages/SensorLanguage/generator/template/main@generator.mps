@@ -197,30 +197,6 @@
         <ref role="v9R2y" node="3hswruZyT6O" resolve="reduce_CondValue" />
       </node>
     </node>
-    <node concept="3aamgX" id="78I5vgjrvGi" role="3acgRq">
-      <ref role="30HIoZ" to="uxew:78I5vgjqovP" resolve="markovLow" />
-      <node concept="j$656" id="78I5vgjrvG$" role="1lVwrX">
-        <ref role="v9R2y" node="78I5vgjrvGy" resolve="reduce_markovLow" />
-      </node>
-    </node>
-    <node concept="3aamgX" id="78I5vgjrvGB" role="3acgRq">
-      <ref role="30HIoZ" to="uxew:78I5vgjqo$i" resolve="State" />
-      <node concept="j$656" id="78I5vgjrvGV" role="1lVwrX">
-        <ref role="v9R2y" node="78I5vgjrvGT" resolve="reduce_State" />
-      </node>
-    </node>
-    <node concept="3aamgX" id="78I5vgjrvGY" role="3acgRq">
-      <ref role="30HIoZ" to="uxew:78I5vgjqoCJ" resolve="Transition" />
-      <node concept="j$656" id="78I5vgjrvHk" role="1lVwrX">
-        <ref role="v9R2y" node="78I5vgjrvHi" resolve="reduce_Transition" />
-      </node>
-    </node>
-    <node concept="3aamgX" id="78I5vgjrvHn" role="3acgRq">
-      <ref role="30HIoZ" to="uxew:78I5vgjqoHa" resolve="CoupleProb" />
-      <node concept="j$656" id="78I5vgjrvHJ" role="1lVwrX">
-        <ref role="v9R2y" node="78I5vgjrvHH" resolve="reduce_CoupleProb" />
-      </node>
-    </node>
     <node concept="3lhOvk" id="7cTSnSp5WZK" role="3lj3bC">
       <ref role="30HIoZ" to="uxew:7cTSnSp5WQK" resolve="App" />
       <ref role="3lhOvi" node="7cTSnSp5WZN" resolve="map_App" />
@@ -3771,57 +3747,6 @@
                     </node>
                   </node>
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="13MO4I" id="78I5vgjrvGy">
-    <property role="TrG5h" value="reduce_markovLow" />
-    <ref role="3gUMe" to="uxew:78I5vgjqovP" resolve="markovLow" />
-    <node concept="9aQIb" id="78I5vgjrvHT" role="13RCb5">
-      <node concept="raruj" id="78I5vgjrw$m" role="lGtFl" />
-      <node concept="3clFbS" id="78I5vgjrw$r" role="9aQI4">
-        <node concept="3clFbF" id="78I5vgjrxp8" role="3cqZAp">
-          <node concept="2OqwBi" id="78I5vgjrxJy" role="3clFbG">
-            <node concept="10M0yZ" id="78I5vgjrxpE" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="78I5vgjry4M" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="78I5vgjryi4" role="37wK5m">
-                <property role="Xl_RC" value=" given to states" />
-              </node>
-            </node>
-          </node>
-          <node concept="2b32R4" id="78I5vgjryyj" role="lGtFl">
-            <node concept="3JmXsc" id="78I5vgjryym" role="2P8S$">
-              <node concept="3clFbS" id="78I5vgjryyn" role="2VODD2">
-                <node concept="3clFbF" id="78I5vgjryyt" role="3cqZAp">
-                  <node concept="2OqwBi" id="78I5vgjryyo" role="3clFbG">
-                    <node concept="3Tsc0h" id="78I5vgjryyr" role="2OqNvi">
-                      <ref role="3TtcxE" to="uxew:78I5vgjqoLD" resolve="states" />
-                    </node>
-                    <node concept="30H73N" id="78I5vgjryys" role="2Oq$k0" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="78I5vgjstYv" role="3cqZAp">
-          <node concept="2OqwBi" id="78I5vgjsutZ" role="3clFbG">
-            <node concept="10M0yZ" id="78I5vgjsu87" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="78I5vgjsuNf" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="78I5vgjsuNL" role="37wK5m">
-                <property role="Xl_RC" value="                 Measurement measurement= createMarkovLow(sensName,listProb,t); " />
               </node>
             </node>
           </node>

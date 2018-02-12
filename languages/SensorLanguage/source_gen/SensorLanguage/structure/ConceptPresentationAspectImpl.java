@@ -15,12 +15,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_FileLaw;
   private ConceptPresentation props_FunctionLow;
   private ConceptPresentation props_Law;
+  private ConceptPresentation props_Markov;
   private ConceptPresentation props_RandomLow;
   private ConceptPresentation props_Sensor;
   private ConceptPresentation props_SensorLot;
   private ConceptPresentation props_State;
   private ConceptPresentation props_Transition;
-  private ConceptPresentation props_markovLow;
 
   @Override
   @Nullable
@@ -68,6 +68,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Law = cpb.create();
         }
         return props_Law;
+      case LanguageConceptSwitch.Markov:
+        if (props_Markov == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Markov = cpb.create();
+        }
+        return props_Markov;
       case LanguageConceptSwitch.RandomLow:
         if (props_RandomLow == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -103,13 +110,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Transition = cpb.create();
         }
         return props_Transition;
-      case LanguageConceptSwitch.markovLow:
-        if (props_markovLow == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_markovLow = cpb.create();
-        }
-        return props_markovLow;
     }
     return null;
   }

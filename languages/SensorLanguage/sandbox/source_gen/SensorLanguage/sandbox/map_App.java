@@ -210,10 +210,7 @@ public class map_App {
     System.out.println("              for(int i = 0; i < " + 1 + ";i++){");
     System.out.println("              String sensName;");
 
-    System.out.println("              sensName =\"" + " functionLow" + "\"+Integer.toString(i);");
-    System.out.println("              listPoly.put(\"" + "x<8" + "\",\"" + "0" + "\");");
-    System.out.println("              listPoly.put(\"" + "x>=8" + "\",\"" + "2" + "\");");
-    System.out.println("              Measurement measurement= createLawFunction(sensName,listPoly,t); ");
+    System.out.println("              sensName =\"" + " functionLow" + "\"+Integer.toString(i);");<!TextGen not found for 'SensorLanguage.structure.markovLow'!>
 
 
     System.out.println("                 if (measurement == null) {");
