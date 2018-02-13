@@ -176,6 +176,18 @@ public class map_App {
     System.out.println("      return null;");
     System.out.println("}");
 
+    System.out.println("     public static ArrayList<Integer> remplirRandom(int nbr){");
+    System.out.println("        ArrayList<Integer> listeRandom = new ArrayList<>();");
+    System.out.println("        for(int i = 0;i < 30;i++){");
+    System.out.println("          Random random = new Random();");
+    System.out.println("          int randomNumber = random.nextInt(100000000 + 1 - 50000000) + 50000000;");
+    System.out.println("          listeRandom.add(randomNumber);");
+    System.out.println("        } ");
+    System.out.println("        Collections.sort(listeRandom);");
+    System.out.println("        return  listeRandom;");
+    System.out.println("      }");
+    System.out.println("      public  static ArrayList<Integer> listeRandom = remplirRandom(50);");
+
     System.out.println("  public static Measurement createLawFunction(String sensName, Map<String,String> funcs, int t ) {");
     System.out.println("    Object value;");
     System.out.println("    String function = \"iff(\";");
@@ -192,25 +204,31 @@ public class map_App {
     System.out.println("    System.out.println(\"      new measurement for \" + sensName + \" from function law ! :\" );");
     System.out.println("     System.out.println(\"       \"+ e.getExpressionString()+ \"=\"+ result + \" when x = \" + x.getArgumentValue()) ;");
     System.out.println("    value = result;");
-    System.out.println("    return new Measurement(sensName, System.currentTimeMillis(), value);");
+    System.out.println("    long timestamp = System.currentTimeMillis();");
+    System.out.println("    Long tt ;");
+    System.out.println("    tt = timestamp + listeRandom.get(t);");
+    System.out.println("    Measurement measurement = new Measurement(sensName,tt,value);");
+    System.out.println("    return measurement;");
+
     System.out.println("  }");
     System.out.println(" ");
 
     System.out.println("  public static void main(String[] args){");
     System.out.println("         createDataBase(\"my_database\",8086);");
 
-    System.out.println("         Thread " + "functionLow" + " = new Thread(\"" + "functionLow" + "\") { ");
+    System.out.println("         Thread " + "jsonLot" + " = new Thread(\"" + "jsonLot" + "\") { ");
     System.out.println("         public void run(){");
     System.out.println("            System.out.println(\"run by: \" + getName());");
-
-    System.out.println("            for(int t =0; t < " + 5 + ";t++){");
+    System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 10 + ");");
+    System.out.println("            for(int t =0; t < " + 10 + ";t++){");
     System.out.println("            List<Measurement> measurements = new ArrayList<>(); ");
     System.out.println("            Map<String,String> listPoly =  new HashMap<>();");
     System.out.println("            Map<String,String> listProb =  new HashMap<>();");
     System.out.println("              for(int i = 0; i < " + 1 + ";i++){");
     System.out.println("              String sensName;");
 
-    System.out.println("              sensName =\"" + " functionLow" + "\"+Integer.toString(i);");<!TextGen not found for 'SensorLanguage.structure.markovLow'!>
+    System.out.println("              sensName =\"" + " jsonLot" + "\"+Integer.toString(i);");
+    System.out.println("              Measurement measurement = createfilelow(\"" + "/home/user/Bureau/dataDemo/dataJson.json" + "\",\"" + "sensorName" + "\",\"" + "value" + "\",\"" + "time" + "\",\"" + "json" + "\"," + 0 + ",t);");
 
 
     System.out.println("                 if (measurement == null) {");
@@ -228,7 +246,112 @@ public class map_App {
     System.out.println("             }");
     System.out.println("         }");
     System.out.println("     };");
-    System.out.println("    " + "functionLow" + ".start();");
+    System.out.println("    " + "jsonLot" + ".start();");
+    System.out.println(" ");
+
+
+    System.out.println("         Thread " + "csvLot" + " = new Thread(\"" + "csvLot" + "\") { ");
+    System.out.println("         public void run(){");
+    System.out.println("            System.out.println(\"run by: \" + getName());");
+    System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 10 + ");");
+    System.out.println("            for(int t =0; t < " + 10 + ";t++){");
+    System.out.println("            List<Measurement> measurements = new ArrayList<>(); ");
+    System.out.println("            Map<String,String> listPoly =  new HashMap<>();");
+    System.out.println("            Map<String,String> listProb =  new HashMap<>();");
+    System.out.println("              for(int i = 0; i < " + 1 + ";i++){");
+    System.out.println("              String sensName;");
+
+    System.out.println("              sensName =\"" + " csvLot" + "\"+Integer.toString(i);");
+    System.out.println("              Measurement measurement = createfilelow(\"" + "/home/user/Bureau/dataDemo/dataCsv.csv" + "\",\"" + "1" + "\",\"" + "8" + "\",\"" + "0" + "\",\"" + "csv" + "\"," + 0 + ",t);");
+
+
+    System.out.println("                 if (measurement == null) {");
+    System.out.println("                   continue;");
+    System.out.println("                  }");
+    System.out.println("                 measurements.add(measurement);");
+    System.out.println("                 try {");
+    System.out.println("                    Thread.sleep(5000);");
+    System.out.println("                 } catch (InterruptedException e) {");
+    System.out.println("                    e.printStackTrace();");
+    System.out.println("                }");
+    System.out.println("               }");
+    System.out.println("               System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
+    System.out.println("             sendToInfluxDB(measurements);");
+    System.out.println("             }");
+    System.out.println("         }");
+    System.out.println("     };");
+    System.out.println("    " + "csvLot" + ".start();");
+    System.out.println(" ");
+
+
+    System.out.println("         Thread " + "randomLot" + " = new Thread(\"" + "randomLot" + "\") { ");
+    System.out.println("         public void run(){");
+    System.out.println("            System.out.println(\"run by: \" + getName());");
+    System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 8 + ");");
+    System.out.println("            for(int t =0; t < " + 8 + ";t++){");
+    System.out.println("            List<Measurement> measurements = new ArrayList<>(); ");
+    System.out.println("            Map<String,String> listPoly =  new HashMap<>();");
+    System.out.println("            Map<String,String> listProb =  new HashMap<>();");
+    System.out.println("              for(int i = 0; i < " + 2 + ";i++){");
+    System.out.println("              String sensName;");
+
+    System.out.println("              sensName =\"" + " randomLot" + "\"+Integer.toString(i);");
+    System.out.println("              Measurement measurement = createrandomLow(sensName);");
+
+
+    System.out.println("                 if (measurement == null) {");
+    System.out.println("                   continue;");
+    System.out.println("                  }");
+    System.out.println("                 measurements.add(measurement);");
+    System.out.println("                 try {");
+    System.out.println("                    Thread.sleep(5000);");
+    System.out.println("                 } catch (InterruptedException e) {");
+    System.out.println("                    e.printStackTrace();");
+    System.out.println("                }");
+    System.out.println("               }");
+    System.out.println("               System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
+    System.out.println("             sendToInfluxDB(measurements);");
+    System.out.println("             }");
+    System.out.println("         }");
+    System.out.println("     };");
+    System.out.println("    " + "randomLot" + ".start();");
+    System.out.println(" ");
+
+
+    System.out.println("         Thread " + "functionLot" + " = new Thread(\"" + "functionLot" + "\") { ");
+    System.out.println("         public void run(){");
+    System.out.println("            System.out.println(\"run by: \" + getName());");
+    System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 11 + ");");
+    System.out.println("            for(int t =0; t < " + 11 + ";t++){");
+    System.out.println("            List<Measurement> measurements = new ArrayList<>(); ");
+    System.out.println("            Map<String,String> listPoly =  new HashMap<>();");
+    System.out.println("            Map<String,String> listProb =  new HashMap<>();");
+    System.out.println("              for(int i = 0; i < " + 1 + ";i++){");
+    System.out.println("              String sensName;");
+
+    System.out.println("              sensName =\"" + " functionLot" + "\"+Integer.toString(i);");
+    System.out.println("              listPoly.put(\"" + "x<1" + "\",\"" + "2" + "\");");
+    System.out.println("              listPoly.put(\"" + "x>= 1 && x<=3" + "\",\"" + "x^2-3" + "\");");
+    System.out.println("              listPoly.put(\"" + "x>3" + "\",\"" + "abs(-2*x)" + "\");");
+    System.out.println("              Measurement measurement= createLawFunction(sensName,listPoly,t); ");
+
+
+    System.out.println("                 if (measurement == null) {");
+    System.out.println("                   continue;");
+    System.out.println("                  }");
+    System.out.println("                 measurements.add(measurement);");
+    System.out.println("                 try {");
+    System.out.println("                    Thread.sleep(5000);");
+    System.out.println("                 } catch (InterruptedException e) {");
+    System.out.println("                    e.printStackTrace();");
+    System.out.println("                }");
+    System.out.println("               }");
+    System.out.println("               System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
+    System.out.println("             sendToInfluxDB(measurements);");
+    System.out.println("             }");
+    System.out.println("         }");
+    System.out.println("     };");
+    System.out.println("    " + "functionLot" + ".start();");
     System.out.println(" ");
 
 
