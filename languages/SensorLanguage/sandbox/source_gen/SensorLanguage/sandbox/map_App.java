@@ -216,40 +216,6 @@ public class map_App {
     System.out.println("  public static void main(String[] args){");
     System.out.println("         createDataBase(\"my_database\",8086);");
 
-    System.out.println("         Thread " + "jsonLot" + " = new Thread(\"" + "jsonLot" + "\") { ");
-    System.out.println("         public void run(){");
-    System.out.println("            System.out.println(\"run by: \" + getName());");
-    System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 10 + ");");
-    System.out.println("            for(int t =0; t < " + 10 + ";t++){");
-    System.out.println("            List<Measurement> measurements = new ArrayList<>(); ");
-    System.out.println("            Map<String,String> listPoly =  new HashMap<>();");
-    System.out.println("            Map<String,String> listProb =  new HashMap<>();");
-    System.out.println("              for(int i = 0; i < " + 1 + ";i++){");
-    System.out.println("              String sensName;");
-
-    System.out.println("              sensName =\"" + " jsonLot" + "\"+Integer.toString(i);");
-    System.out.println("              Measurement measurement = createfilelow(\"" + "/home/user/Bureau/dataDemo/dataJson.json" + "\",\"" + "sensorName" + "\",\"" + "value" + "\",\"" + "time" + "\",\"" + "json" + "\"," + 0 + ",t);");
-
-
-    System.out.println("                 if (measurement == null) {");
-    System.out.println("                   continue;");
-    System.out.println("                  }");
-    System.out.println("                 measurements.add(measurement);");
-    System.out.println("                 try {");
-    System.out.println("                    Thread.sleep(5000);");
-    System.out.println("                 } catch (InterruptedException e) {");
-    System.out.println("                    e.printStackTrace();");
-    System.out.println("                }");
-    System.out.println("               }");
-    System.out.println("               System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
-    System.out.println("             sendToInfluxDB(measurements);");
-    System.out.println("             }");
-    System.out.println("         }");
-    System.out.println("     };");
-    System.out.println("    " + "jsonLot" + ".start();");
-    System.out.println(" ");
-
-
     System.out.println("         Thread " + "csvLot" + " = new Thread(\"" + "csvLot" + "\") { ");
     System.out.println("         public void run(){");
     System.out.println("            System.out.println(\"run by: \" + getName());");

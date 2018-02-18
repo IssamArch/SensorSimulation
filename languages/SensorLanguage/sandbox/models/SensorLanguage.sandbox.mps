@@ -37,9 +37,11 @@
         <child id="887164873055857151" name="sensors" index="1BZjSZ" />
       </concept>
       <concept id="887164873055857753" name="SensorLanguage.structure.RandomLow" flags="ng" index="1BZjIp" />
+      <concept id="744463843628098109" name="SensorLanguage.structure.Chaos" flags="ng" index="3DLZZm" />
       <concept id="8302915319737339312" name="SensorLanguage.structure.App" flags="ng" index="1EbyNe">
         <child id="887164873055896023" name="lows" index="1BZ5on" />
         <child id="887164873055857751" name="sensorLots" index="1BZjIn" />
+        <child id="744463843628098499" name="chaos" index="3DLZSC" />
       </concept>
       <concept id="551985253729880763" name="SensorLanguage.structure.FileLaw" flags="ng" index="3IuW4i">
         <property id="468206683793351311" name="offset" index="2ay0nK" />
@@ -68,15 +70,6 @@
       <property role="3IvmcA" value="1" />
       <property role="3Ivmc4" value="8" />
       <property role="3Ivmcr" value="0" />
-      <property role="2ay0nK" value="0" />
-    </node>
-    <node concept="3IuW4i" id="55_GFJZU8kL" role="1BZ5on">
-      <property role="TrG5h" value="jsonlaw" />
-      <property role="3IuZox" value="/home/user/Bureau/dataDemo/dataJson.json" />
-      <property role="3IuW2x" value="json" />
-      <property role="3IvmcA" value="sensorName" />
-      <property role="3Ivmc4" value="value" />
-      <property role="3Ivmcr" value="time" />
       <property role="2ay0nK" value="0" />
     </node>
     <node concept="1_yE45" id="55_GFJZU8kV" role="1BZ5on">
@@ -123,14 +116,6 @@
         </node>
       </node>
     </node>
-    <node concept="1BZj1s" id="55_GFJZUSEE" role="1BZjIn">
-      <property role="TrG5h" value="jsonLot" />
-      <property role="1BZj0D" value="1" />
-      <property role="1BZj0F" value="10" />
-      <node concept="1BZj0M" id="55_GFJZUSEI" role="1BZjSZ">
-        <ref role="1_w7El" node="55_GFJZU8kL" resolve="jsonlaw" />
-      </node>
-    </node>
     <node concept="1BZj1s" id="55_GFJZUZcP" role="1BZjIn">
       <property role="TrG5h" value="csvLot" />
       <property role="1BZj0D" value="1" />
@@ -155,6 +140,7 @@
         <ref role="1_w7El" node="55_GFJZU8kV" resolve="functionLaw" />
       </node>
     </node>
+    <node concept="3DLZZm" id="DkRuJz_1q$" role="3DLZSC" />
   </node>
 </model>
 
