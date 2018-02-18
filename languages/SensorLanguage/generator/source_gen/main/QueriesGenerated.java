@@ -67,6 +67,9 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_8227537707295057613(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x722e15f413698b4aL, 0x722e15f413698c65L, "prob"));
   }
+  public static SNode sourceNodeQuery_744463843628256860(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x7339e17e1917cdb0L, 0xa54ddebe39323c3L, "chaos"));
+  }
   public static SNode sourceNodeQuery_219761989219347370(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e7f2L, 0x30cc05d668cbac8L, "low"));
   }
