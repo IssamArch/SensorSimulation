@@ -228,10 +228,15 @@ public class map_App {
     System.out.println("            String sensName;");
 
     System.out.println("              sensName =\"" + " mark" + "\"+Integer.toString(i);");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.9" + "\");");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.1" + "\");");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.5" + "\");");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.4" + "\");");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.9" + "\");");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.05" + "\");");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.05" + "\");");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.4" + "\");");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.4" + "\");");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.2" + "\");");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.4" + "\");");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.5" + "\");");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.1" + "\");");
     System.out.println("              Measurement measurement = createMarkovLow(sensName,listMarkov,i);");
 
 
