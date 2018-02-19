@@ -196,7 +196,7 @@ public class map_App {
 
     System.out.println("     public static ArrayList<Integer> remplirRandom(int nbr){");
     System.out.println("        ArrayList<Integer> listeRandom = new ArrayList<>();");
-    System.out.println("        for(int i = 0;i < 30;i++){");
+    System.out.println("        for(int i = 0;i < 50;i++){");
     System.out.println("          Random random = new Random();");
     System.out.println("          int randomNumber = random.nextInt(100000000 + 1 - 50000000) + 50000000;");
     System.out.println("          listeRandom.add(randomNumber);");
@@ -257,7 +257,11 @@ public class map_App {
     System.out.println("         p.add(matrice.get(currState).get(i), i);");
     System.out.println("      }");
     System.out.println("     currState = p.val();");
-    System.out.println("      return new Measurement(sensor, System.currentTimeMillis(), currState);");
+    System.out.println("     long timestamp = System.currentTimeMillis();");
+    System.out.println("     Long tt ;");
+    System.out.println("     tt = timestamp + listeRandom.get(t);");
+    System.out.println("     Measurement measurement = new Measurement(sensor,tt,currState);");
+    System.out.println("     return measurement;");
     System.out.println("   }");
 
 
@@ -267,8 +271,8 @@ public class map_App {
     System.out.println("         Thread " + "mark" + " = new Thread(\"" + "mark" + "\") { ");
     System.out.println("         public void run(){");
     System.out.println("            System.out.println(\"run by: \" + getName());");
-    System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 10 + ");");
-    System.out.println("            for(int t =0; t < " + 10 + ";t++){");
+    System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 50 + ");");
+    System.out.println("            for(int t =0; t < " + 50 + ";t++){");
     System.out.println("            List<Measurement> measurements = new ArrayList<>(); ");
     System.out.println("            Map<String,String> listPoly =  new HashMap<>();");
     System.out.println("            List<Pair<String, String>> listMarkov = new ArrayList<Pair<String, String>>();");
@@ -285,7 +289,7 @@ public class map_App {
     System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.4" + "\"));");
     System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.5" + "\"));");
     System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.1" + "\"));");
-    System.out.println("              Measurement measurement = createMarkovLow(sensName,listMarkov,i);");
+    System.out.println("              Measurement measurement = createMarkovLow(sensName,listMarkov,t);");
 
 
     System.out.println("                 if (measurement == null) {");

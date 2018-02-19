@@ -145,7 +145,7 @@
     <node concept="1BZj1s" id="7Lh_Re$5YyU" role="1BZjIn">
       <property role="TrG5h" value="mark" />
       <property role="1BZj0D" value="1" />
-      <property role="1BZj0F" value="10" />
+      <property role="1BZj0F" value="50" />
       <node concept="1BZj0M" id="7Lh_Re$5YyY" role="1BZjSZ">
         <ref role="1_w7El" node="55_GFJZU8lk" resolve="markovLaw" />
       </node>
