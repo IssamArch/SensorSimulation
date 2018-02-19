@@ -32,6 +32,8 @@ public class map_App {
     System.out.println("import org.json.simple.JSONObject;");
     System.out.println("import org.json.simple.parser.JSONParser;");
     System.out.println("import org.json.simple.parser.ParseException;");
+    System.out.println("import net.andreinc.mockneat.MockNeat;");
+    System.out.println("import net.andreinc.mockneat.unit.objects.Probabilities;");
 
 
     System.out.println("public class " + "App" + " { ");
@@ -229,6 +231,36 @@ public class map_App {
     System.out.println("  }");
     System.out.println(" ");
 
+    System.out.println("   public static Measurement createMarkovLow(String sensor, List<Pair<String, String>> input, int t) {");
+    System.out.println("      List<List<Double>> matrice = new ArrayList<List<Double>>();");
+    System.out.println("      HashMap<String, List<Double>> myInput = new HashMap<String, List<Double>>();");
+    System.out.println("      int currState = 0;");
+    System.out.println("      for(Pair<String, String> p : input){");
+    System.out.println("        if(myInput.containsKey(p.getKey())){");
+    System.out.println("          myInput.get(p.getKey()).add(Double.parseDouble(p.getValue()));");
+    System.out.println("        }else{");
+    System.out.println("          List<Double> liste = new ArrayList<Double>();");
+    System.out.println("          liste.add(Double.parseDouble(p.getValue()));");
+    System.out.println("          myInput.put(p.getKey(), liste);");
+    System.out.println("        }");
+    System.out.println("      }");
+    System.out.println("     for(String key : myInput.keySet()){");
+    System.out.println("       List<Double> ligne = new ArrayList<Double>();");
+    System.out.println("       for(Double f : myInput.get(key)) {");
+    System.out.println("         ligne.add(f);");
+    System.out.println("       }");
+    System.out.println("       matrice.add(ligne);");
+    System.out.println("     }");
+    System.out.println("      MockNeat mockNeat = MockNeat.threadLocal();");
+    System.out.println("      Probabilities<Integer> p = mockNeat.probabilites(Integer.class);");
+    System.out.println("      for(int i = 0 ; i <matrice.size(); i++){");
+    System.out.println("         p.add(matrice.get(currState).get(i), i);");
+    System.out.println("      }");
+    System.out.println("     currState = p.val();");
+    System.out.println("      return new Measurement(sensor, System.currentTimeMillis(), currState);");
+    System.out.println("   }");
+
+
     System.out.println("  public static void main(String[] args){");
     System.out.println("         createDataBase(\"my_database\",8086);");
 
@@ -244,15 +276,15 @@ public class map_App {
     System.out.println("            String sensName;");
 
     System.out.println("              sensName =\"" + " mark" + "\"+Integer.toString(i);");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.9" + "\");");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.05" + "\");");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.05" + "\");");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.4" + "\");");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.4" + "\");");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.2" + "\");");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.4" + "\");");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.5" + "\");");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.1" + "\");");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.9" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.05" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.05" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.4" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.4" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.2" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.4" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.5" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.1" + "\"));");
     System.out.println("              Measurement measurement = createMarkovLow(sensName,listMarkov,i);");
 
 

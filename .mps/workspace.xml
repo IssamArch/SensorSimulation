@@ -85,7 +85,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -97,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoupleProb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CoupleProb" pinned="false" current-in-tab="true">
         <entry file="mps://node://SensorLanguage/SensorLanguage.structure/CoupleProb">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -105,11 +105,11 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="322" />
-                    <property name="caretXRelative" value="96" />
+                    <property name="caretX" value="232" />
+                    <property name="caretXRelative" value="32" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_value">
-                      <node node_reference="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656746961937" />
+                      <node node_reference="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -118,7 +118,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -152,7 +152,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -165,19 +165,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App" pinned="false" current-in-tab="false">
         <entry file="mps://node://SensorLanguage/SensorLanguage.structure/App">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="1107">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="411">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="295" />
-                    <property name="caretXRelative" value="8" />
+                    <property name="selectionStart" value="0" />
+                    <property name="hasNonTrivialSelection" value="true" />
+                    <property name="caretX" value="655" />
+                    <property name="selectionEnd" value="56" />
+                    <property name="caretXRelative" value="448" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_zedcwq_b0">
-                      <node node_reference="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" />
+                    <cellInfo cellId="property_value">
+                      <node node_reference="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656748573711" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -198,7 +200,7 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -232,7 +234,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -266,7 +268,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -306,7 +308,7 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -339,7 +341,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -356,7 +358,7 @@
         <entry file="file://$PROJECT_DIR$/languages/SensorLanguage/sandbox/source_gen/SensorLanguage/sandbox/map_App.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="151">
-              <caret line="246" column="15" lean-forward="false" selection-start-line="246" selection-start-column="15" selection-end-line="246" selection-end-column="15" />
+              <caret line="278" column="15" lean-forward="false" selection-start-line="278" selection-start-column="15" selection-end-line="278" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -382,7 +384,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -507,44 +509,6 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="0976c57d-85cc-4413-a01a-155ebd2f878f(SensorLanguage)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SensorLanguage#8302915319737339300" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="f39aa6cf-6400-4536-971a-e3a27ae23a89" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="efb8e867-e4aa-471f-8ec7-4c823d187813" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="0976c57d-85cc-4413-a01a-155ebd2f878f(SensorLanguage)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -570,6 +534,26 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="0976c57d-85cc-4413-a01a-155ebd2f878f(SensorLanguage)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f39aa6cf-6400-4536-971a-e3a27ae23a89" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="f39aa6cf-6400-4536-971a-e3a27ae23a89" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -583,6 +567,10 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="efb8e867-e4aa-471f-8ec7-4c823d187813" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -594,7 +582,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure) in IdeaFile{file:///home/user/Bureau/mpsFinale/SensorSimulation/languages/SensorLanguage/models/structure.mps}" />
+              <option name="myItemId" value="SensorLanguage#8302915319737339300" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -613,6 +601,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:4eaca1c8-8624-40f4-bcf7-581c14f52ac9(SensorLanguage.sandbox) in IdeaFile{file:///home/user/Bureau/mpsFinale/SensorSimulation/languages/SensorLanguage/sandbox/models/SensorLanguage.sandbox.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="0976c57d-85cc-4413-a01a-155ebd2f878f(SensorLanguage)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure) in IdeaFile{file:///home/user/Bureau/mpsFinale/SensorSimulation/languages/SensorLanguage/models/structure.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -658,29 +660,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Java Application.Node App (3)">
-    <configuration name="Node App (1)" type="Java Application" factoryName="Java" temporary="true">
-      <MyState />
-      <myNode>
-        <MyState>
-          <option name="myNodePointer" value="r:4eaca1c8-8624-40f4-bcf7-581c14f52ac9(SensorLanguage.sandbox)/8302915319737570072" />
-          <option name="myNodeText" value="SensorLanguage.sandbox.App" />
-        </MyState>
-      </myNode>
-      <myRunParameters>
-        <MyState>
-          <option name="myJavaRunParameters">
-            <JavaRunParameters>
-              <option name="jrePath" />
-              <option name="programParameters" />
-              <option name="useAlternativeJre" value="false" />
-              <option name="vmOptions" />
-              <option name="workingDirectory" value="$APPLICATION_HOME_DIR$/bin" />
-            </JavaRunParameters>
-          </option>
-        </MyState>
-      </myRunParameters>
-    </configuration>
+  <component name="RunManager" selected="Java Application.Node App (5)">
     <configuration name="Node App (2)" type="Java Application" factoryName="Java" temporary="true">
       <MyState />
       <myNode>
@@ -704,6 +684,28 @@
       </myRunParameters>
     </configuration>
     <configuration name="Node App (3)" type="Java Application" factoryName="Java" temporary="true">
+      <MyState />
+      <myNode>
+        <MyState>
+          <option name="myNodePointer" value="r:4eaca1c8-8624-40f4-bcf7-581c14f52ac9(SensorLanguage.sandbox)/8302915319737570072" />
+          <option name="myNodeText" value="SensorLanguage.sandbox.App" />
+        </MyState>
+      </myNode>
+      <myRunParameters>
+        <MyState>
+          <option name="myJavaRunParameters">
+            <JavaRunParameters>
+              <option name="jrePath" />
+              <option name="programParameters" />
+              <option name="useAlternativeJre" value="false" />
+              <option name="vmOptions" />
+              <option name="workingDirectory" value="$APPLICATION_HOME_DIR$/bin" />
+            </JavaRunParameters>
+          </option>
+        </MyState>
+      </myRunParameters>
+    </configuration>
+    <configuration name="Node App (4)" type="Java Application" factoryName="Java" temporary="true">
       <MyState />
       <myNode>
         <MyState>
@@ -806,19 +808,19 @@
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Java Application.Node App (5)" />
-      <item index="1" class="java.lang.String" itemvalue="Java Application.Node App (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Java Application.Node App" />
-      <item index="3" class="java.lang.String" itemvalue="Java Application.Node App (2)" />
-      <item index="4" class="java.lang.String" itemvalue="Java Application.Node App (3)" />
+      <item index="0" class="java.lang.String" itemvalue="Java Application.Node App" />
+      <item index="1" class="java.lang.String" itemvalue="Java Application.Node App (2)" />
+      <item index="2" class="java.lang.String" itemvalue="Java Application.Node App (3)" />
+      <item index="3" class="java.lang.String" itemvalue="Java Application.Node App (4)" />
+      <item index="4" class="java.lang.String" itemvalue="Java Application.Node App (5)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Java Application.Node App (3)" />
-        <item index="1" class="java.lang.String" itemvalue="Java Application.Node App (2)" />
-        <item index="2" class="java.lang.String" itemvalue="Java Application.Node App" />
-        <item index="3" class="java.lang.String" itemvalue="Java Application.Node App (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Java Application.Node App (5)" />
+        <item index="0" class="java.lang.String" itemvalue="Java Application.Node App (5)" />
+        <item index="1" class="java.lang.String" itemvalue="Java Application.Node App (4)" />
+        <item index="2" class="java.lang.String" itemvalue="Java Application.Node App (3)" />
+        <item index="3" class="java.lang.String" itemvalue="Java Application.Node App (2)" />
+        <item index="4" class="java.lang.String" itemvalue="Java Application.Node App" />
       </list>
     </recent_temporary>
   </component>
@@ -1726,7 +1728,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1764,7 +1766,7 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1795,7 +1797,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1810,7 +1812,7 @@
     <entry file="file://$PROJECT_DIR$/languages/SensorLanguage/sandbox/source_gen/SensorLanguage/sandbox/map_App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
-          <caret line="246" column="15" lean-forward="false" selection-start-line="246" selection-start-column="15" selection-end-line="246" selection-end-column="15" />
+          <caret line="278" column="15" lean-forward="false" selection-start-line="278" selection-start-column="15" selection-end-line="278" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -1834,7 +1836,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1843,38 +1845,6 @@
             <enabledHints />
           </inspectorMemento>
           <node node_ref="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656746768519" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://SensorLanguage/SensorLanguage.structure/CoupleProb">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="322" />
-                <property name="caretXRelative" value="96" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value">
-                  <node node_reference="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656746961937" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656746959120" />
         </state>
       </provider>
     </entry>
@@ -1898,7 +1868,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1930,7 +1900,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1962,7 +1932,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1976,15 +1946,17 @@
     <entry file="mps://node://SensorLanguage/SensorLanguage.structure/App">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="1107">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="411">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="295" />
-                <property name="caretXRelative" value="8" />
+                <property name="selectionStart" value="0" />
+                <property name="hasNonTrivialSelection" value="true" />
+                <property name="caretX" value="655" />
+                <property name="selectionEnd" value="56" />
+                <property name="caretXRelative" value="448" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_zedcwq_b0">
-                  <node node_reference="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" />
+                <cellInfo cellId="property_value">
+                  <node node_reference="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656748573711" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -2005,7 +1977,7 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747586009" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2014,6 +1986,38 @@
             <enabledHints />
           </inspectorMemento>
           <node node_ref="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8302915319737339891" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://SensorLanguage/SensorLanguage.structure/CoupleProb">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="232" />
+                <property name="caretXRelative" value="32" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value">
+                  <node node_reference="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656747021637" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656746959120" />
         </state>
       </provider>
     </entry>
