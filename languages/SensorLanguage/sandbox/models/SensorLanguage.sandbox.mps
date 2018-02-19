@@ -128,7 +128,7 @@
       <property role="TrG5h" value="randomLot" />
       <property role="1BZj0D" value="2" />
       <property role="1BZj0F" value="8" />
-      <property role="3DYlZM" value="0" />
+      <property role="3DYlZM" value="1" />
       <node concept="1BZj0M" id="DkRuJzGBp9" role="1BZjSZ">
         <ref role="1_w7El" node="55_GFJZU8k$" resolve="randomlaw" />
       </node>
@@ -137,7 +137,7 @@
       <property role="TrG5h" value="functionLot" />
       <property role="1BZj0D" value="1" />
       <property role="1BZj0F" value="11" />
-      <property role="3DYlZM" value="0" />
+      <property role="3DYlZM" value="1" />
       <node concept="1BZj0M" id="DkRuJzGBps" role="1BZjSZ">
         <ref role="1_w7El" node="55_GFJZU8kV" resolve="functionLaw" />
       </node>

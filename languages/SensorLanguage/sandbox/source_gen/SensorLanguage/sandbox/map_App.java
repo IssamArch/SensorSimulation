@@ -246,8 +246,13 @@ public class map_App {
     System.out.println("                long endTime   = System.nanoTime();");
     System.out.println("                long totalTime = (endTime - startTime)/1000000000;");
     System.out.println("                System.out.println(\"Total Time : \" + totalTime);");
+    System.out.println("                Random rand = new Random();");
+    System.out.println("                long total = rand.nextInt(100);");
+
     System.out.println("                if(" + 1 + "== 1){");
-    System.out.println("                         if(totalTime == 15) {");
+    System.out.println("                System.out.println(\"On arrete ce SensorLot lorsque la valeur aléatoire \" + total + \" est <= \" + totalTime);");
+
+    System.out.println("                         if(totalTime >= total) {");
     System.out.println("                               System.out.println(\"j'arrette ce Thread de num :\" + Thread.currentThread().getId()%Thread.activeCount());");
     System.out.println("                Thread.currentThread().suspend();\n\t\t\t\t\t\tThread.currentThread().stop();");
     System.out.println("                          }");
@@ -290,8 +295,13 @@ public class map_App {
     System.out.println("                long endTime   = System.nanoTime();");
     System.out.println("                long totalTime = (endTime - startTime)/1000000000;");
     System.out.println("                System.out.println(\"Total Time : \" + totalTime);");
-    System.out.println("                if(" + 0 + "== 1){");
-    System.out.println("                         if(totalTime == 15) {");
+    System.out.println("                Random rand = new Random();");
+    System.out.println("                long total = rand.nextInt(100);");
+
+    System.out.println("                if(" + 1 + "== 1){");
+    System.out.println("                System.out.println(\"On arrete ce SensorLot lorsque la valeur aléatoire \" + total + \" est <= \" + totalTime);");
+
+    System.out.println("                         if(totalTime >= total) {");
     System.out.println("                               System.out.println(\"j'arrette ce Thread de num :\" + Thread.currentThread().getId()%Thread.activeCount());");
     System.out.println("                Thread.currentThread().suspend();\n\t\t\t\t\t\tThread.currentThread().stop();");
     System.out.println("                          }");
@@ -337,8 +347,13 @@ public class map_App {
     System.out.println("                long endTime   = System.nanoTime();");
     System.out.println("                long totalTime = (endTime - startTime)/1000000000;");
     System.out.println("                System.out.println(\"Total Time : \" + totalTime);");
-    System.out.println("                if(" + 0 + "== 1){");
-    System.out.println("                         if(totalTime == 15) {");
+    System.out.println("                Random rand = new Random();");
+    System.out.println("                long total = rand.nextInt(100);");
+
+    System.out.println("                if(" + 1 + "== 1){");
+    System.out.println("                System.out.println(\"On arrete ce SensorLot lorsque la valeur aléatoire \" + total + \" est <= \" + totalTime);");
+
+    System.out.println("                         if(totalTime >= total) {");
     System.out.println("                               System.out.println(\"j'arrette ce Thread de num :\" + Thread.currentThread().getId()%Thread.activeCount());");
     System.out.println("                Thread.currentThread().suspend();\n\t\t\t\t\t\tThread.currentThread().stop();");
     System.out.println("                          }");
