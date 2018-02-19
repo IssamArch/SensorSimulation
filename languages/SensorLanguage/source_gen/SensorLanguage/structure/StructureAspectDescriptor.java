@@ -172,6 +172,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/887164873055856540");
     b.prop("sensorNumber", 0xc4fd7c06bb2e7e9L, "887164873055856617");
     b.prop("simulationDuration", 0xc4fd7c06bb2e7ebL, "887164873055856619");
+    b.prop("dateBegin", 0x7c519773a43d411aL, "8958107656749138202");
+    b.prop("dateEnd", 0x7c519773a43d411eL, "8958107656749138206");
     b.aggregate("sensors", 0xc4fd7c06bb2e9ffL).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e7f2L).optional(false).ordered(true).multiple(true).origin("887164873055857151").done();
     return b.create();
   }

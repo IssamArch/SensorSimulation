@@ -92,6 +92,18 @@
       <node concept="3F0A7n" id="LfPW1FH95E" role="3EZMnx">
         <ref role="1NtTu8" to="uxew:LfPW1FGIvF" resolve="simulationDuration" />
       </node>
+      <node concept="3F0ifn" id="7Lh_Re$fk9k" role="3EZMnx">
+        <property role="3F0ifm" value="from" />
+      </node>
+      <node concept="3F0A7n" id="7Lh_Re$fk9G" role="3EZMnx">
+        <ref role="1NtTu8" to="uxew:7Lh_Re$fk4q" resolve="dateBegin" />
+      </node>
+      <node concept="3F0ifn" id="7Lh_Re$fkak" role="3EZMnx">
+        <property role="3F0ifm" value="to" />
+      </node>
+      <node concept="3F0A7n" id="7Lh_Re$fkaK" role="3EZMnx">
+        <ref role="1NtTu8" to="uxew:7Lh_Re$fk4u" resolve="dateEnd" />
+      </node>
       <node concept="2iRfu4" id="LfPW1FH3QN" role="2iSdaV" />
     </node>
   </node>

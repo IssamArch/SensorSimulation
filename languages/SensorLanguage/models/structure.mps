@@ -101,6 +101,16 @@
       <property role="TrG5h" value="simulationDuration" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="7Lh_Re$fk4q" role="1TKVEl">
+      <property role="IQ2nx" value="8958107656749138202" />
+      <property role="TrG5h" value="dateBegin" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7Lh_Re$fk4u" role="1TKVEl">
+      <property role="IQ2nx" value="8958107656749138206" />
+      <property role="TrG5h" value="dateEnd" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="LfPW1FGIBZ" role="1TKVEi">
       <property role="IQ2ns" value="887164873055857151" />
       <property role="20lmBu" value="aggregation" />

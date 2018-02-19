@@ -32,6 +32,8 @@
         <reference id="219761989219302088" name="low" index="1_w7El" />
       </concept>
       <concept id="887164873055856540" name="SensorLanguage.structure.SensorLot" flags="ng" index="1BZj1s">
+        <property id="8958107656749138202" name="dateBegin" index="3ordpD" />
+        <property id="8958107656749138206" name="dateEnd" index="3ordpH" />
         <property id="887164873055856617" name="sensorNumber" index="1BZj0D" />
         <property id="887164873055856619" name="simulationDuration" index="1BZj0F" />
         <child id="887164873055857151" name="sensors" index="1BZjSZ" />
@@ -146,6 +148,8 @@
       <property role="TrG5h" value="mark" />
       <property role="1BZj0D" value="1" />
       <property role="1BZj0F" value="50" />
+      <property role="3ordpD" value="16/02/2018 00:00:00" />
+      <property role="3ordpH" value="19/02/2018 22:00:00" />
       <node concept="1BZj0M" id="7Lh_Re$5YyY" role="1BZjSZ">
         <ref role="1_w7El" node="55_GFJZU8lk" resolve="markovLaw" />
       </node>
