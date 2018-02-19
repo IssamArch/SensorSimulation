@@ -55,6 +55,8 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     editorCell.addEditorCell(createRefNodeList_eqri6y_f0());
     editorCell.addEditorCell(createConstant_eqri6y_g0());
     editorCell.addEditorCell(createProperty_eqri6y_h0());
+    editorCell.addEditorCell(createConstant_eqri6y_i0());
+    editorCell.addEditorCell(createProperty_eqri6y_j0());
     return editorCell;
   }
   private EditorCell createConstant_eqri6y_a0() {
@@ -174,6 +176,27 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("property_simulationDuration");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
+    return editorCell;
+  }
+  private EditorCell createConstant_eqri6y_i0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "chaos");
+    editorCell.setCellId("Constant_eqri6y_i0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_eqri6y_j0() {
+    CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
+    provider.setRole("chaos");
+    provider.setNoTargetText("<no chaos>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(getEditorContext());
+    editorCell.setCellId("property_chaos");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {

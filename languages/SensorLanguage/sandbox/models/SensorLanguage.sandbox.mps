@@ -34,14 +34,13 @@
       <concept id="887164873055856540" name="SensorLanguage.structure.SensorLot" flags="ng" index="1BZj1s">
         <property id="887164873055856617" name="sensorNumber" index="1BZj0D" />
         <property id="887164873055856619" name="simulationDuration" index="1BZj0F" />
+        <property id="744463843629826585" name="chaos" index="3DYlZM" />
         <child id="887164873055857151" name="sensors" index="1BZjSZ" />
       </concept>
       <concept id="887164873055857753" name="SensorLanguage.structure.RandomLow" flags="ng" index="1BZjIp" />
-      <concept id="744463843628098109" name="SensorLanguage.structure.Chaos" flags="ng" index="3DLZZm" />
       <concept id="8302915319737339312" name="SensorLanguage.structure.App" flags="ng" index="1EbyNe">
         <child id="887164873055896023" name="lows" index="1BZ5on" />
         <child id="887164873055857751" name="sensorLots" index="1BZjIn" />
-        <child id="744463843628098499" name="chaos" index="3DLZSC" />
       </concept>
       <concept id="551985253729880763" name="SensorLanguage.structure.FileLaw" flags="ng" index="3IuW4i">
         <property id="468206683793351311" name="offset" index="2ay0nK" />
@@ -116,31 +115,33 @@
         </node>
       </node>
     </node>
-    <node concept="1BZj1s" id="55_GFJZUZcP" role="1BZjIn">
+    <node concept="1BZj1s" id="DkRuJzGBoG" role="1BZjIn">
       <property role="TrG5h" value="csvLot" />
       <property role="1BZj0D" value="1" />
       <property role="1BZj0F" value="10" />
-      <node concept="1BZj0M" id="55_GFJZUZcV" role="1BZjSZ">
+      <property role="3DYlZM" value="1" />
+      <node concept="1BZj0M" id="DkRuJzGBoS" role="1BZjSZ">
         <ref role="1_w7El" node="55_GFJZU8kD" resolve="csvLaw" />
       </node>
     </node>
-    <node concept="1BZj1s" id="55_GFJZUZcY" role="1BZjIn">
+    <node concept="1BZj1s" id="DkRuJzGBoV" role="1BZjIn">
       <property role="TrG5h" value="randomLot" />
       <property role="1BZj0D" value="2" />
       <property role="1BZj0F" value="8" />
-      <node concept="1BZj0M" id="55_GFJZUZd6" role="1BZjSZ">
+      <property role="3DYlZM" value="0" />
+      <node concept="1BZj0M" id="DkRuJzGBp9" role="1BZjSZ">
         <ref role="1_w7El" node="55_GFJZU8k$" resolve="randomlaw" />
       </node>
     </node>
-    <node concept="1BZj1s" id="55_GFJZUZd9" role="1BZjIn">
+    <node concept="1BZj1s" id="DkRuJzGBpc" role="1BZjIn">
       <property role="TrG5h" value="functionLot" />
       <property role="1BZj0D" value="1" />
       <property role="1BZj0F" value="11" />
-      <node concept="1BZj0M" id="55_GFJZUZdm" role="1BZjSZ">
+      <property role="3DYlZM" value="0" />
+      <node concept="1BZj0M" id="DkRuJzGBps" role="1BZjSZ">
         <ref role="1_w7El" node="55_GFJZU8kV" resolve="functionLaw" />
       </node>
     </node>
-    <node concept="3DLZZm" id="DkRuJz_1q$" role="3DLZSC" />
   </node>
 </model>
 

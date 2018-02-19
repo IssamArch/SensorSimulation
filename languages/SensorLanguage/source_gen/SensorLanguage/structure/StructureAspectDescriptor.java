@@ -13,7 +13,6 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptApp = createDescriptorForApp();
-  /*package*/ final ConceptDescriptor myConceptChaos = createDescriptorForChaos();
   /*package*/ final ConceptDescriptor myConceptCondValue = createDescriptorForCondValue();
   /*package*/ final ConceptDescriptor myConceptCoupleProb = createDescriptorForCoupleProb();
   /*package*/ final ConceptDescriptor myConceptFileLaw = createDescriptorForFileLaw();
@@ -33,7 +32,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptApp, myConceptChaos, myConceptCondValue, myConceptCoupleProb, myConceptFileLaw, myConceptFunctionLow, myConceptLaw, myConceptMarkov, myConceptRandomLow, myConceptSensor, myConceptSensorLot, myConceptState, myConceptTransition);
+    return Arrays.asList(myConceptApp, myConceptCondValue, myConceptCoupleProb, myConceptFileLaw, myConceptFunctionLow, myConceptLaw, myConceptMarkov, myConceptRandomLow, myConceptSensor, myConceptSensorLot, myConceptState, myConceptTransition);
   }
 
   @Override
@@ -42,8 +41,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myConceptIndex.index(id)) {
       case LanguageConceptSwitch.App:
         return myConceptApp;
-      case LanguageConceptSwitch.Chaos:
-        return myConceptChaos;
       case LanguageConceptSwitch.CondValue:
         return myConceptCondValue;
       case LanguageConceptSwitch.CoupleProb:
@@ -83,15 +80,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/8302915319737339312");
     b.aggregate("sensorLots", 0xc4fd7c06bb2ec57L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e79cL).optional(true).ordered(true).multiple(true).origin("887164873055857751").done();
     b.aggregate("lows", 0xc4fd7c06bb381d7L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2ea01L).optional(false).ordered(true).multiple(true).origin("887164873055896023").done();
-    b.aggregate("chaos", 0xa54ddebe39323c3L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xa54ddebe393223dL).optional(true).ordered(true).multiple(false).origin("744463843628098499").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForChaos() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SensorLanguage", "Chaos", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xa54ddebe393223dL);
-    b.class_(false, false, false);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/744463843628098109");
-    b.prop("chaos", 0xa54ddebe39322d6L, "744463843628098262");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForCondValue() {
@@ -172,6 +160,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/887164873055856540");
     b.prop("sensorNumber", 0xc4fd7c06bb2e7e9L, "887164873055856617");
     b.prop("simulationDuration", 0xc4fd7c06bb2e7ebL, "887164873055856619");
+    b.prop("chaos", 0xa54ddebe3ad8219L, "744463843629826585");
     b.aggregate("sensors", 0xc4fd7c06bb2e9ffL).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e7f2L).optional(false).ordered(true).multiple(true).origin("887164873055857151").done();
     return b.create();
   }

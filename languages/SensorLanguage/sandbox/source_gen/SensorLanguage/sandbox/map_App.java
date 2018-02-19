@@ -218,6 +218,7 @@ public class map_App {
 
     System.out.println("         Thread " + "csvLot" + " = new Thread(\"" + "csvLot" + "\") { ");
     System.out.println("         public void run(){");
+    System.out.println("            long startTime = System.nanoTime();");
     System.out.println("            System.out.println(\"run by: \" + getName());");
     System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 10 + ");");
     System.out.println("            for(int t =0; t < " + 10 + ";t++){");
@@ -242,6 +243,15 @@ public class map_App {
     System.out.println("                }");
     System.out.println("               }");
     System.out.println("               System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
+    System.out.println("                long endTime   = System.nanoTime();");
+    System.out.println("                long totalTime = (endTime - startTime)/1000000000;");
+    System.out.println("                System.out.println(\"Total Time : \" + totalTime);");
+    System.out.println("                if(" + 1 + "== 1){");
+    System.out.println("                         if(totalTime == 15) {");
+    System.out.println("                               System.out.println(\"j'arrette ce Thread de num :\" + Thread.currentThread().getId()%Thread.activeCount());");
+    System.out.println("                Thread.currentThread().suspend();\n\t\t\t\t\t\tThread.currentThread().stop();");
+    System.out.println("                          }");
+    System.out.println("                }");
     System.out.println("             sendToInfluxDB(measurements);");
     System.out.println("             }");
     System.out.println("         }");
@@ -252,6 +262,7 @@ public class map_App {
 
     System.out.println("         Thread " + "randomLot" + " = new Thread(\"" + "randomLot" + "\") { ");
     System.out.println("         public void run(){");
+    System.out.println("            long startTime = System.nanoTime();");
     System.out.println("            System.out.println(\"run by: \" + getName());");
     System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 8 + ");");
     System.out.println("            for(int t =0; t < " + 8 + ";t++){");
@@ -276,6 +287,15 @@ public class map_App {
     System.out.println("                }");
     System.out.println("               }");
     System.out.println("               System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
+    System.out.println("                long endTime   = System.nanoTime();");
+    System.out.println("                long totalTime = (endTime - startTime)/1000000000;");
+    System.out.println("                System.out.println(\"Total Time : \" + totalTime);");
+    System.out.println("                if(" + 0 + "== 1){");
+    System.out.println("                         if(totalTime == 15) {");
+    System.out.println("                               System.out.println(\"j'arrette ce Thread de num :\" + Thread.currentThread().getId()%Thread.activeCount());");
+    System.out.println("                Thread.currentThread().suspend();\n\t\t\t\t\t\tThread.currentThread().stop();");
+    System.out.println("                          }");
+    System.out.println("                }");
     System.out.println("             sendToInfluxDB(measurements);");
     System.out.println("             }");
     System.out.println("         }");
@@ -286,6 +306,7 @@ public class map_App {
 
     System.out.println("         Thread " + "functionLot" + " = new Thread(\"" + "functionLot" + "\") { ");
     System.out.println("         public void run(){");
+    System.out.println("            long startTime = System.nanoTime();");
     System.out.println("            System.out.println(\"run by: \" + getName());");
     System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 11 + ");");
     System.out.println("            for(int t =0; t < " + 11 + ";t++){");
@@ -313,6 +334,15 @@ public class map_App {
     System.out.println("                }");
     System.out.println("               }");
     System.out.println("               System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
+    System.out.println("                long endTime   = System.nanoTime();");
+    System.out.println("                long totalTime = (endTime - startTime)/1000000000;");
+    System.out.println("                System.out.println(\"Total Time : \" + totalTime);");
+    System.out.println("                if(" + 0 + "== 1){");
+    System.out.println("                         if(totalTime == 15) {");
+    System.out.println("                               System.out.println(\"j'arrette ce Thread de num :\" + Thread.currentThread().getId()%Thread.activeCount());");
+    System.out.println("                Thread.currentThread().suspend();\n\t\t\t\t\t\tThread.currentThread().stop();");
+    System.out.println("                          }");
+    System.out.println("                }");
     System.out.println("             sendToInfluxDB(measurements);");
     System.out.println("             }");
     System.out.println("         }");
@@ -321,9 +351,6 @@ public class map_App {
     System.out.println(" ");
 
 
-
-
-    System.out.println("   //Chaos in Simulation");
 
 
 
