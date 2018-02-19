@@ -4,7 +4,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="14,0,91,0" name="main.QueriesGenerated" />
+      <unit at="14,0,94,0" name="main.QueriesGenerated" />
     </file>
   </root>
   <root nodeRef="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/3773033214022141166">
@@ -35,26 +35,6 @@
       <scope id="5537505225978785780" at="49,112,50,185" />
       <scope id="5537505225978792421" at="52,112,53,184" />
       <scope id="551985253730272846" at="55,111,56,197" />
-    </file>
-  </root>
-  <root nodeRef="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8227537707294653241">
-    <file name="QueriesGenerated.java">
-      <node id="8227537707294672163" at="73,108,74,194" concept="1" />
-      <scope id="8227537707294672157" at="73,108,74,194" />
-    </file>
-  </root>
-  <root nodeRef="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8227537707294653266">
-    <file name="QueriesGenerated.java">
-      <node id="8227537707294679707" at="87,120,88,195" concept="1" />
-      <scope id="8227537707294679701" at="87,120,88,195" />
-    </file>
-  </root>
-  <root nodeRef="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8227537707294653293">
-    <file name="QueriesGenerated.java">
-      <node id="8227537707295045450" at="64,112,65,332" concept="1" />
-      <node id="8227537707295058741" at="67,112,68,184" concept="1" />
-      <scope id="8227537707295044592" at="64,112,65,332" />
-      <scope id="8227537707295057614" at="67,112,68,184" />
     </file>
   </root>
   <root nodeRef="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8302915319737339891">
@@ -91,6 +71,32 @@
       <scope id="219761989218439686" at="34,111,35,191" />
       <scope id="5537505225980895420" at="37,112,38,175" />
       <scope id="219761989218641546" at="80,119,82,190" />
+    </file>
+  </root>
+  <root nodeRef="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656746744981">
+    <file name="QueriesGenerated.java">
+      <node id="8958107656746981534" at="87,120,88,191" concept="1" />
+      <scope id="8958107656746981528" at="87,120,88,191" />
+    </file>
+  </root>
+  <root nodeRef="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656746768519">
+    <file name="QueriesGenerated.java">
+      <node id="8958107656746962887" at="73,108,74,194" concept="1" />
+      <scope id="8958107656746962881" at="73,108,74,194" />
+    </file>
+  </root>
+  <root nodeRef="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656746772173">
+    <file name="QueriesGenerated.java">
+      <node id="8958107656746963973" at="90,120,91,195" concept="1" />
+      <scope id="8958107656746963967" at="90,120,91,195" />
+    </file>
+  </root>
+  <root nodeRef="r:0b5badcf-fbec-4a0e-acf1-48fe92c67add(main@generator)/8958107656746959120">
+    <file name="QueriesGenerated.java">
+      <node id="8958107656747024229" at="64,112,65,332" concept="1" />
+      <node id="8958107656747031716" at="67,112,68,184" concept="1" />
+      <scope id="8958107656747023365" at="64,112,65,332" />
+      <scope id="8958107656747030591" at="67,112,68,184" />
     </file>
   </root>
 </debug-info>

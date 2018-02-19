@@ -216,53 +216,23 @@ public class map_App {
     System.out.println("  public static void main(String[] args){");
     System.out.println("         createDataBase(\"my_database\",8086);");
 
-    System.out.println("         Thread " + "csvLot" + " = new Thread(\"" + "csvLot" + "\") { ");
+    System.out.println("         Thread " + "mark" + " = new Thread(\"" + "mark" + "\") { ");
     System.out.println("         public void run(){");
     System.out.println("            System.out.println(\"run by: \" + getName());");
     System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 10 + ");");
     System.out.println("            for(int t =0; t < " + 10 + ";t++){");
     System.out.println("            List<Measurement> measurements = new ArrayList<>(); ");
     System.out.println("            Map<String,String> listPoly =  new HashMap<>();");
-    System.out.println("            Map<String,String> listProb =  new HashMap<>();");
-    System.out.println("              for(int i = 0; i < " + 1 + ";i++){");
-    System.out.println("              String sensName;");
+    System.out.println("            List<Pair<String, String>> listMarkov = new ArrayList<Pair<String, String>>();");
+    System.out.println("            for(int i = 0; i < " + 1 + ";i++){");
+    System.out.println("            String sensName;");
 
-    System.out.println("              sensName =\"" + " csvLot" + "\"+Integer.toString(i);");
-    System.out.println("              Measurement measurement = createfilelow(\"" + "/home/user/Bureau/dataDemo/dataCsv.csv" + "\",\"" + "1" + "\",\"" + "8" + "\",\"" + "0" + "\",\"" + "csv" + "\"," + 0 + ",t);");
-
-
-    System.out.println("                 if (measurement == null) {");
-    System.out.println("                   continue;");
-    System.out.println("                  }");
-    System.out.println("                 measurements.add(measurement);");
-    System.out.println("                 try {");
-    System.out.println("                    Thread.sleep(5000);");
-    System.out.println("                 } catch (InterruptedException e) {");
-    System.out.println("                    e.printStackTrace();");
-    System.out.println("                }");
-    System.out.println("               }");
-    System.out.println("               System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
-    System.out.println("             sendToInfluxDB(measurements);");
-    System.out.println("             }");
-    System.out.println("         }");
-    System.out.println("     };");
-    System.out.println("    " + "csvLot" + ".start();");
-    System.out.println(" ");
-
-
-    System.out.println("         Thread " + "randomLot" + " = new Thread(\"" + "randomLot" + "\") { ");
-    System.out.println("         public void run(){");
-    System.out.println("            System.out.println(\"run by: \" + getName());");
-    System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 8 + ");");
-    System.out.println("            for(int t =0; t < " + 8 + ";t++){");
-    System.out.println("            List<Measurement> measurements = new ArrayList<>(); ");
-    System.out.println("            Map<String,String> listPoly =  new HashMap<>();");
-    System.out.println("            Map<String,String> listProb =  new HashMap<>();");
-    System.out.println("              for(int i = 0; i < " + 2 + ";i++){");
-    System.out.println("              String sensName;");
-
-    System.out.println("              sensName =\"" + " randomLot" + "\"+Integer.toString(i);");
-    System.out.println("              Measurement measurement = createrandomLow(sensName);");
+    System.out.println("              sensName =\"" + " mark" + "\"+Integer.toString(i);");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.9" + "\");");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.1" + "\");");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.5" + "\");");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.4" + "\");");
+    System.out.println("              Measurement measurement = createMarkovLow(sensName,listMarkov,i);");
 
 
     System.out.println("                 if (measurement == null) {");
@@ -280,44 +250,7 @@ public class map_App {
     System.out.println("             }");
     System.out.println("         }");
     System.out.println("     };");
-    System.out.println("    " + "randomLot" + ".start();");
-    System.out.println(" ");
-
-
-    System.out.println("         Thread " + "functionLot" + " = new Thread(\"" + "functionLot" + "\") { ");
-    System.out.println("         public void run(){");
-    System.out.println("            System.out.println(\"run by: \" + getName());");
-    System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 11 + ");");
-    System.out.println("            for(int t =0; t < " + 11 + ";t++){");
-    System.out.println("            List<Measurement> measurements = new ArrayList<>(); ");
-    System.out.println("            Map<String,String> listPoly =  new HashMap<>();");
-    System.out.println("            Map<String,String> listProb =  new HashMap<>();");
-    System.out.println("              for(int i = 0; i < " + 1 + ";i++){");
-    System.out.println("              String sensName;");
-
-    System.out.println("              sensName =\"" + " functionLot" + "\"+Integer.toString(i);");
-    System.out.println("              listPoly.put(\"" + "x<1" + "\",\"" + "2" + "\");");
-    System.out.println("              listPoly.put(\"" + "x>= 1 && x<=3" + "\",\"" + "x^2-3" + "\");");
-    System.out.println("              listPoly.put(\"" + "x>3" + "\",\"" + "abs(-2*x)" + "\");");
-    System.out.println("              Measurement measurement= createLawFunction(sensName,listPoly,t); ");
-
-
-    System.out.println("                 if (measurement == null) {");
-    System.out.println("                   continue;");
-    System.out.println("                  }");
-    System.out.println("                 measurements.add(measurement);");
-    System.out.println("                 try {");
-    System.out.println("                    Thread.sleep(5000);");
-    System.out.println("                 } catch (InterruptedException e) {");
-    System.out.println("                    e.printStackTrace();");
-    System.out.println("                }");
-    System.out.println("               }");
-    System.out.println("               System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
-    System.out.println("             sendToInfluxDB(measurements);");
-    System.out.println("             }");
-    System.out.println("         }");
-    System.out.println("     };");
-    System.out.println("    " + "functionLot" + ".start();");
+    System.out.println("    " + "mark" + ".start();");
     System.out.println(" ");
 
 

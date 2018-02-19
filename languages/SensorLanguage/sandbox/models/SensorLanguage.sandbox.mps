@@ -94,7 +94,7 @@
         <node concept="1xhTZr" id="55_GFJZU8lo" role="1xhTAv">
           <node concept="1xhTUY" id="55_GFJZU8lO" role="1xhTAp">
             <property role="1xhTAh" value="0.9" />
-            <ref role="1xhTAj" node="55_GFJZU8lB" resolve="soelil" />
+            <ref role="1xhTAj" node="55_GFJZU8lm" resolve="pluie" />
           </node>
           <node concept="1xhTUY" id="55_GFJZU8lK" role="1xhTAp">
             <property role="1xhTAh" value="0.1" />
@@ -116,31 +116,15 @@
         </node>
       </node>
     </node>
-    <node concept="1BZj1s" id="55_GFJZUZcP" role="1BZjIn">
-      <property role="TrG5h" value="csvLot" />
+    <node concept="3DLZZm" id="DkRuJz_1q$" role="3DLZSC" />
+    <node concept="1BZj1s" id="7Lh_Re$5YyU" role="1BZjIn">
+      <property role="TrG5h" value="mark" />
       <property role="1BZj0D" value="1" />
       <property role="1BZj0F" value="10" />
-      <node concept="1BZj0M" id="55_GFJZUZcV" role="1BZjSZ">
-        <ref role="1_w7El" node="55_GFJZU8kD" resolve="csvLaw" />
+      <node concept="1BZj0M" id="7Lh_Re$5YyY" role="1BZjSZ">
+        <ref role="1_w7El" node="55_GFJZU8lk" resolve="markovLaw" />
       </node>
     </node>
-    <node concept="1BZj1s" id="55_GFJZUZcY" role="1BZjIn">
-      <property role="TrG5h" value="randomLot" />
-      <property role="1BZj0D" value="2" />
-      <property role="1BZj0F" value="8" />
-      <node concept="1BZj0M" id="55_GFJZUZd6" role="1BZjSZ">
-        <ref role="1_w7El" node="55_GFJZU8k$" resolve="randomlaw" />
-      </node>
-    </node>
-    <node concept="1BZj1s" id="55_GFJZUZd9" role="1BZjIn">
-      <property role="TrG5h" value="functionLot" />
-      <property role="1BZj0D" value="1" />
-      <property role="1BZj0F" value="11" />
-      <node concept="1BZj0M" id="55_GFJZUZdm" role="1BZjSZ">
-        <ref role="1_w7El" node="55_GFJZU8kV" resolve="functionLaw" />
-      </node>
-    </node>
-    <node concept="3DLZZm" id="DkRuJz_1q$" role="3DLZSC" />
   </node>
 </model>
 
