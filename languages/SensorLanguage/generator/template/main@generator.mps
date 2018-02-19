@@ -1032,6 +1032,217 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="7Lh_Re$7P5p" role="3cqZAp" />
+        <node concept="3clFbF" id="7Lh_Re$7Rot" role="3cqZAp">
+          <node concept="2OqwBi" id="7Lh_Re$7UGe" role="3clFbG">
+            <node concept="10M0yZ" id="7Lh_Re$7T5M" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7Lh_Re$7W9v" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7Lh_Re$7Wgx" role="37wK5m">
+                <property role="Xl_RC" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Lh_Re$7Yc7" role="3cqZAp">
+          <node concept="2OqwBi" id="7Lh_Re$81nD" role="3clFbG">
+            <node concept="10M0yZ" id="7Lh_Re$7ZTI" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7Lh_Re$82P5" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7Lh_Re$82YJ" role="37wK5m">
+                <property role="Xl_RC" value="    public static class Pair&lt;K, T&gt; {" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Lh_Re$8596" role="3cqZAp">
+          <node concept="2OqwBi" id="7Lh_Re$88ln" role="3clFbG">
+            <node concept="10M0yZ" id="7Lh_Re$86Ij" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7Lh_Re$89Na" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7Lh_Re$89WN" role="37wK5m">
+                <property role="Xl_RC" value="       private K key;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Lh_Re$8bKU" role="3cqZAp">
+          <node concept="2OqwBi" id="7Lh_Re$8eXV" role="3clFbG">
+            <node concept="10M0yZ" id="7Lh_Re$8dvl" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7Lh_Re$8gs1" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7Lh_Re$8g_F" role="37wK5m">
+                <property role="Xl_RC" value="       private T value;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Lh_Re$8ipK" role="3cqZAp">
+          <node concept="2OqwBi" id="7Lh_Re$8lBB" role="3clFbG">
+            <node concept="10M0yZ" id="7Lh_Re$8k8H" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7Lh_Re$8n62" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7Lh_Re$8nfG" role="37wK5m">
+                <property role="Xl_RC" value="       public Pair(K key, T value){" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Lh_Re$8pdV" role="3cqZAp">
+          <node concept="2OqwBi" id="7Lh_Re$8ssr" role="3clFbG">
+            <node concept="10M0yZ" id="7Lh_Re$8qXa" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7Lh_Re$8tVb" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7Lh_Re$8u4P" role="37wK5m">
+                <property role="Xl_RC" value="         this.key = key;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Lh_Re$8w2q" role="3cqZAp">
+          <node concept="2OqwBi" id="7Lh_Re$8zkc" role="3clFbG">
+            <node concept="10M0yZ" id="7Lh_Re$8xDf" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7Lh_Re$8$Nh" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7Lh_Re$8$Uw" role="37wK5m">
+                <property role="Xl_RC" value="         this.value = value;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Lh_Re$8AMs" role="3cqZAp">
+          <node concept="2OqwBi" id="7Lh_Re$8E2o" role="3clFbG">
+            <node concept="10M0yZ" id="7Lh_Re$8CpF" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7Lh_Re$8FxM" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7Lh_Re$8FFs" role="37wK5m">
+                <property role="Xl_RC" value="       }" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Lh_Re$8HFH" role="3cqZAp">
+          <node concept="2OqwBi" id="7Lh_Re$8KWp" role="3clFbG">
+            <node concept="10M0yZ" id="7Lh_Re$8Jjm" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7Lh_Re$8Msi" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7Lh_Re$8M_N" role="37wK5m">
+                <property role="Xl_RC" value="       public K getKey() {" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Lh_Re$8O_e" role="3cqZAp">
+          <node concept="2OqwBi" id="7Lh_Re$8RQC" role="3clFbG">
+            <node concept="10M0yZ" id="7Lh_Re$8Qdh" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7Lh_Re$8TmQ" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7Lh_Re$8Twn" role="37wK5m">
+                <property role="Xl_RC" value="         return key;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Lh_Re$8VmK" role="3cqZAp">
+          <node concept="2OqwBi" id="7Lh_Re$8YD1" role="3clFbG">
+            <node concept="10M0yZ" id="7Lh_Re$8X89" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7Lh_Re$90uK" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7Lh_Re$90Ch" role="37wK5m">
+                <property role="Xl_RC" value="       }" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Lh_Re$9bpN" role="3cqZAp">
+          <node concept="2OqwBi" id="7Lh_Re$9eGF" role="3clFbG">
+            <node concept="10M0yZ" id="7Lh_Re$9dbu" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7Lh_Re$9gdr" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7Lh_Re$9gmW" role="37wK5m">
+                <property role="Xl_RC" value="       public T getValue() {" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Lh_Re$9ih8" role="3cqZAp">
+          <node concept="2OqwBi" id="7Lh_Re$9l$S" role="3clFbG">
+            <node concept="10M0yZ" id="7Lh_Re$9jUy" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7Lh_Re$9n5V" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7Lh_Re$9nf_" role="37wK5m">
+                <property role="Xl_RC" value="         return value;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Lh_Re$9p7p" role="3cqZAp">
+          <node concept="2OqwBi" id="7Lh_Re$9tR0" role="3clFbG">
+            <node concept="10M0yZ" id="7Lh_Re$9seM" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7Lh_Re$9voo" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7Lh_Re$9vvz" role="37wK5m">
+                <property role="Xl_RC" value="       }" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Lh_Re$9xn4" role="3cqZAp">
+          <node concept="2OqwBi" id="7Lh_Re$9$G9" role="3clFbG">
+            <node concept="10M0yZ" id="7Lh_Re$9z9X" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7Lh_Re$9AdQ" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7Lh_Re$9Anw" role="37wK5m">
+                <property role="Xl_RC" value="    }" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="7TAWFFURAlC" role="3cqZAp" />
         <node concept="3clFbH" id="7TAWFFURAC2" role="3cqZAp" />
         <node concept="3clFbH" id="7TAWFFURAYR" role="3cqZAp" />

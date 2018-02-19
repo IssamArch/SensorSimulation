@@ -64,6 +64,22 @@ public class map_App {
     System.out.println("    }");
     System.out.println("   }");
 
+    System.out.println("");
+    System.out.println("    public static class Pair<K, T> {");
+    System.out.println("       private K key;");
+    System.out.println("       private T value;");
+    System.out.println("       public Pair(K key, T value){");
+    System.out.println("         this.key = key;");
+    System.out.println("         this.value = value;");
+    System.out.println("       }");
+    System.out.println("       public K getKey() {");
+    System.out.println("         return key;");
+    System.out.println("       }");
+    System.out.println("       public T getValue() {");
+    System.out.println("         return value;");
+    System.out.println("       }");
+    System.out.println("    }");
+
 
 
     System.out.println("    public static InfluxDB influxDB;");
