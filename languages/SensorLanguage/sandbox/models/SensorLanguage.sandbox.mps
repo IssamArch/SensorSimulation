@@ -163,6 +163,26 @@
         <ref role="1_w7El" node="55_GFJZU8kD" resolve="csvLaw" />
       </node>
     </node>
+    <node concept="1BZj1s" id="50bKtf1JCk8" role="1BZjIn">
+      <property role="TrG5h" value="markov" />
+      <property role="1BZj0D" value="5" />
+      <property role="1BZj0F" value="2" />
+      <property role="3ordpD" value="16/02/2018" />
+      <property role="3ordpH" value="16/02/2018" />
+      <node concept="1BZj0M" id="50bKtf1JCke" role="1BZjSZ">
+        <ref role="1_w7El" node="55_GFJZU8k$" resolve="randomlaw" />
+      </node>
+    </node>
+    <node concept="1BZj1s" id="50bKtf1JCkh" role="1BZjIn">
+      <property role="TrG5h" value="ma" />
+      <property role="1BZj0D" value="6" />
+      <property role="1BZj0F" value="2" />
+      <property role="3ordpD" value="45" />
+      <property role="3ordpH" value="16/02/2018" />
+      <node concept="1BZj0M" id="50bKtf1JCkp" role="1BZjSZ">
+        <ref role="1_w7El" node="55_GFJZU8kV" resolve="functionLaw" />
+      </node>
+    </node>
   </node>
 </model>
 

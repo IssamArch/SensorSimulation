@@ -5438,20 +5438,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3hswruZy_4J" role="3cqZAp">
-          <node concept="2OqwBi" id="3hswruZy_qO" role="3clFbG">
-            <node concept="10M0yZ" id="3hswruZy_4U" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="3hswruZy_K4" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="3hswruZy_KA" role="37wK5m">
-                <property role="Xl_RC" value="              Measurement measurement= createLawFunction(sensName,listPoly,t); " />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </node>
