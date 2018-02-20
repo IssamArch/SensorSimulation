@@ -57,6 +57,8 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     editorCell.addEditorCell(createProperty_eqri6y_h0());
     editorCell.addEditorCell(createConstant_eqri6y_i0());
     editorCell.addEditorCell(createProperty_eqri6y_j0());
+    editorCell.addEditorCell(createConstant_eqri6y_k0());
+    editorCell.addEditorCell(createProperty_eqri6y_l0());
     return editorCell;
   }
   private EditorCell createConstant_eqri6y_a0() {
@@ -185,18 +187,39 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private EditorCell createConstant_eqri6y_i0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "chaos");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "from");
     editorCell.setCellId("Constant_eqri6y_i0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createProperty_eqri6y_j0() {
     CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
-    provider.setRole("chaos");
-    provider.setNoTargetText("<no chaos>");
+    provider.setRole("dateBegin");
+    provider.setNoTargetText("<no dateBegin>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
-    editorCell.setCellId("property_chaos");
+    editorCell.setCellId("property_dateBegin");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
+    return editorCell;
+  }
+  private EditorCell createConstant_eqri6y_k0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "to");
+    editorCell.setCellId("Constant_eqri6y_k0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_eqri6y_l0() {
+    CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
+    provider.setRole("dateEnd");
+    provider.setNoTargetText("<no dateEnd>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(getEditorContext());
+    editorCell.setCellId("property_dateEnd");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {

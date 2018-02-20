@@ -32,15 +32,18 @@
         <reference id="219761989219302088" name="low" index="1_w7El" />
       </concept>
       <concept id="887164873055856540" name="SensorLanguage.structure.SensorLot" flags="ng" index="1BZj1s">
+        <property id="8958107656749138202" name="dateBegin" index="3ordpD" />
+        <property id="8958107656749138206" name="dateEnd" index="3ordpH" />
         <property id="887164873055856617" name="sensorNumber" index="1BZj0D" />
         <property id="887164873055856619" name="simulationDuration" index="1BZj0F" />
-        <property id="744463843629826585" name="chaos" index="3DYlZM" />
         <child id="887164873055857151" name="sensors" index="1BZjSZ" />
       </concept>
       <concept id="887164873055857753" name="SensorLanguage.structure.RandomLow" flags="ng" index="1BZjIp" />
+      <concept id="744463843628098109" name="SensorLanguage.structure.Chaos" flags="ng" index="3DLZZm" />
       <concept id="8302915319737339312" name="SensorLanguage.structure.App" flags="ng" index="1EbyNe">
         <child id="887164873055896023" name="lows" index="1BZ5on" />
         <child id="887164873055857751" name="sensorLots" index="1BZjIn" />
+        <child id="744463843628098499" name="chaos" index="3DLZSC" />
       </concept>
       <concept id="551985253729880763" name="SensorLanguage.structure.FileLaw" flags="ng" index="3IuW4i">
         <property id="468206683793351311" name="offset" index="2ay0nK" />
@@ -88,58 +91,67 @@
     </node>
     <node concept="3nfSkm" id="55_GFJZU8lk" role="1BZ5on">
       <property role="TrG5h" value="markovLaw" />
-      <node concept="1xhTNA" id="55_GFJZU8lm" role="3nfZD2">
-        <property role="TrG5h" value="pluie" />
-        <node concept="1xhTZr" id="55_GFJZU8lo" role="1xhTAv">
-          <node concept="1xhTUY" id="55_GFJZU8lO" role="1xhTAp">
-            <property role="1xhTAh" value="0.9" />
-            <ref role="1xhTAj" node="55_GFJZU8lB" resolve="soelil" />
-          </node>
-          <node concept="1xhTUY" id="55_GFJZU8lK" role="1xhTAp">
-            <property role="1xhTAh" value="0.1" />
-            <ref role="1xhTAj" node="55_GFJZU8lm" resolve="pluie" />
-          </node>
-        </node>
-      </node>
       <node concept="1xhTNA" id="55_GFJZU8lB" role="3nfZD2">
         <property role="TrG5h" value="soelil" />
         <node concept="1xhTZr" id="55_GFJZU8lC" role="1xhTAv">
           <node concept="1xhTUY" id="55_GFJZU8lD" role="1xhTAp">
-            <property role="1xhTAh" value="0.5" />
+            <property role="1xhTAh" value="0.9" />
+            <ref role="1xhTAj" node="55_GFJZU8lB" resolve="soelil" />
+          </node>
+          <node concept="1xhTUY" id="7Lh_Re$7J51" role="1xhTAp">
+            <property role="1xhTAh" value="0.05" />
             <ref role="1xhTAj" node="55_GFJZU8lB" resolve="soelil" />
           </node>
           <node concept="1xhTUY" id="55_GFJZU8lR" role="1xhTAp">
-            <property role="1xhTAh" value="0.4" />
+            <property role="1xhTAh" value="0.05" />
             <ref role="1xhTAj" node="55_GFJZU8lB" resolve="soelil" />
           </node>
         </node>
       </node>
-    </node>
-    <node concept="1BZj1s" id="DkRuJzGBoG" role="1BZjIn">
-      <property role="TrG5h" value="csvLot" />
-      <property role="1BZj0D" value="1" />
-      <property role="1BZj0F" value="10" />
-      <property role="3DYlZM" value="1" />
-      <node concept="1BZj0M" id="DkRuJzGBoS" role="1BZjSZ">
-        <ref role="1_w7El" node="55_GFJZU8kD" resolve="csvLaw" />
+      <node concept="1xhTNA" id="7Lh_Re$7J4R" role="3nfZD2">
+        <property role="TrG5h" value="pluie" />
+        <node concept="1xhTZr" id="7Lh_Re$7J4S" role="1xhTAv">
+          <node concept="1xhTUY" id="7Lh_Re$7J4T" role="1xhTAp">
+            <property role="1xhTAh" value="0.4" />
+            <ref role="1xhTAj" node="7Lh_Re$7J4R" resolve="pluie" />
+          </node>
+          <node concept="1xhTUY" id="7Lh_Re$7J55" role="1xhTAp">
+            <property role="1xhTAh" value="0.4" />
+            <ref role="1xhTAj" node="7Lh_Re$7J4R" resolve="pluie" />
+          </node>
+          <node concept="1xhTUY" id="7Lh_Re$7J58" role="1xhTAp">
+            <property role="1xhTAh" value="0.2" />
+            <ref role="1xhTAj" node="7Lh_Re$7J4R" resolve="pluie" />
+          </node>
+        </node>
+      </node>
+      <node concept="1xhTNA" id="7Lh_Re$7J5c" role="3nfZD2">
+        <property role="TrG5h" value="nuage" />
+        <node concept="1xhTZr" id="7Lh_Re$7J5d" role="1xhTAv">
+          <node concept="1xhTUY" id="7Lh_Re$7J5e" role="1xhTAp">
+            <property role="1xhTAh" value="0.4" />
+            <ref role="1xhTAj" node="7Lh_Re$7J5c" resolve="nuage" />
+          </node>
+          <node concept="1xhTUY" id="7Lh_Re$7J5s" role="1xhTAp">
+            <property role="1xhTAh" value="0.5" />
+            <ref role="1xhTAj" node="7Lh_Re$7J5c" resolve="nuage" />
+          </node>
+          <node concept="1xhTUY" id="7Lh_Re$7J5v" role="1xhTAp">
+            <property role="1xhTAh" value="0.1" />
+            <ref role="1xhTAj" node="7Lh_Re$7J5c" resolve="nuage" />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="1BZj1s" id="DkRuJzGBoV" role="1BZjIn">
-      <property role="TrG5h" value="randomLot" />
-      <property role="1BZj0D" value="2" />
-      <property role="1BZj0F" value="8" />
-      <property role="3DYlZM" value="1" />
-      <node concept="1BZj0M" id="DkRuJzGBp9" role="1BZjSZ">
-        <ref role="1_w7El" node="55_GFJZU8k$" resolve="randomlaw" />
-      </node>
-    </node>
-    <node concept="1BZj1s" id="DkRuJzGBpc" role="1BZjIn">
-      <property role="TrG5h" value="functionLot" />
+    <node concept="3DLZZm" id="DkRuJz_1q$" role="3DLZSC" />
+    <node concept="1BZj1s" id="7Lh_Re$5YyU" role="1BZjIn">
+      <property role="TrG5h" value="mark" />
       <property role="1BZj0D" value="1" />
-      <property role="1BZj0F" value="11" />
-      <property role="3DYlZM" value="1" />
-      <node concept="1BZj0M" id="DkRuJzGBps" role="1BZjSZ">
-        <ref role="1_w7El" node="55_GFJZU8kV" resolve="functionLaw" />
+      <property role="1BZj0F" value="50" />
+      <property role="3ordpD" value="16/02/2018 00:00:00" />
+      <property role="3ordpH" value="19/02/2018 22:00:00" />
+      <node concept="1BZj0M" id="7Lh_Re$5YyY" role="1BZjSZ">
+        <ref role="1_w7El" node="55_GFJZU8lk" resolve="markovLaw" />
       </node>
     </node>
   </node>

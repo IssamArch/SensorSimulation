@@ -92,11 +92,17 @@
       <node concept="3F0A7n" id="LfPW1FH95E" role="3EZMnx">
         <ref role="1NtTu8" to="uxew:LfPW1FGIvF" resolve="simulationDuration" />
       </node>
-      <node concept="3F0ifn" id="DkRuJzFogR" role="3EZMnx">
-        <property role="3F0ifm" value="chaos" />
+      <node concept="3F0ifn" id="7Lh_Re$fk9k" role="3EZMnx">
+        <property role="3F0ifm" value="from" />
       </node>
-      <node concept="3F0A7n" id="DkRuJzFohf" role="3EZMnx">
-        <ref role="1NtTu8" to="uxew:DkRuJzFo8p" resolve="chaos" />
+      <node concept="3F0A7n" id="7Lh_Re$fk9G" role="3EZMnx">
+        <ref role="1NtTu8" to="uxew:7Lh_Re$fk4q" resolve="dateBegin" />
+      </node>
+      <node concept="3F0ifn" id="7Lh_Re$fkak" role="3EZMnx">
+        <property role="3F0ifm" value="to" />
+      </node>
+      <node concept="3F0A7n" id="7Lh_Re$fkaK" role="3EZMnx">
+        <ref role="1NtTu8" to="uxew:7Lh_Re$fk4u" resolve="dateEnd" />
       </node>
       <node concept="2iRfu4" id="LfPW1FH3QN" role="2iSdaV" />
     </node>
@@ -304,6 +310,15 @@
         <node concept="l2Vlx" id="3wkzhNJaV9u" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="3wkzhNJaNWU" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="DkRuJz$MhH">
+    <ref role="1XX52x" to="uxew:DkRuJz$M8X" resolve="Chaos" />
+    <node concept="3EZMnI" id="DkRuJz$MiW" role="2wV5jI">
+      <node concept="2iRfu4" id="DkRuJz$MiX" role="2iSdaV" />
+      <node concept="3F0A7n" id="DkRuJz$Mj2" role="3EZMnx">
+        <ref role="1NtTu8" to="uxew:DkRuJz$Mbm" resolve="chaos" />
+      </node>
     </node>
   </node>
 </model>

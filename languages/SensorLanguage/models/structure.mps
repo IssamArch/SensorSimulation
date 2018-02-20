@@ -77,6 +77,12 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="LfPW1FGIC1" resolve="Law" />
     </node>
+    <node concept="1TJgyj" id="DkRuJz$Mf3" role="1TKVEi">
+      <property role="IQ2ns" value="744463843628098499" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="chaos" />
+      <ref role="20lvS9" node="DkRuJz$M8X" resolve="Chaos" />
+    </node>
   </node>
   <node concept="1TIwiD" id="LfPW1FGIus">
     <property role="EcuMT" value="887164873055856540" />
@@ -95,10 +101,15 @@
       <property role="TrG5h" value="simulationDuration" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyi" id="DkRuJzFo8p" role="1TKVEl">
-      <property role="IQ2nx" value="744463843629826585" />
-      <property role="TrG5h" value="chaos" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="1TJgyi" id="7Lh_Re$fk4q" role="1TKVEl">
+      <property role="IQ2nx" value="8958107656749138202" />
+      <property role="TrG5h" value="dateBegin" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7Lh_Re$fk4u" role="1TKVEl">
+      <property role="IQ2nx" value="8958107656749138206" />
+      <property role="TrG5h" value="dateEnd" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="LfPW1FGIBZ" role="1TKVEi">
       <property role="IQ2ns" value="887164873055857151" />
@@ -300,6 +311,19 @@
       <property role="20kJfa" value="states" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="78I5vgjqo$i" resolve="State" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="DkRuJz$M8X">
+    <property role="EcuMT" value="744463843628098109" />
+    <property role="TrG5h" value="Chaos" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="DkRuJz$Mbm" role="1TKVEl">
+      <property role="IQ2nx" value="744463843628098262" />
+      <property role="TrG5h" value="chaos" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="DkRuJz$Mbk" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

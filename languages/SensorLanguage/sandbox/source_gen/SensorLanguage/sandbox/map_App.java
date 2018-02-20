@@ -32,6 +32,8 @@ public class map_App {
     System.out.println("import org.json.simple.JSONObject;");
     System.out.println("import org.json.simple.parser.JSONParser;");
     System.out.println("import org.json.simple.parser.ParseException;");
+    System.out.println("import net.andreinc.mockneat.MockNeat;");
+    System.out.println("import net.andreinc.mockneat.unit.objects.Probabilities;");
 
 
     System.out.println("public class " + "App" + " { ");
@@ -63,6 +65,22 @@ public class map_App {
     System.out.println("             '}';");
     System.out.println("    }");
     System.out.println("   }");
+
+    System.out.println("");
+    System.out.println("    public static class Pair<K, T> {");
+    System.out.println("       private K key;");
+    System.out.println("       private T value;");
+    System.out.println("       public Pair(K key, T value){");
+    System.out.println("         this.key = key;");
+    System.out.println("         this.value = value;");
+    System.out.println("       }");
+    System.out.println("       public K getKey() {");
+    System.out.println("         return key;");
+    System.out.println("       }");
+    System.out.println("       public T getValue() {");
+    System.out.println("         return value;");
+    System.out.println("       }");
+    System.out.println("    }");
 
 
 
@@ -178,7 +196,7 @@ public class map_App {
 
     System.out.println("     public static ArrayList<Integer> remplirRandom(int nbr){");
     System.out.println("        ArrayList<Integer> listeRandom = new ArrayList<>();");
-    System.out.println("        for(int i = 0;i < 30;i++){");
+    System.out.println("        for(int i = 0;i < 50;i++){");
     System.out.println("          Random random = new Random();");
     System.out.println("          int randomNumber = random.nextInt(100000000 + 1 - 50000000) + 50000000;");
     System.out.println("          listeRandom.add(randomNumber);");
@@ -213,23 +231,65 @@ public class map_App {
     System.out.println("  }");
     System.out.println(" ");
 
+    System.out.println("   public static Measurement createMarkovLow(String sensor, List<Pair<String, String>> input, int t) {");
+    System.out.println("      List<List<Double>> matrice = new ArrayList<List<Double>>();");
+    System.out.println("      HashMap<String, List<Double>> myInput = new HashMap<String, List<Double>>();");
+    System.out.println("      int currState = 0;");
+    System.out.println("      for(Pair<String, String> p : input){");
+    System.out.println("        if(myInput.containsKey(p.getKey())){");
+    System.out.println("          myInput.get(p.getKey()).add(Double.parseDouble(p.getValue()));");
+    System.out.println("        }else{");
+    System.out.println("          List<Double> liste = new ArrayList<Double>();");
+    System.out.println("          liste.add(Double.parseDouble(p.getValue()));");
+    System.out.println("          myInput.put(p.getKey(), liste);");
+    System.out.println("        }");
+    System.out.println("      }");
+    System.out.println("     for(String key : myInput.keySet()){");
+    System.out.println("       List<Double> ligne = new ArrayList<Double>();");
+    System.out.println("       for(Double f : myInput.get(key)) {");
+    System.out.println("         ligne.add(f);");
+    System.out.println("       }");
+    System.out.println("       matrice.add(ligne);");
+    System.out.println("     }");
+    System.out.println("      MockNeat mockNeat = MockNeat.threadLocal();");
+    System.out.println("      Probabilities<Integer> p = mockNeat.probabilites(Integer.class);");
+    System.out.println("      for(int i = 0 ; i <matrice.size(); i++){");
+    System.out.println("         p.add(matrice.get(currState).get(i), i);");
+    System.out.println("      }");
+    System.out.println("     currState = p.val();");
+    System.out.println("     long timestamp = System.currentTimeMillis();");
+    System.out.println("     Long tt ;");
+    System.out.println("     tt = timestamp + listeRandom.get(t);");
+    System.out.println("     Measurement measurement = new Measurement(sensor,tt,currState);");
+    System.out.println("     return measurement;");
+    System.out.println("   }");
+
+
     System.out.println("  public static void main(String[] args){");
     System.out.println("         createDataBase(\"my_database\",8086);");
 
-    System.out.println("         Thread " + "csvLot" + " = new Thread(\"" + "csvLot" + "\") { ");
+    System.out.println("         Thread " + "mark" + " = new Thread(\"" + "mark" + "\") { ");
     System.out.println("         public void run(){");
-    System.out.println("            long startTime = System.nanoTime();");
     System.out.println("            System.out.println(\"run by: \" + getName());");
-    System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 10 + ");");
-    System.out.println("            for(int t =0; t < " + 10 + ";t++){");
+    System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 50 + ");");
+    System.out.println("            for(int t =0; t < " + 50 + ";t++){");
     System.out.println("            List<Measurement> measurements = new ArrayList<>(); ");
     System.out.println("            Map<String,String> listPoly =  new HashMap<>();");
-    System.out.println("            Map<String,String> listProb =  new HashMap<>();");
-    System.out.println("              for(int i = 0; i < " + 1 + ";i++){");
-    System.out.println("              String sensName;");
+    System.out.println("            List<Pair<String, String>> listMarkov = new ArrayList<Pair<String, String>>();");
+    System.out.println("            for(int i = 0; i < " + 1 + ";i++){");
+    System.out.println("            String sensName;");
 
-    System.out.println("              sensName =\"" + " csvLot" + "\"+Integer.toString(i);");
-    System.out.println("              Measurement measurement = createfilelow(\"" + "/home/user/Bureau/dataDemo/dataCsv.csv" + "\",\"" + "1" + "\",\"" + "8" + "\",\"" + "0" + "\",\"" + "csv" + "\"," + 0 + ",t);");
+    System.out.println("              sensName =\"" + " mark" + "\"+Integer.toString(i);");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.9" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.05" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.05" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.4" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.4" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.2" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.4" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.5" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.1" + "\"));");
+    System.out.println("              Measurement measurement = createMarkovLow(sensName,listMarkov,t);");
 
 
     System.out.println("                 if (measurement == null) {");
@@ -243,127 +303,13 @@ public class map_App {
     System.out.println("                }");
     System.out.println("               }");
     System.out.println("               System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
-    System.out.println("                long endTime   = System.nanoTime();");
-    System.out.println("                long totalTime = (endTime - startTime)/1000000000;");
-    System.out.println("                System.out.println(\"Total Time : \" + totalTime);");
-    System.out.println("                Random rand = new Random();");
-    System.out.println("                long total = rand.nextInt(100);");
-
-    System.out.println("                if(" + 1 + "== 1){");
-    System.out.println("                System.out.println(\"On arrete ce SensorLot lorsque la valeur aléatoire \" + total + \" est <= \" + totalTime);");
-
-    System.out.println("                         if(totalTime >= total) {");
-    System.out.println("                               System.out.println(\"j'arrette ce Thread de num :\" + Thread.currentThread().getId()%Thread.activeCount());");
-    System.out.println("                Thread.currentThread().suspend();\n\t\t\t\t\t\tThread.currentThread().stop();");
-    System.out.println("                          }");
-    System.out.println("                }");
     System.out.println("             sendToInfluxDB(measurements);");
     System.out.println("             }");
     System.out.println("         }");
     System.out.println("     };");
-    System.out.println("    " + "csvLot" + ".start();");
+    System.out.println("    " + "mark" + ".start();");
     System.out.println(" ");
 
-
-    System.out.println("         Thread " + "randomLot" + " = new Thread(\"" + "randomLot" + "\") { ");
-    System.out.println("         public void run(){");
-    System.out.println("            long startTime = System.nanoTime();");
-    System.out.println("            System.out.println(\"run by: \" + getName());");
-    System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 8 + ");");
-    System.out.println("            for(int t =0; t < " + 8 + ";t++){");
-    System.out.println("            List<Measurement> measurements = new ArrayList<>(); ");
-    System.out.println("            Map<String,String> listPoly =  new HashMap<>();");
-    System.out.println("            Map<String,String> listProb =  new HashMap<>();");
-    System.out.println("              for(int i = 0; i < " + 2 + ";i++){");
-    System.out.println("              String sensName;");
-
-    System.out.println("              sensName =\"" + " randomLot" + "\"+Integer.toString(i);");
-    System.out.println("              Measurement measurement = createrandomLow(sensName);");
-
-
-    System.out.println("                 if (measurement == null) {");
-    System.out.println("                   continue;");
-    System.out.println("                  }");
-    System.out.println("                 measurements.add(measurement);");
-    System.out.println("                 try {");
-    System.out.println("                    Thread.sleep(5000);");
-    System.out.println("                 } catch (InterruptedException e) {");
-    System.out.println("                    e.printStackTrace();");
-    System.out.println("                }");
-    System.out.println("               }");
-    System.out.println("               System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
-    System.out.println("                long endTime   = System.nanoTime();");
-    System.out.println("                long totalTime = (endTime - startTime)/1000000000;");
-    System.out.println("                System.out.println(\"Total Time : \" + totalTime);");
-    System.out.println("                Random rand = new Random();");
-    System.out.println("                long total = rand.nextInt(100);");
-
-    System.out.println("                if(" + 1 + "== 1){");
-    System.out.println("                System.out.println(\"On arrete ce SensorLot lorsque la valeur aléatoire \" + total + \" est <= \" + totalTime);");
-
-    System.out.println("                         if(totalTime >= total) {");
-    System.out.println("                               System.out.println(\"j'arrette ce Thread de num :\" + Thread.currentThread().getId()%Thread.activeCount());");
-    System.out.println("                Thread.currentThread().suspend();\n\t\t\t\t\t\tThread.currentThread().stop();");
-    System.out.println("                          }");
-    System.out.println("                }");
-    System.out.println("             sendToInfluxDB(measurements);");
-    System.out.println("             }");
-    System.out.println("         }");
-    System.out.println("     };");
-    System.out.println("    " + "randomLot" + ".start();");
-    System.out.println(" ");
-
-
-    System.out.println("         Thread " + "functionLot" + " = new Thread(\"" + "functionLot" + "\") { ");
-    System.out.println("         public void run(){");
-    System.out.println("            long startTime = System.nanoTime();");
-    System.out.println("            System.out.println(\"run by: \" + getName());");
-    System.out.println("            ArrayList<Integer> listeRandom = remplirRandom(" + 11 + ");");
-    System.out.println("            for(int t =0; t < " + 11 + ";t++){");
-    System.out.println("            List<Measurement> measurements = new ArrayList<>(); ");
-    System.out.println("            Map<String,String> listPoly =  new HashMap<>();");
-    System.out.println("            Map<String,String> listProb =  new HashMap<>();");
-    System.out.println("              for(int i = 0; i < " + 1 + ";i++){");
-    System.out.println("              String sensName;");
-
-    System.out.println("              sensName =\"" + " functionLot" + "\"+Integer.toString(i);");
-    System.out.println("              listPoly.put(\"" + "x<1" + "\",\"" + "2" + "\");");
-    System.out.println("              listPoly.put(\"" + "x>= 1 && x<=3" + "\",\"" + "x^2-3" + "\");");
-    System.out.println("              listPoly.put(\"" + "x>3" + "\",\"" + "abs(-2*x)" + "\");");
-    System.out.println("              Measurement measurement= createLawFunction(sensName,listPoly,t); ");
-
-
-    System.out.println("                 if (measurement == null) {");
-    System.out.println("                   continue;");
-    System.out.println("                  }");
-    System.out.println("                 measurements.add(measurement);");
-    System.out.println("                 try {");
-    System.out.println("                    Thread.sleep(5000);");
-    System.out.println("                 } catch (InterruptedException e) {");
-    System.out.println("                    e.printStackTrace();");
-    System.out.println("                }");
-    System.out.println("               }");
-    System.out.println("               System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
-    System.out.println("                long endTime   = System.nanoTime();");
-    System.out.println("                long totalTime = (endTime - startTime)/1000000000;");
-    System.out.println("                System.out.println(\"Total Time : \" + totalTime);");
-    System.out.println("                Random rand = new Random();");
-    System.out.println("                long total = rand.nextInt(100);");
-
-    System.out.println("                if(" + 1 + "== 1){");
-    System.out.println("                System.out.println(\"On arrete ce SensorLot lorsque la valeur aléatoire \" + total + \" est <= \" + totalTime);");
-
-    System.out.println("                         if(totalTime >= total) {");
-    System.out.println("                               System.out.println(\"j'arrette ce Thread de num :\" + Thread.currentThread().getId()%Thread.activeCount());");
-    System.out.println("                Thread.currentThread().suspend();\n\t\t\t\t\t\tThread.currentThread().stop();");
-    System.out.println("                          }");
-    System.out.println("                }");
-    System.out.println("             sendToInfluxDB(measurements);");
-    System.out.println("             }");
-    System.out.println("         }");
-    System.out.println("     };");
-    System.out.println("    " + "functionLot" + ".start();");
-    System.out.println(" ");
 
 
 
