@@ -89,7 +89,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/8302915319737339312");
     b.aggregate("sensorLots", 0xc4fd7c06bb2ec57L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e79cL).optional(true).ordered(true).multiple(true).origin("887164873055857751").done();
     b.aggregate("lows", 0xc4fd7c06bb381d7L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2ea01L).optional(false).ordered(true).multiple(true).origin("887164873055896023").done();
-    b.aggregate("chaos", 0xa54ddebe39323c3L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xa54ddebe393223dL).optional(true).ordered(true).multiple(false).origin("744463843628098499").done();
+    b.aggregate("chaos", 0xa54ddebe39323c3L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xa54ddebe393223dL).optional(false).ordered(true).multiple(true).origin("744463843628098499").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForChaos() {
@@ -98,6 +98,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/744463843628098109");
     b.prop("exist", 0xa54ddebe39322d6L, "744463843628098262");
+    b.prop("risque", 0x500bc1d3c19fab93L, "5767916863008779155");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForCondValue() {
@@ -144,7 +145,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("SensorLanguage.structure.Chaos", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xa54ddebe393223dL);
     b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/5767916863007564931");
-    b.prop("risque", 0x500bc1d3c18d2529L, "5767916863007565097");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLaw() {
@@ -196,6 +196,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.prop("simulationDuration", 0xc4fd7c06bb2e7ebL, "887164873055856619");
     b.prop("dateBegin", 0x7c519773a43d411aL, "8958107656749138202");
     b.prop("dateEnd", 0x7c519773a43d411eL, "8958107656749138206");
+    b.associate("gorilla", 0x500bc1d3c1a3ab80L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x500bc1d3c18d2483L).optional(true).origin("5767916863009041280").done();
     b.aggregate("sensors", 0xc4fd7c06bb2e9ffL).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e7f2L).optional(false).ordered(true).multiple(true).origin("887164873055857151").done();
     b.aggregate("monkey", 0xe897df4b1bd18c5L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xe897df4b1babf17L).optional(true).ordered(true).multiple(false).origin("1047506878247803077").done();
     return b.create();

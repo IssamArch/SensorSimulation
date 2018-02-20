@@ -81,6 +81,7 @@
       <property role="IQ2ns" value="744463843628098499" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="chaos" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="DkRuJz$M8X" resolve="Chaos" />
     </node>
   </node>
@@ -123,6 +124,12 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="monkey" />
       <ref role="20lvS9" node="U9vviLIFWn" resolve="Monkey" />
+    </node>
+    <node concept="1TJgyj" id="50bKtf1CUI0" role="1TKVEi">
+      <property role="IQ2ns" value="5767916863009041280" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="gorilla" />
+      <ref role="20lvS9" node="50bKtf1zii3" resolve="Gorilla" />
     </node>
   </node>
   <node concept="1TIwiD" id="LfPW1FGIvM">
@@ -330,6 +337,11 @@
       <property role="TrG5h" value="exist" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="50bKtf1BUIj" role="1TKVEl">
+      <property role="IQ2nx" value="5767916863008779155" />
+      <property role="TrG5h" value="risque" />
+      <ref role="AX2Wp" node="50bKtf1zije" resolve="RisqueChaos" />
+    </node>
     <node concept="PrWs8" id="DkRuJz$Mbk" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -338,11 +350,6 @@
     <property role="EcuMT" value="5767916863007564931" />
     <property role="TrG5h" value="Gorilla" />
     <ref role="1TJDcQ" node="DkRuJz$M8X" resolve="Chaos" />
-    <node concept="1TJgyi" id="50bKtf1zikD" role="1TKVEl">
-      <property role="IQ2nx" value="5767916863007565097" />
-      <property role="TrG5h" value="risque" />
-      <ref role="AX2Wp" node="50bKtf1zije" resolve="RisqueChaos" />
-    </node>
   </node>
   <node concept="AxPO7" id="50bKtf1zije">
     <property role="TrG5h" value="RisqueChaos" />

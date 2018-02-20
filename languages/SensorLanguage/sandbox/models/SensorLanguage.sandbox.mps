@@ -12,9 +12,7 @@
         <property id="3773033214022082486" name="valeur" index="2bPtS1" />
         <property id="3773033214022082484" name="condition" index="2bPtS3" />
       </concept>
-      <concept id="5767916863007564931" name="SensorLanguage.structure.Gorilla" flags="ng" index="2hxIlg">
-        <property id="5767916863007565097" name="risque" index="2hxIjU" />
-      </concept>
+      <concept id="5767916863007564931" name="SensorLanguage.structure.Gorilla" flags="ng" index="2hxIlg" />
       <concept id="4041009921069352970" name="SensorLanguage.structure.Markov" flags="ng" index="3nfSkm">
         <child id="4041009921069381470" name="states" index="3nfZD2" />
       </concept>
@@ -66,7 +64,10 @@
     </language>
   </registry>
   <node concept="1EbyNe" id="7cTSnSp6Pco">
-    <property role="TrG5h" value="App" />
+    <property role="TrG5h" value="Markov" />
+    <node concept="2hxIlg" id="50bKtf1EBA$" role="3DLZSC">
+      <property role="3DLZWX" value="true" />
+    </node>
     <node concept="1BZjIp" id="55_GFJZU8k$" role="1BZ5on">
       <property role="TrG5h" value="randomlaw" />
     </node>
@@ -148,17 +149,13 @@
         </node>
       </node>
     </node>
-    <node concept="2hxIlg" id="50bKtf1zm1m" role="3DLZSC">
-      <property role="2hxIjU" value="low" />
-      <property role="3DLZWX" value="true" />
-    </node>
-    <node concept="1BZj1s" id="7Lh_Re$5YyU" role="1BZjIn">
+    <node concept="1BZj1s" id="50bKtf1DjLk" role="1BZjIn">
       <property role="TrG5h" value="mark" />
       <property role="1BZj0D" value="1" />
-      <property role="1BZj0F" value="50" />
-      <property role="3ordpD" value="16/02/2018 00:00:00" />
-      <property role="3ordpH" value="19/02/2018 22:00:00" />
-      <node concept="1BZj0M" id="7Lh_Re$5YyY" role="1BZjSZ">
+      <property role="1BZj0F" value="10" />
+      <property role="3ordpD" value="16/02/2018" />
+      <property role="3ordpH" value="00:00:00" />
+      <node concept="1BZj0M" id="50bKtf1DjLr" role="1BZjSZ">
         <ref role="1_w7El" node="55_GFJZU8lk" resolve="markovLaw" />
       </node>
     </node>
