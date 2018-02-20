@@ -18,11 +18,12 @@ public final class LanguageConceptSwitch {
   public static final int Gorilla = 6;
   public static final int Law = 7;
   public static final int Markov = 8;
-  public static final int RandomLow = 9;
-  public static final int Sensor = 10;
-  public static final int SensorLot = 11;
-  public static final int State = 12;
-  public static final int Transition = 13;
+  public static final int Monkey = 9;
+  public static final int RandomLow = 10;
+  public static final int Sensor = 11;
+  public static final int SensorLot = 12;
+  public static final int State = 13;
+  public static final int Transition = 14;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x976c57d85cc4413L, 0xa01a155ebd2f878fL);
@@ -35,6 +36,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x500bc1d3c18d2483L, Gorilla);
     builder.put(0xc4fd7c06bb2ea01L, Law);
     builder.put(0x38148d1cef2b080aL, Markov);
+    builder.put(0xe897df4b1babf17L, Monkey);
     builder.put(0xc4fd7c06bb2ec59L, RandomLow);
     builder.put(0xc4fd7c06bb2e7f2L, Sensor);
     builder.put(0xc4fd7c06bb2e79cL, SensorLot);

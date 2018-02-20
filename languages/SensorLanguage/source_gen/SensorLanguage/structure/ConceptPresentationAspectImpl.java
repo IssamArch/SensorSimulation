@@ -18,6 +18,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Gorilla;
   private ConceptPresentation props_Law;
   private ConceptPresentation props_Markov;
+  private ConceptPresentation props_Monkey;
   private ConceptPresentation props_RandomLow;
   private ConceptPresentation props_Sensor;
   private ConceptPresentation props_SensorLot;
@@ -90,6 +91,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Markov = cpb.create();
         }
         return props_Markov;
+      case LanguageConceptSwitch.Monkey:
+        if (props_Monkey == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Monkey = cpb.create();
+        }
+        return props_Monkey;
       case LanguageConceptSwitch.RandomLow:
         if (props_RandomLow == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

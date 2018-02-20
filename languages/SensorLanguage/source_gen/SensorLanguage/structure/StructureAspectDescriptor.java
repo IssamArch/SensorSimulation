@@ -21,6 +21,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptGorilla = createDescriptorForGorilla();
   /*package*/ final ConceptDescriptor myConceptLaw = createDescriptorForLaw();
   /*package*/ final ConceptDescriptor myConceptMarkov = createDescriptorForMarkov();
+  /*package*/ final ConceptDescriptor myConceptMonkey = createDescriptorForMonkey();
   /*package*/ final ConceptDescriptor myConceptRandomLow = createDescriptorForRandomLow();
   /*package*/ final ConceptDescriptor myConceptSensor = createDescriptorForSensor();
   /*package*/ final ConceptDescriptor myConceptSensorLot = createDescriptorForSensorLot();
@@ -34,7 +35,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptApp, myConceptChaos, myConceptCondValue, myConceptCoupleProb, myConceptFileLaw, myConceptFunctionLow, myConceptGorilla, myConceptLaw, myConceptMarkov, myConceptRandomLow, myConceptSensor, myConceptSensorLot, myConceptState, myConceptTransition);
+    return Arrays.asList(myConceptApp, myConceptChaos, myConceptCondValue, myConceptCoupleProb, myConceptFileLaw, myConceptFunctionLow, myConceptGorilla, myConceptLaw, myConceptMarkov, myConceptMonkey, myConceptRandomLow, myConceptSensor, myConceptSensorLot, myConceptState, myConceptTransition);
   }
 
   @Override
@@ -59,6 +60,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptLaw;
       case LanguageConceptSwitch.Markov:
         return myConceptMarkov;
+      case LanguageConceptSwitch.Monkey:
+        return myConceptMonkey;
       case LanguageConceptSwitch.RandomLow:
         return myConceptRandomLow;
       case LanguageConceptSwitch.Sensor:
@@ -160,6 +163,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("states", 0x38148d1cef2b775eL).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x722e15f413698912L).optional(false).ordered(true).multiple(true).origin("4041009921069381470").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForMonkey() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SensorLanguage", "Monkey", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xe897df4b1babf17L);
+    b.class_(false, false, false);
+    b.super_("SensorLanguage.structure.Chaos", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xa54ddebe393223dL);
+    b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/1047506878247649047");
+    b.prop("risque", 0xe897df4b1bac032L, "1047506878247649330");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForRandomLow() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SensorLanguage", "RandomLow", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2ec59L);
     b.class_(false, false, false);
@@ -186,6 +197,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.prop("dateBegin", 0x7c519773a43d411aL, "8958107656749138202");
     b.prop("dateEnd", 0x7c519773a43d411eL, "8958107656749138206");
     b.aggregate("sensors", 0xc4fd7c06bb2e9ffL).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e7f2L).optional(false).ordered(true).multiple(true).origin("887164873055857151").done();
+    b.aggregate("monkey", 0xe897df4b1bd18c5L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xe897df4b1babf17L).optional(true).ordered(true).multiple(false).origin("1047506878247803077").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForState() {

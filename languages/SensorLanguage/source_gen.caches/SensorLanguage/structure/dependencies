@@ -17,14 +17,14 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SConceptId" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
   </dependency>
-  <dependency className="SensorLanguage.structure.RisqueGorilla" file="RisqueGorilla.java">
+  <dependency className="SensorLanguage.structure.RisqueChaos" file="RisqueChaos.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.LinkedList" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
   </dependency>
-  <dependency className="SensorLanguage.structure.RisqueGorilla_PropertySupport" file="RisqueGorilla_PropertySupport.java">
-    <classNode dependClassName="SensorLanguage.structure.RisqueGorilla" />
+  <dependency className="SensorLanguage.structure.RisqueChaos_PropertySupport" file="RisqueChaos_PropertySupport.java">
+    <classNode dependClassName="SensorLanguage.structure.RisqueChaos" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Iterator" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
