@@ -184,7 +184,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/887164873055856626");
     b.associate("low", 0x30cc05d668cbac8L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2ea01L).optional(false).origin("219761989219302088").done();
-    b.associate("monkey", 0x500bc1d3c1ac95d1L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xe897df4b1babf17L).optional(true).origin("5767916863009625553").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSensorLot() {

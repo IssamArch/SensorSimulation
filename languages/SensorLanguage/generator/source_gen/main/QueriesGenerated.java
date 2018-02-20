@@ -19,9 +19,6 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_9108234181292347276(final PropertyMacroContext _context) {
     return " " + _context.getSessionObject("name of lot");
   }
-  public static Object propertyMacro_GetPropertyValue_5767916863009633358(final PropertyMacroContext _context) {
-    return (SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e7f2L, 0x500bc1d3c1ac95d1L, "monkey")), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xa54ddebe393223dL, 0xa54ddebe39322d6L, "exist")) ? "true" : "false");
-  }
   public static Object propertyMacro_GetPropertyValue_3773033214023518039(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
@@ -33,6 +30,9 @@ public class QueriesGenerated {
   }
   public static Object propertyMacro_GetPropertyValue_5865290610242621630(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e79cL, 0xc4fd7c06bb2e7ebL, "simulationDuration"));
+  }
+  public static Object propertyMacro_GetPropertyValue_5767916863010322490(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e79cL, 0xc4fd7c06bb2e7e9L, "sensorNumber"));
   }
   public static Object propertyMacro_GetPropertyValue_5767916863008688669(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e79cL, 0xc4fd7c06bb2e7ebL, "simulationDuration"));
@@ -88,8 +88,11 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_5767916863009187284(final PropertyMacroContext _context) {
     return SPropertyOperations.getString_def(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xa54ddebe393223dL, 0x500bc1d3c19fab93L, "risque"), "low");
   }
-  public static Object propertyMacro_GetPropertyValue_5767916863009664580(final PropertyMacroContext _context) {
+  public static Object propertyMacro_GetPropertyValue_5767916863010018749(final PropertyMacroContext _context) {
     return SPropertyOperations.getString_def(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xa54ddebe393223dL, 0x500bc1d3c19fab93L, "risque"), "low");
+  }
+  public static Object propertyMacro_GetPropertyValue_5767916863010033750(final PropertyMacroContext _context) {
+    return (SPropertyOperations.getBoolean(_context.getNode(), MetaAdapterFactory.getProperty(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xa54ddebe393223dL, 0xa54ddebe39322d6L, "exist")) ? "true" : "false");
   }
   public static SNode sourceNodeQuery_219761989219347370(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e7f2L, 0x30cc05d668cbac8L, "low"));
