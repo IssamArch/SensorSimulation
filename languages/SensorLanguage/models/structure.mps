@@ -316,14 +316,42 @@
   <node concept="1TIwiD" id="DkRuJz$M8X">
     <property role="EcuMT" value="744463843628098109" />
     <property role="TrG5h" value="Chaos" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="DkRuJz$Mbm" role="1TKVEl">
       <property role="IQ2nx" value="744463843628098262" />
-      <property role="TrG5h" value="chaos" />
+      <property role="TrG5h" value="exist" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="PrWs8" id="DkRuJz$Mbk" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="50bKtf1zii3">
+    <property role="EcuMT" value="5767916863007564931" />
+    <property role="TrG5h" value="Gorilla" />
+    <ref role="1TJDcQ" node="DkRuJz$M8X" resolve="Chaos" />
+    <node concept="1TJgyi" id="50bKtf1zikD" role="1TKVEl">
+      <property role="IQ2nx" value="5767916863007565097" />
+      <property role="TrG5h" value="risque" />
+      <ref role="AX2Wp" node="50bKtf1zije" resolve="RisqueGorilla" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="50bKtf1zije">
+    <property role="TrG5h" value="RisqueGorilla" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="50bKtf1zijf" role="M5hS2">
+      <property role="1uS6qv" value="low" />
+      <property role="1uS6qo" value="low" />
+    </node>
+    <node concept="M4N5e" id="50bKtf1zikq" role="M5hS2">
+      <property role="1uS6qv" value="average" />
+      <property role="1uS6qo" value="average" />
+    </node>
+    <node concept="M4N5e" id="50bKtf1zikt" role="M5hS2">
+      <property role="1uS6qv" value="stong" />
+      <property role="1uS6qo" value="strong" />
     </node>
   </node>
 </model>

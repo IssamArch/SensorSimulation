@@ -12,6 +12,9 @@
         <property id="3773033214022082486" name="valeur" index="2bPtS1" />
         <property id="3773033214022082484" name="condition" index="2bPtS3" />
       </concept>
+      <concept id="5767916863007564931" name="SensorLanguage.structure.Gorilla" flags="ng" index="2hxIlg">
+        <property id="5767916863007565097" name="risque" index="2hxIjU" />
+      </concept>
       <concept id="4041009921069352970" name="SensorLanguage.structure.Markov" flags="ng" index="3nfSkm">
         <child id="4041009921069381470" name="states" index="3nfZD2" />
       </concept>
@@ -39,7 +42,9 @@
         <child id="887164873055857151" name="sensors" index="1BZjSZ" />
       </concept>
       <concept id="887164873055857753" name="SensorLanguage.structure.RandomLow" flags="ng" index="1BZjIp" />
-      <concept id="744463843628098109" name="SensorLanguage.structure.Chaos" flags="ng" index="3DLZZm" />
+      <concept id="744463843628098109" name="SensorLanguage.structure.Chaos" flags="ng" index="3DLZZm">
+        <property id="744463843628098262" name="exist" index="3DLZWX" />
+      </concept>
       <concept id="8302915319737339312" name="SensorLanguage.structure.App" flags="ng" index="1EbyNe">
         <child id="887164873055896023" name="lows" index="1BZ5on" />
         <child id="887164873055857751" name="sensorLots" index="1BZjIn" />
@@ -143,7 +148,10 @@
         </node>
       </node>
     </node>
-    <node concept="3DLZZm" id="DkRuJz_1q$" role="3DLZSC" />
+    <node concept="2hxIlg" id="50bKtf1zm1m" role="3DLZSC">
+      <property role="2hxIjU" value="low" />
+      <property role="3DLZWX" value="true" />
+    </node>
     <node concept="1BZj1s" id="7Lh_Re$5YyU" role="1BZjIn">
       <property role="TrG5h" value="mark" />
       <property role="1BZj0D" value="1" />

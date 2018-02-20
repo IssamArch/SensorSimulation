@@ -42,11 +42,11 @@ import jetbrains.mps.nodeEditor.EditorManager;
   }
   private EditorCell createProperty_4khfae_a0() {
     CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
-    provider.setRole("chaos");
-    provider.setNoTargetText("<no chaos>");
+    provider.setRole("exist");
+    provider.setNoTargetText("<no exist>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
-    editorCell.setCellId("property_chaos");
+    editorCell.setCellId("property_exist");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {

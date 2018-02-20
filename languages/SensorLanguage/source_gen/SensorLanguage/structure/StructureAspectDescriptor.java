@@ -18,6 +18,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptCoupleProb = createDescriptorForCoupleProb();
   /*package*/ final ConceptDescriptor myConceptFileLaw = createDescriptorForFileLaw();
   /*package*/ final ConceptDescriptor myConceptFunctionLow = createDescriptorForFunctionLow();
+  /*package*/ final ConceptDescriptor myConceptGorilla = createDescriptorForGorilla();
   /*package*/ final ConceptDescriptor myConceptLaw = createDescriptorForLaw();
   /*package*/ final ConceptDescriptor myConceptMarkov = createDescriptorForMarkov();
   /*package*/ final ConceptDescriptor myConceptRandomLow = createDescriptorForRandomLow();
@@ -33,7 +34,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptApp, myConceptChaos, myConceptCondValue, myConceptCoupleProb, myConceptFileLaw, myConceptFunctionLow, myConceptLaw, myConceptMarkov, myConceptRandomLow, myConceptSensor, myConceptSensorLot, myConceptState, myConceptTransition);
+    return Arrays.asList(myConceptApp, myConceptChaos, myConceptCondValue, myConceptCoupleProb, myConceptFileLaw, myConceptFunctionLow, myConceptGorilla, myConceptLaw, myConceptMarkov, myConceptRandomLow, myConceptSensor, myConceptSensorLot, myConceptState, myConceptTransition);
   }
 
   @Override
@@ -52,6 +53,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptFileLaw;
       case LanguageConceptSwitch.FunctionLow:
         return myConceptFunctionLow;
+      case LanguageConceptSwitch.Gorilla:
+        return myConceptGorilla;
       case LanguageConceptSwitch.Law:
         return myConceptLaw;
       case LanguageConceptSwitch.Markov:
@@ -88,10 +91,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForChaos() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SensorLanguage", "Chaos", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xa54ddebe393223dL);
-    b.class_(false, false, false);
+    b.class_(false, true, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/744463843628098109");
-    b.prop("chaos", 0xa54ddebe39322d6L, "744463843628098262");
+    b.prop("exist", 0xa54ddebe39322d6L, "744463843628098262");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForCondValue() {
@@ -131,6 +134,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/219761989218885976");
     b.aggregate("poly", 0x345c81b7bf895fb9L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x345c81b7bf895e99L).optional(false).ordered(true).multiple(true).origin("3773033214022082489").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForGorilla() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SensorLanguage", "Gorilla", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x500bc1d3c18d2483L);
+    b.class_(false, false, false);
+    b.super_("SensorLanguage.structure.Chaos", 0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xa54ddebe393223dL);
+    b.origin("r:e33051fe-2b5d-4ccc-ada4-abd98be3c743(SensorLanguage.structure)/5767916863007564931");
+    b.prop("risque", 0x500bc1d3c18d2529L, "5767916863007565097");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLaw() {

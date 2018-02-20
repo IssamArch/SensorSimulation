@@ -15,6 +15,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_CoupleProb;
   private ConceptPresentation props_FileLaw;
   private ConceptPresentation props_FunctionLow;
+  private ConceptPresentation props_Gorilla;
   private ConceptPresentation props_Law;
   private ConceptPresentation props_Markov;
   private ConceptPresentation props_RandomLow;
@@ -38,7 +39,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Chaos:
         if (props_Chaos == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
           props_Chaos = cpb.create();
         }
         return props_Chaos;
@@ -70,6 +70,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FunctionLow = cpb.create();
         }
         return props_FunctionLow;
+      case LanguageConceptSwitch.Gorilla:
+        if (props_Gorilla == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Gorilla = cpb.create();
+        }
+        return props_Gorilla;
       case LanguageConceptSwitch.Law:
         if (props_Law == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
