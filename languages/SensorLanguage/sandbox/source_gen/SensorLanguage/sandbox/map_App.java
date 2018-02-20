@@ -286,8 +286,7 @@ public class map_App {
     System.out.println("   }");
     System.out.println("   return 1;");
     System.out.println("}");
-    System.out.println("  // monkey risque" + "average");
-
+    System.out.println(" static Boolean monkey_Exist =" + "true" + ";");
 
 
     System.out.println("  public static void main(String[] args){");
@@ -295,12 +294,14 @@ public class map_App {
 
     System.out.println("         Thread " + "mark" + " = new Thread(\"" + "mark" + "\") { ");
     System.out.println("         public void run(){");
-    System.out.println("          int dureeMaxi = 0");
+    System.out.println("          int dureeMaxi = 0;");
     System.out.println("          try {");
     System.out.println("            while (gorilla == false && dureeMaxi < " + 10 + ") { ");
     System.out.println("              System.out.println(\"run by: \" + getName());");
     System.out.println("              ArrayList<Integer> listeRandom = remplirRandom(" + 10 + ");");
     System.out.println("              int k = RandomGorilla(" + 10 + "," + "risque" + ");");
+    System.out.println("              int m = RandomGorilla(" + 10 + "," + "risque" + ");");
+    System.out.println("              System.out.println(\"The Monkey will attack the mesurement number :\" + m);");
     System.out.println("              System.out.println(k);");
     System.out.println("              for(int t =0; t < " + 10 + ";t++){");
     System.out.println("              List<Measurement> measurements = new ArrayList<>(); ");
@@ -310,7 +311,6 @@ public class map_App {
     System.out.println("             String sensName;");
 
     System.out.println("              sensName =\"" + " mark" + "\"+Integer.toString(i);");
-    System.out.println(" //risque of monkey" + "false");
     System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.9" + "\"));");
     System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.05" + "\"));");
     System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.05" + "\"));");
@@ -326,7 +326,12 @@ public class map_App {
     System.out.println("                 if (measurement == null) {");
     System.out.println("                   continue;");
     System.out.println("                  }");
-    System.out.println("                 measurements.add(measurement);");
+    System.out.println("                  if(monkey_Exist && t == m){");
+    System.out.println("                      System.out.println(\"Ce Mesurement \" + t  + \" est Null\");\n                \t measurement = null;");
+    System.out.println("                  }");
+    System.out.println("                  else{");
+    System.out.println("                     measurements.add(measurement);");
+    System.out.println("                  }");
     System.out.println("                 try {");
     System.out.println("                    Thread.sleep(5000);");
     System.out.println("                 } catch (InterruptedException e) {");

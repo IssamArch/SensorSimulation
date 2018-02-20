@@ -31,7 +31,9 @@
         <child id="3773033214022082489" name="poly" index="2bPtSe" />
       </concept>
       <concept id="887164873055856626" name="SensorLanguage.structure.Sensor" flags="ng" index="1BZj0M">
+        <reference id="5767916863009625553" name="monkey" index="2hDPg2" />
         <reference id="219761989219302088" name="low" index="1_w7El" />
+        <child id="1047506878248895802" name="monkey" index="2Zhbze" />
       </concept>
       <concept id="887164873055856540" name="SensorLanguage.structure.SensorLot" flags="ng" index="1BZj1s">
         <property id="8958107656749138202" name="dateBegin" index="3ordpD" />
@@ -68,9 +70,9 @@
   <node concept="1EbyNe" id="7cTSnSp6Pco">
     <property role="TrG5h" value="Markov" />
     <node concept="2hxIlg" id="50bKtf1EBA$" role="3DLZSC" />
-    <node concept="2ZcWbz" id="50bKtf1F9kQ" role="3DLZSC">
-      <property role="3DLZWX" value="true" />
+    <node concept="2ZcWbz" id="U9vviLNXFs" role="3DLZSC">
       <property role="2h_6D0" value="average" />
+      <property role="3DLZWX" value="true" />
     </node>
     <node concept="1BZjIp" id="55_GFJZU8k$" role="1BZ5on">
       <property role="TrG5h" value="randomlaw" />
@@ -153,14 +155,16 @@
         </node>
       </node>
     </node>
-    <node concept="1BZj1s" id="50bKtf1DjLk" role="1BZjIn">
+    <node concept="1BZj1s" id="U9vviLLEnK" role="1BZjIn">
       <property role="TrG5h" value="mark" />
       <property role="1BZj0D" value="1" />
       <property role="1BZj0F" value="10" />
       <property role="3ordpD" value="16/02/2018" />
       <property role="3ordpH" value="00:00:00" />
-      <node concept="1BZj0M" id="50bKtf1DjLr" role="1BZjSZ">
+      <node concept="1BZj0M" id="U9vviLNIJW" role="1BZjSZ">
         <ref role="1_w7El" node="55_GFJZU8lk" resolve="markovLaw" />
+        <ref role="2hDPg2" node="U9vviLNXFs" />
+        <node concept="2ZcWbz" id="U9vviLNIJX" role="2Zhbze" />
       </node>
     </node>
   </node>

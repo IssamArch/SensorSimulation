@@ -3646,7 +3646,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="50bKtf1zGCl" role="3cqZAp" />
         <node concept="3clFbH" id="7Lh_Re$cjaG" role="3cqZAp" />
         <node concept="3clFbH" id="7Lh_Re$cjxS" role="3cqZAp" />
         <node concept="3clFbF" id="LfPW1FIXWZ" role="3cqZAp">
@@ -3844,54 +3843,6 @@
                       </node>
                     </node>
                   </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="50bKtf1F9Nl" role="3cqZAp">
-          <node concept="2OqwBi" id="50bKtf1Fakg" role="3clFbG">
-            <node concept="10M0yZ" id="50bKtf1F9Yp" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="50bKtf1FaDv" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="50bKtf1Fb1A" role="37wK5m">
-                <node concept="Xl_RD" id="50bKtf1Fb2u" role="3uHU7w">
-                  <property role="Xl_RC" value="exist" />
-                  <node concept="17Uvod" id="50bKtf1Fbhd" role="lGtFl">
-                    <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-                    <property role="2qtEX9" value="value" />
-                    <node concept="3zFVjK" id="50bKtf1Fbhe" role="3zH0cK">
-                      <node concept="3clFbS" id="50bKtf1Fbhf" role="2VODD2">
-                        <node concept="3clFbF" id="50bKtf1Fbu7" role="3cqZAp">
-                          <node concept="3K4zz7" id="50bKtf1Fqd8" role="3clFbG">
-                            <node concept="Xl_RD" id="50bKtf1FqpS" role="3K4E3e">
-                              <property role="Xl_RC" value="true" />
-                            </node>
-                            <node concept="Xl_RD" id="50bKtf1FqZ7" role="3K4GZi">
-                              <property role="Xl_RC" value="false" />
-                            </node>
-                            <node concept="2OqwBi" id="50bKtf1Fcnn" role="3K4Cdx">
-                              <node concept="2OqwBi" id="50bKtf1FbFI" role="2Oq$k0">
-                                <node concept="30H73N" id="50bKtf1Fbu6" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="50bKtf1FbVC" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="uxew:50bKtf1F9nh" resolve="monkey" />
-                                </node>
-                              </node>
-                              <node concept="3TrcHB" id="50bKtf1Fpn5" role="2OqNvi">
-                                <ref role="3TsBF5" to="uxew:DkRuJz$Mbm" resolve="exist" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="50bKtf1FaDT" role="3uHU7B">
-                  <property role="Xl_RC" value=" //risque of monkey" />
                 </node>
               </node>
             </node>
@@ -4186,6 +4137,70 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="U9vviLQArY" role="3cqZAp">
+          <node concept="2OqwBi" id="U9vviLQArZ" role="3clFbG">
+            <node concept="10M0yZ" id="U9vviLQAs0" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="U9vviLQAs1" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="U9vviLQAs2" role="37wK5m">
+                <node concept="Xl_RD" id="U9vviLQAs3" role="3uHU7w">
+                  <property role="Xl_RC" value=");" />
+                </node>
+                <node concept="3cpWs3" id="U9vviLQAs4" role="3uHU7B">
+                  <node concept="3cpWs3" id="U9vviLQAs5" role="3uHU7B">
+                    <node concept="3cpWs3" id="U9vviLQAs6" role="3uHU7B">
+                      <node concept="Xl_RD" id="U9vviLQAs7" role="3uHU7B">
+                        <property role="Xl_RC" value="              int m = RandomGorilla(" />
+                      </node>
+                      <node concept="3cmrfG" id="U9vviLQAs8" role="3uHU7w">
+                        <property role="3cmrfH" value="0" />
+                        <node concept="17Uvod" id="U9vviLQAs9" role="lGtFl">
+                          <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
+                          <property role="2qtEX9" value="value" />
+                          <node concept="3zFVjK" id="U9vviLQAsa" role="3zH0cK">
+                            <node concept="3clFbS" id="U9vviLQAsb" role="2VODD2">
+                              <node concept="3clFbF" id="U9vviLQAsc" role="3cqZAp">
+                                <node concept="2OqwBi" id="U9vviLQAsd" role="3clFbG">
+                                  <node concept="30H73N" id="U9vviLQAse" role="2Oq$k0" />
+                                  <node concept="3TrcHB" id="U9vviLQAsf" role="2OqNvi">
+                                    <ref role="3TsBF5" to="uxew:LfPW1FGIvF" resolve="simulationDuration" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="U9vviLQAsg" role="3uHU7w">
+                      <property role="Xl_RC" value="," />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="U9vviLQAsh" role="3uHU7w">
+                    <property role="Xl_RC" value="risque" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="U9vviLRxzk" role="3cqZAp">
+          <node concept="2OqwBi" id="U9vviLRxzl" role="3clFbG">
+            <node concept="10M0yZ" id="U9vviLRxzm" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="U9vviLRxzn" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="U9vviLRxzp" role="37wK5m">
+                <property role="Xl_RC" value="              System.out.println(\&quot;The Monkey will attack the mesurement number :\&quot; + m);" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="50bKtf1A9JW" role="3cqZAp">
           <node concept="2OqwBi" id="50bKtf1AaYf" role="3clFbG">
             <node concept="10M0yZ" id="50bKtf1AaCn" role="2Oq$k0">
@@ -4427,6 +4442,62 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="U9vviLQdL9" role="3cqZAp">
+          <node concept="2OqwBi" id="U9vviLQdLa" role="3clFbG">
+            <node concept="10M0yZ" id="U9vviLQdLb" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="U9vviLQdLc" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="U9vviLQdLd" role="37wK5m">
+                <property role="Xl_RC" value="                  if(monkey_Exist &amp;&amp; t == m){" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="U9vviLQeSa" role="3cqZAp">
+          <node concept="2OqwBi" id="U9vviLQeSb" role="3clFbG">
+            <node concept="10M0yZ" id="U9vviLQeSc" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="U9vviLQeSd" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="U9vviLQeSe" role="37wK5m">
+                <property role="Xl_RC" value="                      System.out.println(\&quot;Ce Mesurement \&quot; + t  + \&quot; est Null\&quot;);\n                \t measurement = null;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="U9vviLQfVH" role="3cqZAp">
+          <node concept="2OqwBi" id="U9vviLQfVI" role="3clFbG">
+            <node concept="10M0yZ" id="U9vviLQfVJ" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="U9vviLQfVK" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="U9vviLQfVL" role="37wK5m">
+                <property role="Xl_RC" value="                  }" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="U9vviLQh2f" role="3cqZAp">
+          <node concept="2OqwBi" id="U9vviLQh2g" role="3clFbG">
+            <node concept="10M0yZ" id="U9vviLQh2h" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="U9vviLQh2i" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="U9vviLQh2j" role="37wK5m">
+                <property role="Xl_RC" value="                  else{" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="3jSYJW1HUMw" role="3cqZAp">
           <node concept="2OqwBi" id="3jSYJW1HVGE" role="3clFbG">
             <node concept="10M0yZ" id="3jSYJW1HVmM" role="2Oq$k0">
@@ -4436,7 +4507,21 @@
             <node concept="liA8E" id="3jSYJW1HW1U" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="3jSYJW1HW2s" role="37wK5m">
-                <property role="Xl_RC" value="                 measurements.add(measurement);" />
+                <property role="Xl_RC" value="                     measurements.add(measurement);" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="U9vviLR6G2" role="3cqZAp">
+          <node concept="2OqwBi" id="U9vviLR6G3" role="3clFbG">
+            <node concept="10M0yZ" id="U9vviLR6G4" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="U9vviLR6G5" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="U9vviLR6G6" role="37wK5m">
+                <property role="Xl_RC" value="                  }" />
               </node>
             </node>
           </node>
@@ -5773,28 +5858,41 @@
             </node>
             <node concept="liA8E" id="50bKtf1Fibm" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="50bKtf1Fi$F" role="37wK5m">
-                <node concept="Xl_RD" id="50bKtf1Fi_F" role="3uHU7w">
-                  <property role="Xl_RC" value="mokey" />
-                  <node concept="17Uvod" id="50bKtf1FiT3" role="lGtFl">
-                    <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-                    <property role="2qtEX9" value="value" />
-                    <node concept="3zFVjK" id="50bKtf1FiT4" role="3zH0cK">
-                      <node concept="3clFbS" id="50bKtf1FiT5" role="2VODD2">
-                        <node concept="3clFbF" id="50bKtf1Fj5X" role="3cqZAp">
-                          <node concept="2OqwBi" id="50bKtf1Fjmc" role="3clFbG">
-                            <node concept="30H73N" id="50bKtf1Fj5W" role="2Oq$k0" />
-                            <node concept="3TrcHB" id="50bKtf1FjBn" role="2OqNvi">
-                              <ref role="3TsBF5" to="uxew:50bKtf1BUIj" resolve="risque" />
+              <node concept="3cpWs3" id="U9vviLPIDD" role="37wK5m">
+                <node concept="Xl_RD" id="U9vviLPIDE" role="3uHU7w">
+                  <property role="Xl_RC" value=";" />
+                </node>
+                <node concept="3cpWs3" id="U9vviLPIDF" role="3uHU7B">
+                  <node concept="Xl_RD" id="U9vviLPIDG" role="3uHU7B">
+                    <property role="Xl_RC" value=" static Boolean monkey_Exist =" />
+                  </node>
+                  <node concept="Xl_RD" id="U9vviLPIDH" role="3uHU7w">
+                    <property role="Xl_RC" value="gorrila" />
+                    <node concept="17Uvod" id="U9vviLPIDI" role="lGtFl">
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                      <property role="2qtEX9" value="value" />
+                      <node concept="3zFVjK" id="U9vviLPIDJ" role="3zH0cK">
+                        <node concept="3clFbS" id="U9vviLPIDK" role="2VODD2">
+                          <node concept="3clFbF" id="U9vviLPIDL" role="3cqZAp">
+                            <node concept="3K4zz7" id="U9vviLPIDM" role="3clFbG">
+                              <node concept="Xl_RD" id="U9vviLPIDN" role="3K4E3e">
+                                <property role="Xl_RC" value="true" />
+                              </node>
+                              <node concept="Xl_RD" id="U9vviLPIDO" role="3K4GZi">
+                                <property role="Xl_RC" value="false" />
+                              </node>
+                              <node concept="2OqwBi" id="U9vviLPIDP" role="3K4Cdx">
+                                <node concept="30H73N" id="U9vviLPIDQ" role="2Oq$k0" />
+                                <node concept="3TrcHB" id="U9vviLPIDR" role="2OqNvi">
+                                  <ref role="3TsBF5" to="uxew:DkRuJz$Mbm" resolve="exist" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
                       </node>
                     </node>
                   </node>
-                </node>
-                <node concept="Xl_RD" id="50bKtf1FibS" role="3uHU7B">
-                  <property role="Xl_RC" value="  // monkey risque" />
                 </node>
               </node>
             </node>
