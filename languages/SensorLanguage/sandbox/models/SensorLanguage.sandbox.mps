@@ -13,6 +13,7 @@
         <property id="3773033214022082484" name="condition" index="2bPtS3" />
       </concept>
       <concept id="5767916863007564931" name="SensorLanguage.structure.Gorilla" flags="ng" index="2hxIlg" />
+      <concept id="1047506878247649047" name="SensorLanguage.structure.Monkey" flags="ng" index="2ZcWbz" />
       <concept id="4041009921069352970" name="SensorLanguage.structure.Markov" flags="ng" index="3nfSkm">
         <child id="4041009921069381470" name="states" index="3nfZD2" />
       </concept>
@@ -41,6 +42,7 @@
       </concept>
       <concept id="887164873055857753" name="SensorLanguage.structure.RandomLow" flags="ng" index="1BZjIp" />
       <concept id="744463843628098109" name="SensorLanguage.structure.Chaos" flags="ng" index="3DLZZm">
+        <property id="5767916863008779155" name="risque" index="2h_6D0" />
         <property id="744463843628098262" name="exist" index="3DLZWX" />
       </concept>
       <concept id="8302915319737339312" name="SensorLanguage.structure.App" flags="ng" index="1EbyNe">
@@ -65,8 +67,10 @@
   </registry>
   <node concept="1EbyNe" id="7cTSnSp6Pco">
     <property role="TrG5h" value="Markov" />
-    <node concept="2hxIlg" id="50bKtf1EBA$" role="3DLZSC">
+    <node concept="2hxIlg" id="50bKtf1EBA$" role="3DLZSC" />
+    <node concept="2ZcWbz" id="50bKtf1F9kQ" role="3DLZSC">
       <property role="3DLZWX" value="true" />
+      <property role="2h_6D0" value="average" />
     </node>
     <node concept="1BZjIp" id="55_GFJZU8k$" role="1BZ5on">
       <property role="TrG5h" value="randomlaw" />

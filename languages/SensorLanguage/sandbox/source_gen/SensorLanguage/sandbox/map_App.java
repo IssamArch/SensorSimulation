@@ -286,6 +286,7 @@ public class map_App {
     System.out.println("   }");
     System.out.println("   return 1;");
     System.out.println("}");
+    System.out.println("  // monkey risque" + "average");
 
 
 
@@ -294,8 +295,9 @@ public class map_App {
 
     System.out.println("         Thread " + "mark" + " = new Thread(\"" + "mark" + "\") { ");
     System.out.println("         public void run(){");
+    System.out.println("          int dureeMaxi = 0");
     System.out.println("          try {");
-    System.out.println("            while (gorilla == false ) {");
+    System.out.println("            while (gorilla == false && dureeMaxi < " + 10 + ") { ");
     System.out.println("              System.out.println(\"run by: \" + getName());");
     System.out.println("              ArrayList<Integer> listeRandom = remplirRandom(" + 10 + ");");
     System.out.println("              int k = RandomGorilla(" + 10 + "," + "risque" + ");");
@@ -308,6 +310,7 @@ public class map_App {
     System.out.println("             String sensName;");
 
     System.out.println("              sensName =\"" + " mark" + "\"+Integer.toString(i);");
+    System.out.println(" //risque of monkey" + "false");
     System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.9" + "\"));");
     System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.05" + "\"));");
     System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.05" + "\"));");
@@ -339,6 +342,7 @@ public class map_App {
     System.out.println("                System.out.println(\"Gorilla attack !!! we can't finished \"+(" + 10 + "- t )+" + "\" lists from our " + 10 + " lists\");");
     System.out.println("             break;");
     System.out.println("             }");
+    System.out.println("            dureeMaxi++;");
 
     System.out.println("            }");
     System.out.println("            Thread.sleep (2000);");

@@ -146,6 +146,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="LfPW1FGIC1" resolve="Law" />
     </node>
+    <node concept="1TJgyj" id="50bKtf1F9nh" role="1TKVEi">
+      <property role="IQ2ns" value="5767916863009625553" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="monkey" />
+      <ref role="20lvS9" node="U9vviLIFWn" resolve="Monkey" />
+    </node>
   </node>
   <node concept="1TIwiD" id="LfPW1FGIC1">
     <property role="EcuMT" value="887164873055857153" />
@@ -371,11 +377,6 @@
     <property role="EcuMT" value="1047506878247649047" />
     <property role="TrG5h" value="Monkey" />
     <ref role="1TJDcQ" node="DkRuJz$M8X" resolve="Chaos" />
-    <node concept="1TJgyi" id="U9vviLIG0M" role="1TKVEl">
-      <property role="IQ2nx" value="1047506878247649330" />
-      <property role="TrG5h" value="risque" />
-      <ref role="AX2Wp" node="50bKtf1zije" resolve="RisqueChaos" />
-    </node>
   </node>
 </model>
 
