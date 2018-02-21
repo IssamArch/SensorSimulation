@@ -197,7 +197,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.prop("dateEnd", 0x7c519773a43d411eL, "8958107656749138206");
     b.associate("gorilla", 0x500bc1d3c1a3ab80L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0x500bc1d3c18d2483L).optional(true).origin("5767916863009041280").done();
     b.aggregate("sensors", 0xc4fd7c06bb2e9ffL).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xc4fd7c06bb2e7f2L).optional(false).ordered(true).multiple(true).origin("887164873055857151").done();
-    b.aggregate("monkey", 0xe897df4b1bd18c5L).target(0x976c57d85cc4413L, 0xa01a155ebd2f878fL, 0xe897df4b1babf17L).optional(true).ordered(true).multiple(false).origin("1047506878247803077").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForState() {

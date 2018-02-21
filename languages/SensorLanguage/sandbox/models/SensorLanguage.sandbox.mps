@@ -43,7 +43,6 @@
       <concept id="887164873055857753" name="SensorLanguage.structure.RandomLow" flags="ng" index="1BZjIp" />
       <concept id="744463843628098109" name="SensorLanguage.structure.Chaos" flags="ng" index="3DLZZm">
         <property id="5767916863008779155" name="risque" index="2h_6D0" />
-        <property id="744463843628098262" name="exist" index="3DLZWX" />
       </concept>
       <concept id="8302915319737339312" name="SensorLanguage.structure.App" flags="ng" index="1EbyNe">
         <child id="887164873055896023" name="lows" index="1BZ5on" />
@@ -68,19 +67,17 @@
   <node concept="1EbyNe" id="7cTSnSp6Pco">
     <property role="TrG5h" value="App" />
     <node concept="2hxIlg" id="50bKtf1EBA$" role="3DLZSC">
-      <property role="3DLZWX" value="true" />
-      <property role="2h_6D0" value="stong" />
+      <property role="2h_6D0" value="average" />
     </node>
     <node concept="2ZcWbz" id="50bKtf1F9kQ" role="3DLZSC">
-      <property role="3DLZWX" value="true" />
-      <property role="2h_6D0" value="average" />
+      <property role="2h_6D0" value="strong" />
     </node>
     <node concept="1BZjIp" id="55_GFJZU8k$" role="1BZ5on">
       <property role="TrG5h" value="randomlaw" />
     </node>
     <node concept="3IuW4i" id="55_GFJZU8kD" role="1BZ5on">
       <property role="TrG5h" value="csvLaw" />
-      <property role="3IuZox" value="/home/user/Bureau/data/dataCsv.csv" />
+      <property role="3IuZox" value="/home/user/Bureau/dataDemo/dataCsv.csv" />
       <property role="3IuW2x" value="csv" />
       <property role="3IvmcA" value="1" />
       <property role="3Ivmc4" value="8" />
@@ -90,7 +87,7 @@
     <node concept="3IuW4i" id="50bKtf1JYzo" role="1BZ5on">
       <property role="3IuW2x" value="json" />
       <property role="TrG5h" value="jsonLaw" />
-      <property role="3IuZox" value="/home/user/Bureau/data/dataJson" />
+      <property role="3IuZox" value="/home/user/Bureau/dataDemo/dataJson.json" />
       <property role="3IvmcA" value="sensorName" />
       <property role="3Ivmc4" value="value" />
       <property role="3Ivmcr" value="time" />
@@ -166,52 +163,52 @@
       </node>
     </node>
     <node concept="1BZj1s" id="50bKtf1DjLk" role="1BZjIn">
-      <property role="TrG5h" value="garageRandom" />
-      <property role="1BZj0D" value="4" />
-      <property role="1BZj0F" value="1" />
+      <property role="TrG5h" value="parkingRandom" />
+      <property role="1BZj0D" value="1" />
+      <property role="1BZj0F" value="12" />
       <property role="3ordpD" value="16/02/2018 00:00:00" />
       <property role="3ordpH" value="19/02/2018 00:00:00" />
-      <node concept="1BZj0M" id="50bKtf1JUlT" role="1BZjSZ">
-        <ref role="1_w7El" node="55_GFJZU8kV" resolve="functionLaw" />
+      <node concept="1BZj0M" id="50bKtf1L0wq" role="1BZjSZ">
+        <ref role="1_w7El" node="55_GFJZU8k$" resolve="randomlaw" />
       </node>
     </node>
-    <node concept="1BZj1s" id="50bKtf1JY_3" role="1BZjIn">
+    <node concept="1BZj1s" id="50bKtf1L4sI" role="1BZjIn">
       <property role="TrG5h" value="jardinCsv" />
-      <property role="1BZj0D" value="5" />
-      <property role="1BZj0F" value="4" />
+      <property role="1BZj0D" value="1" />
+      <property role="1BZj0F" value="10" />
       <property role="3ordpD" value="16/02/2018 00:00:00 " />
-      <property role="3ordpH" value="20/02/2018 04:00:00 " />
-      <node concept="1BZj0M" id="50bKtf1JY_9" role="1BZjSZ">
+      <property role="3ordpH" value="16/02/2018 00:00:00 " />
+      <node concept="1BZj0M" id="50bKtf1L4sO" role="1BZjSZ">
         <ref role="1_w7El" node="55_GFJZU8kD" resolve="csvLaw" />
       </node>
     </node>
-    <node concept="1BZj1s" id="50bKtf1JY_c" role="1BZjIn">
-      <property role="TrG5h" value="parkingJson" />
-      <property role="1BZj0D" value="6" />
-      <property role="1BZj0F" value="13" />
-      <property role="3ordpH" value="20/02/2018 04:00:00 " />
+    <node concept="1BZj1s" id="50bKtf1L4sR" role="1BZjIn">
+      <property role="TrG5h" value="bureauJson" />
+      <property role="1BZj0D" value="1" />
+      <property role="1BZj0F" value="10" />
       <property role="3ordpD" value="16/02/2018 00:00:00 " />
-      <node concept="1BZj0M" id="50bKtf1JY_k" role="1BZjSZ">
+      <property role="3ordpH" value="16/02/2018 00:00:00 " />
+      <node concept="1BZj0M" id="50bKtf1L4sZ" role="1BZjSZ">
         <ref role="1_w7El" node="50bKtf1JYzo" resolve="jsonLaw" />
       </node>
     </node>
-    <node concept="1BZj1s" id="50bKtf1JY_n" role="1BZjIn">
+    <node concept="1BZj1s" id="50bKtf1L4t2" role="1BZjIn">
       <property role="TrG5h" value="salleFunction" />
-      <property role="1BZj0D" value="15" />
-      <property role="1BZj0F" value="13" />
+      <property role="1BZj0D" value="1" />
+      <property role="1BZj0F" value="10" />
+      <property role="3ordpD" value="16/02/2018 00:00:00 " />
       <property role="3ordpH" value="16/02/2018 00:00:00 " />
-      <property role="3ordpD" value="12/02/2018 04:00:00" />
-      <node concept="1BZj0M" id="50bKtf1JY_x" role="1BZjSZ">
+      <node concept="1BZj0M" id="50bKtf1L4tc" role="1BZjSZ">
         <ref role="1_w7El" node="55_GFJZU8kV" resolve="functionLaw" />
       </node>
     </node>
-    <node concept="1BZj1s" id="50bKtf1JY_$" role="1BZjIn">
-      <property role="TrG5h" value="bureauMarkov" />
-      <property role="1BZj0D" value="17" />
-      <property role="1BZj0F" value="22" />
-      <property role="3ordpD" value="20/02/2018 04:00:00" />
-      <property role="3ordpH" value="22/02/2018 00:00:00 " />
-      <node concept="1BZj0M" id="50bKtf1JY_K" role="1BZjSZ">
+    <node concept="1BZj1s" id="50bKtf1L4tf" role="1BZjIn">
+      <property role="TrG5h" value="garageMarkov" />
+      <property role="1BZj0D" value="1" />
+      <property role="1BZj0F" value="10" />
+      <property role="3ordpD" value="16/02/2018 00:00:00 " />
+      <property role="3ordpH" value="16/02/2018 00:00:00 " />
+      <node concept="1BZj0M" id="50bKtf1L4tr" role="1BZjSZ">
         <ref role="1_w7El" node="55_GFJZU8lk" resolve="markovLaw" />
       </node>
     </node>

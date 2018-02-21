@@ -9,7 +9,7 @@ import java.util.LinkedList;
 public enum RisqueChaos {
   low("low", "low"),
   average("average", "average"),
-  strong("strong", "stong");
+  strong("strong", "strong");
 
   private final String myName;
   public String getName() {

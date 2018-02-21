@@ -119,12 +119,6 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="LfPW1FGIvM" resolve="Sensor" />
     </node>
-    <node concept="1TJgyj" id="U9vviLJhz5" role="1TKVEi">
-      <property role="IQ2ns" value="1047506878247803077" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="monkey" />
-      <ref role="20lvS9" node="U9vviLIFWn" resolve="Monkey" />
-    </node>
     <node concept="1TJgyj" id="50bKtf1CUI0" role="1TKVEi">
       <property role="IQ2ns" value="5767916863009041280" />
       <property role="20lmBu" value="reference" />
@@ -363,7 +357,7 @@
       <property role="1uS6qo" value="average" />
     </node>
     <node concept="M4N5e" id="50bKtf1zikt" role="M5hS2">
-      <property role="1uS6qv" value="stong" />
+      <property role="1uS6qv" value="strong" />
       <property role="1uS6qo" value="strong" />
     </node>
   </node>
