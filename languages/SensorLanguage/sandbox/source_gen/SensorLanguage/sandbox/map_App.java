@@ -36,7 +36,7 @@ public class map_App {
     System.out.println("import net.andreinc.mockneat.unit.objects.Probabilities;");
 
 
-    System.out.println("public class " + "Markov" + " { ");
+    System.out.println("public class " + "App" + " { ");
 
     System.out.println("  public static class Measurement<T> {");
     System.out.println("    private String sensorName;");
@@ -265,9 +265,9 @@ public class map_App {
     System.out.println("   }");
 
     System.out.println("// chaos");
-    System.out.println(" static Boolean gorilla_Exist =" + "false" + ";");
+    System.out.println(" static Boolean gorilla_Exist =" + "true" + ";");
     System.out.println("static Boolean gorilla = false;");
-    System.out.println(" static String risque = \"" + "low" + "\";");
+    System.out.println(" static String risque = \"" + "stong" + "\";");
     System.out.println("public static int RandomGorilla(int duration,String risque){");
     System.out.println("   if(risque == \"low\"){");
     System.out.println("      Random random = new Random();");
@@ -286,52 +286,73 @@ public class map_App {
     System.out.println("   }");
     System.out.println("   return 1;");
     System.out.println("}");
-    System.out.println(" static Boolean monkey_Exist =" + "true" + ";");
+    System.out.println("static String risqueMonkey = \"" + "average" + "\";");
+    System.out.println("static Boolean monkey=" + "true" + ";");
+    System.out.println(" public static ArrayList<Integer> randomMonkey(int nbrSensor, String risque){");
+    System.out.println("   ArrayList<Integer> temp = new ArrayList<>();");
+    System.out.println("   int size = 0;");
+    System.out.println("   if(risque == \"strong\" && monkey){");
+    System.out.println("     Random random = new Random();");
+    System.out.println("     int randomNumber = random.nextInt(nbrSensor * 2 +1  - 0) + 0;");
+    System.out.println("     size =  randomNumber;");
+    System.out.println("   }");
+    System.out.println("   else if(risque == \"average\" && monkey) {");
+    System.out.println("      Random random = new Random();");
+    System.out.println("      size = random.nextInt(nbrSensor  +1  - 0) + 0;");
+    System.out.println("   }");
+    System.out.println("    else if(risque ==  \"low\" && monkey){");
+    System.out.println("       Random random = new Random();");
+    System.out.println("       size= random.nextInt((nbrSensor/2)  - 0) + 0;");
+    System.out.println("    }");
+    System.out.println("     for (int i =0; i< size;i++){");
+    System.out.println("     Random random = new Random();");
+    System.out.println("     temp.add(random.nextInt(nbrSensor +1  - 0) + 0);");
+    System.out.println("    }");
+    System.out.println("  return temp;");
+    System.out.println("}");
+
+
+
 
 
     System.out.println("  public static void main(String[] args){");
     System.out.println("         createDataBase(\"my_database\",8086);");
 
-    System.out.println("         Thread " + "mark" + " = new Thread(\"" + "mark" + "\") { ");
+    System.out.println("         Thread " + "garageRandom" + " = new Thread(\"" + "garageRandom" + "\") { ");
     System.out.println("         public void run(){");
     System.out.println("          int dureeMaxi = 0;");
     System.out.println("          try {");
-    System.out.println("            while (gorilla == false && dureeMaxi < " + 10 + ") { ");
+    System.out.println("            while (gorilla == false && dureeMaxi < " + 1 + ") { ");
     System.out.println("              System.out.println(\"run by: \" + getName());");
-    System.out.println("              ArrayList<Integer> listeRandom = remplirRandom(" + 10 + ");");
-    System.out.println("              int k = RandomGorilla(" + 10 + "," + "risque" + ");");
-    System.out.println("              int m = RandomGorilla(" + 10 + "," + "risque" + ");");
-    System.out.println("              System.out.println(\"The Monkey will attack the mesurement number :\" + m);");
+    System.out.println("              ArrayList<Integer> listeRandom = remplirRandom(" + 1 + ");");
+    System.out.println("              ArrayList<Integer> listeMonkey = randomMonkey(" + 4 + "," + "risqueMonkey" + ");");
+    System.out.println("              int k = RandomGorilla(" + 1 + "," + "risque" + ");");
     System.out.println("              System.out.println(k);");
-    System.out.println("              for(int t =0; t < " + 10 + ";t++){");
+    System.out.println("              for(int t =0; t < " + 1 + ";t++){");
     System.out.println("              List<Measurement> measurements = new ArrayList<>(); ");
     System.out.println("              Map<String,String> listPoly =  new HashMap<>();");
     System.out.println("               List<Pair<String, String>> listMarkov = new ArrayList<Pair<String, String>>();");
-    System.out.println("             for(int i = 0; i < " + 1 + ";i++){");
+    System.out.println("             for(int i = 0; i < " + 4 + ";i++){");
     System.out.println("             String sensName;");
 
-    System.out.println("              sensName =\"" + " mark" + "\"+Integer.toString(i);");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.9" + "\"));");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.05" + "\"));");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "soelil" + "\",\"" + "0.05" + "\"));");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.4" + "\"));");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.4" + "\"));");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "pluie" + "\",\"" + "0.2" + "\"));");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.4" + "\"));");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.5" + "\"));");
-    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "nuage" + "\",\"" + "0.1" + "\"));");
-    System.out.println("              Measurement measurement = createMarkovLow(sensName,listMarkov,t);");
+
+    System.out.println("              sensName =\"" + " garageRandom" + "\"+Integer.toString(i);");
+    System.out.println("              listPoly.put(\"" + "x<1" + "\",\"" + "2" + "\");");
+    System.out.println("              listPoly.put(\"" + "x>= 1 && x<=3" + "\",\"" + "x^2-3" + "\");");
+    System.out.println("              listPoly.put(\"" + "x>3" + "\",\"" + "abs(-2*x)" + "\");");
+    System.out.println("              Measurement measurement ;");
+    System.out.println("              if( listeMonkey.contains(i)){");
+    System.out.println("                   measurement = null;");
+    System.out.println("                   System.out.println(\" monkey attaque sensor num! \"+ i);");
+    System.out.println("               } else {");
+    System.out.println("                  measurement= createLawFunction(sensName,listPoly,t); ");
+    System.out.println("               }");
 
 
     System.out.println("                 if (measurement == null) {");
     System.out.println("                   continue;");
     System.out.println("                  }");
-    System.out.println("                  if(monkey_Exist && t == m){");
-    System.out.println("                      System.out.println(\"Ce Mesurement \" + t  + \" est Null\");\n                \t measurement = null;");
-    System.out.println("                  }");
-    System.out.println("                  else{");
-    System.out.println("                     measurements.add(measurement);");
-    System.out.println("                  }");
+    System.out.println("                 measurements.add(measurement);");
     System.out.println("                 try {");
     System.out.println("                    Thread.sleep(5000);");
     System.out.println("                 } catch (InterruptedException e) {");
@@ -344,7 +365,7 @@ public class map_App {
     System.out.println("                gorilla = true;");
     System.out.println("              }");
     System.out.println("             if(gorilla == true){");
-    System.out.println("                System.out.println(\"Gorilla attack !!! we can't finished \"+(" + 10 + "- t )+" + "\" lists from our " + 10 + " lists\");");
+    System.out.println("                System.out.println(\"Gorilla attack !!! we can't finished \"+(" + 1 + "- t )+" + "\" lists from our " + 1 + " lists\");");
     System.out.println("             break;");
     System.out.println("             }");
     System.out.println("            dureeMaxi++;");
@@ -357,7 +378,263 @@ public class map_App {
     System.out.println("          catch (InterruptedException exception){}");
     System.out.println("         }");
     System.out.println("     };");
-    System.out.println("    " + "mark" + ".start();");
+    System.out.println("    " + "garageRandom" + ".start();");
+    System.out.println(" ");
+
+
+    System.out.println("         Thread " + "jardinCsv" + " = new Thread(\"" + "jardinCsv" + "\") { ");
+    System.out.println("         public void run(){");
+    System.out.println("          int dureeMaxi = 0;");
+    System.out.println("          try {");
+    System.out.println("            while (gorilla == false && dureeMaxi < " + 4 + ") { ");
+    System.out.println("              System.out.println(\"run by: \" + getName());");
+    System.out.println("              ArrayList<Integer> listeRandom = remplirRandom(" + 4 + ");");
+    System.out.println("              ArrayList<Integer> listeMonkey = randomMonkey(" + 5 + "," + "risqueMonkey" + ");");
+    System.out.println("              int k = RandomGorilla(" + 4 + "," + "risque" + ");");
+    System.out.println("              System.out.println(k);");
+    System.out.println("              for(int t =0; t < " + 4 + ";t++){");
+    System.out.println("              List<Measurement> measurements = new ArrayList<>(); ");
+    System.out.println("              Map<String,String> listPoly =  new HashMap<>();");
+    System.out.println("               List<Pair<String, String>> listMarkov = new ArrayList<Pair<String, String>>();");
+    System.out.println("             for(int i = 0; i < " + 5 + ";i++){");
+    System.out.println("             String sensName;");
+
+
+    System.out.println("              sensName =\"" + " jardinCsv" + "\"+Integer.toString(i);");
+    System.out.println("              Measurement measurement ;");
+    System.out.println("              if( listeMonkey.contains(i)){");
+    System.out.println("                   measurement = null;");
+    System.out.println("                   System.out.println(\" monkey attaque sensor num! \"+ i);");
+    System.out.println("               } else {");
+    System.out.println("               measurement = createfilelow(\"" + "/home/user/Bureau/data/dataCsv.csv" + "\",\"" + "1" + "\",\"" + "8" + "\",\"" + "0" + "\",\"" + "csv" + "\"," + 0 + ",t);");
+    System.out.println("               }");
+
+
+    System.out.println("                 if (measurement == null) {");
+    System.out.println("                   continue;");
+    System.out.println("                  }");
+    System.out.println("                 measurements.add(measurement);");
+    System.out.println("                 try {");
+    System.out.println("                    Thread.sleep(5000);");
+    System.out.println("                 } catch (InterruptedException e) {");
+    System.out.println("                    e.printStackTrace();");
+    System.out.println("                }");
+    System.out.println("               }");
+    System.out.println("               System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
+    System.out.println("             sendToInfluxDB(measurements);");
+    System.out.println("             if(t ==k && gorilla_Exist == true){");
+    System.out.println("                gorilla = true;");
+    System.out.println("              }");
+    System.out.println("             if(gorilla == true){");
+    System.out.println("                System.out.println(\"Gorilla attack !!! we can't finished \"+(" + 4 + "- t )+" + "\" lists from our " + 4 + " lists\");");
+    System.out.println("             break;");
+    System.out.println("             }");
+    System.out.println("            dureeMaxi++;");
+
+    System.out.println("            }");
+    System.out.println("            Thread.sleep (2000);");
+
+    System.out.println("             }");
+    System.out.println("         }");
+    System.out.println("          catch (InterruptedException exception){}");
+    System.out.println("         }");
+    System.out.println("     };");
+    System.out.println("    " + "jardinCsv" + ".start();");
+    System.out.println(" ");
+
+
+    System.out.println("         Thread " + "parkingJson" + " = new Thread(\"" + "parkingJson" + "\") { ");
+    System.out.println("         public void run(){");
+    System.out.println("          int dureeMaxi = 0;");
+    System.out.println("          try {");
+    System.out.println("            while (gorilla == false && dureeMaxi < " + 13 + ") { ");
+    System.out.println("              System.out.println(\"run by: \" + getName());");
+    System.out.println("              ArrayList<Integer> listeRandom = remplirRandom(" + 13 + ");");
+    System.out.println("              ArrayList<Integer> listeMonkey = randomMonkey(" + 6 + "," + "risqueMonkey" + ");");
+    System.out.println("              int k = RandomGorilla(" + 13 + "," + "risque" + ");");
+    System.out.println("              System.out.println(k);");
+    System.out.println("              for(int t =0; t < " + 13 + ";t++){");
+    System.out.println("              List<Measurement> measurements = new ArrayList<>(); ");
+    System.out.println("              Map<String,String> listPoly =  new HashMap<>();");
+    System.out.println("               List<Pair<String, String>> listMarkov = new ArrayList<Pair<String, String>>();");
+    System.out.println("             for(int i = 0; i < " + 6 + ";i++){");
+    System.out.println("             String sensName;");
+
+
+    System.out.println("              sensName =\"" + " parkingJson" + "\"+Integer.toString(i);");
+    System.out.println("              Measurement measurement ;");
+    System.out.println("              if( listeMonkey.contains(i)){");
+    System.out.println("                   measurement = null;");
+    System.out.println("                   System.out.println(\" monkey attaque sensor num! \"+ i);");
+    System.out.println("               } else {");
+    System.out.println("               measurement = createfilelow(\"" + "/home/user/Bureau/data/dataJson" + "\",\"" + "sensorName" + "\",\"" + "value" + "\",\"" + "time" + "\",\"" + "json" + "\"," + 4 + ",t);");
+    System.out.println("               }");
+
+
+    System.out.println("                 if (measurement == null) {");
+    System.out.println("                   continue;");
+    System.out.println("                  }");
+    System.out.println("                 measurements.add(measurement);");
+    System.out.println("                 try {");
+    System.out.println("                    Thread.sleep(5000);");
+    System.out.println("                 } catch (InterruptedException e) {");
+    System.out.println("                    e.printStackTrace();");
+    System.out.println("                }");
+    System.out.println("               }");
+    System.out.println("               System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
+    System.out.println("             sendToInfluxDB(measurements);");
+    System.out.println("             if(t ==k && gorilla_Exist == true){");
+    System.out.println("                gorilla = true;");
+    System.out.println("              }");
+    System.out.println("             if(gorilla == true){");
+    System.out.println("                System.out.println(\"Gorilla attack !!! we can't finished \"+(" + 13 + "- t )+" + "\" lists from our " + 13 + " lists\");");
+    System.out.println("             break;");
+    System.out.println("             }");
+    System.out.println("            dureeMaxi++;");
+
+    System.out.println("            }");
+    System.out.println("            Thread.sleep (2000);");
+
+    System.out.println("             }");
+    System.out.println("         }");
+    System.out.println("          catch (InterruptedException exception){}");
+    System.out.println("         }");
+    System.out.println("     };");
+    System.out.println("    " + "parkingJson" + ".start();");
+    System.out.println(" ");
+
+
+    System.out.println("         Thread " + "salleFunction" + " = new Thread(\"" + "salleFunction" + "\") { ");
+    System.out.println("         public void run(){");
+    System.out.println("          int dureeMaxi = 0;");
+    System.out.println("          try {");
+    System.out.println("            while (gorilla == false && dureeMaxi < " + 13 + ") { ");
+    System.out.println("              System.out.println(\"run by: \" + getName());");
+    System.out.println("              ArrayList<Integer> listeRandom = remplirRandom(" + 13 + ");");
+    System.out.println("              ArrayList<Integer> listeMonkey = randomMonkey(" + 15 + "," + "risqueMonkey" + ");");
+    System.out.println("              int k = RandomGorilla(" + 13 + "," + "risque" + ");");
+    System.out.println("              System.out.println(k);");
+    System.out.println("              for(int t =0; t < " + 13 + ";t++){");
+    System.out.println("              List<Measurement> measurements = new ArrayList<>(); ");
+    System.out.println("              Map<String,String> listPoly =  new HashMap<>();");
+    System.out.println("               List<Pair<String, String>> listMarkov = new ArrayList<Pair<String, String>>();");
+    System.out.println("             for(int i = 0; i < " + 15 + ";i++){");
+    System.out.println("             String sensName;");
+
+
+    System.out.println("              sensName =\"" + " salleFunction" + "\"+Integer.toString(i);");
+    System.out.println("              listPoly.put(\"" + "x<1" + "\",\"" + "2" + "\");");
+    System.out.println("              listPoly.put(\"" + "x>= 1 && x<=3" + "\",\"" + "x^2-3" + "\");");
+    System.out.println("              listPoly.put(\"" + "x>3" + "\",\"" + "abs(-2*x)" + "\");");
+    System.out.println("              Measurement measurement ;");
+    System.out.println("              if( listeMonkey.contains(i)){");
+    System.out.println("                   measurement = null;");
+    System.out.println("                   System.out.println(\" monkey attaque sensor num! \"+ i);");
+    System.out.println("               } else {");
+    System.out.println("                  measurement= createLawFunction(sensName,listPoly,t); ");
+    System.out.println("               }");
+
+
+    System.out.println("                 if (measurement == null) {");
+    System.out.println("                   continue;");
+    System.out.println("                  }");
+    System.out.println("                 measurements.add(measurement);");
+    System.out.println("                 try {");
+    System.out.println("                    Thread.sleep(5000);");
+    System.out.println("                 } catch (InterruptedException e) {");
+    System.out.println("                    e.printStackTrace();");
+    System.out.println("                }");
+    System.out.println("               }");
+    System.out.println("               System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
+    System.out.println("             sendToInfluxDB(measurements);");
+    System.out.println("             if(t ==k && gorilla_Exist == true){");
+    System.out.println("                gorilla = true;");
+    System.out.println("              }");
+    System.out.println("             if(gorilla == true){");
+    System.out.println("                System.out.println(\"Gorilla attack !!! we can't finished \"+(" + 13 + "- t )+" + "\" lists from our " + 13 + " lists\");");
+    System.out.println("             break;");
+    System.out.println("             }");
+    System.out.println("            dureeMaxi++;");
+
+    System.out.println("            }");
+    System.out.println("            Thread.sleep (2000);");
+
+    System.out.println("             }");
+    System.out.println("         }");
+    System.out.println("          catch (InterruptedException exception){}");
+    System.out.println("         }");
+    System.out.println("     };");
+    System.out.println("    " + "salleFunction" + ".start();");
+    System.out.println(" ");
+
+
+    System.out.println("         Thread " + "bureauMarkov" + " = new Thread(\"" + "bureauMarkov" + "\") { ");
+    System.out.println("         public void run(){");
+    System.out.println("          int dureeMaxi = 0;");
+    System.out.println("          try {");
+    System.out.println("            while (gorilla == false && dureeMaxi < " + 22 + ") { ");
+    System.out.println("              System.out.println(\"run by: \" + getName());");
+    System.out.println("              ArrayList<Integer> listeRandom = remplirRandom(" + 22 + ");");
+    System.out.println("              ArrayList<Integer> listeMonkey = randomMonkey(" + 17 + "," + "risqueMonkey" + ");");
+    System.out.println("              int k = RandomGorilla(" + 22 + "," + "risque" + ");");
+    System.out.println("              System.out.println(k);");
+    System.out.println("              for(int t =0; t < " + 22 + ";t++){");
+    System.out.println("              List<Measurement> measurements = new ArrayList<>(); ");
+    System.out.println("              Map<String,String> listPoly =  new HashMap<>();");
+    System.out.println("               List<Pair<String, String>> listMarkov = new ArrayList<Pair<String, String>>();");
+    System.out.println("             for(int i = 0; i < " + 17 + ";i++){");
+    System.out.println("             String sensName;");
+
+
+    System.out.println("              sensName =\"" + " bureauMarkov" + "\"+Integer.toString(i);");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "sunny" + "\",\"" + "0.9" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "sunny" + "\",\"" + "0.05" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "sunny" + "\",\"" + "0.05" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "runny" + "\",\"" + "0.4" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "runny" + "\",\"" + "0.4" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "runny" + "\",\"" + "0.2" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "cloudy" + "\",\"" + "0.4" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "cloudy" + "\",\"" + "0.5" + "\"));");
+    System.out.println("             listMarkov.add(new Pair<String, String>(" + "\"" + "cloudy" + "\",\"" + "0.1" + "\"));");
+    System.out.println("              Measurement measurement ;");
+    System.out.println("              if( listeMonkey.contains(i)){");
+    System.out.println("                   measurement = null;");
+    System.out.println("                   System.out.println(\" monkey attaque sensor num! \"+ i);");
+    System.out.println("               } else {");
+    System.out.println("              measurement = createMarkovLow(sensName,listMarkov,t);");
+    System.out.println("             }");
+
+
+    System.out.println("                 if (measurement == null) {");
+    System.out.println("                   continue;");
+    System.out.println("                  }");
+    System.out.println("                 measurements.add(measurement);");
+    System.out.println("                 try {");
+    System.out.println("                    Thread.sleep(5000);");
+    System.out.println("                 } catch (InterruptedException e) {");
+    System.out.println("                    e.printStackTrace();");
+    System.out.println("                }");
+    System.out.println("               }");
+    System.out.println("               System.out.println(\"send list n° \"+ t + \" of measurements to influxDB : \"+ measurements);");
+    System.out.println("             sendToInfluxDB(measurements);");
+    System.out.println("             if(t ==k && gorilla_Exist == true){");
+    System.out.println("                gorilla = true;");
+    System.out.println("              }");
+    System.out.println("             if(gorilla == true){");
+    System.out.println("                System.out.println(\"Gorilla attack !!! we can't finished \"+(" + 22 + "- t )+" + "\" lists from our " + 22 + " lists\");");
+    System.out.println("             break;");
+    System.out.println("             }");
+    System.out.println("            dureeMaxi++;");
+
+    System.out.println("            }");
+    System.out.println("            Thread.sleep (2000);");
+
+    System.out.println("             }");
+    System.out.println("         }");
+    System.out.println("          catch (InterruptedException exception){}");
+    System.out.println("         }");
+    System.out.println("     };");
+    System.out.println("    " + "bureauMarkov" + ".start();");
     System.out.println(" ");
 
 

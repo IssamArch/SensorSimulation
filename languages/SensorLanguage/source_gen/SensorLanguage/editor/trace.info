@@ -15,7 +15,11 @@
       <unit at="18,0,59,0" name="SensorLanguage.editor.CoupleProb_SubstituteMenu" />
     </file>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="16,0,66,0" name="SensorLanguage.editor.EditorAspectDescriptorImpl" />
+      <unit at="16,0,68,0" name="SensorLanguage.editor.EditorAspectDescriptorImpl" />
+    </file>
+    <file name="Sensor_SubstituteMenu.java">
+      <unit at="40,0,58,0" name="SensorLanguage.editor.Sensor_SubstituteMenu$SMP_ReferenceScope_iv8n4v_a" />
+      <unit at="18,0,59,0" name="SensorLanguage.editor.Sensor_SubstituteMenu" />
     </file>
   </root>
   <root nodeRef="r:03cb4b1b-f06e-45db-a472-cb01884c106e(SensorLanguage.editor)/219761989218886269">
@@ -1876,8 +1880,8 @@
       <node id="887164873055953912" at="55,39,56,128" concept="6" />
       <node id="887164873055953912" at="58,33,59,63" concept="1" />
       <node id="887164873055953912" at="59,63,60,45" concept="1" />
-      <node id="887164873055953912" at="60,45,61,43" concept="1" />
-      <node id="887164873055953912" at="61,43,62,20" concept="6" />
+      <node id="887164873055953912" at="60,45,61,58" concept="1" />
+      <node id="887164873055953912" at="61,58,62,20" concept="6" />
       <node id="887164873055953912" at="64,6,65,28" concept="1" />
       <node id="887164873055953912" at="65,28,66,41" concept="1" />
       <node id="887164873055953912" at="66,41,67,26" concept="5" />

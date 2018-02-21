@@ -119,17 +119,17 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="LfPW1FGIvM" resolve="Sensor" />
     </node>
+    <node concept="1TJgyj" id="U9vviLJhz5" role="1TKVEi">
+      <property role="IQ2ns" value="1047506878247803077" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="monkey" />
+      <ref role="20lvS9" node="U9vviLIFWn" resolve="Monkey" />
+    </node>
     <node concept="1TJgyj" id="50bKtf1CUI0" role="1TKVEi">
       <property role="IQ2ns" value="5767916863009041280" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="gorilla" />
       <ref role="20lvS9" node="50bKtf1zii3" resolve="Gorilla" />
-    </node>
-    <node concept="1TJgyj" id="U9vviLNNXH" role="1TKVEi">
-      <property role="IQ2ns" value="1047506878248992621" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="monkey" />
-      <ref role="20lvS9" node="U9vviLIFWn" resolve="Monkey" />
     </node>
   </node>
   <node concept="1TIwiD" id="LfPW1FGIvM">
@@ -145,13 +145,6 @@
       <property role="20kJfa" value="low" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="LfPW1FGIC1" resolve="Law" />
-    </node>
-    <node concept="1TJgyj" id="50bKtf1F9nh" role="1TKVEi">
-      <property role="IQ2ns" value="5767916863009625553" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="monkey" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="U9vviLIFWn" resolve="Monkey" />
     </node>
   </node>
   <node concept="1TIwiD" id="LfPW1FGIC1">

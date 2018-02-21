@@ -31,9 +31,7 @@
         <child id="3773033214022082489" name="poly" index="2bPtSe" />
       </concept>
       <concept id="887164873055856626" name="SensorLanguage.structure.Sensor" flags="ng" index="1BZj0M">
-        <reference id="5767916863009625553" name="monkey" index="2hDPg2" />
         <reference id="219761989219302088" name="low" index="1_w7El" />
-        <child id="1047506878248895802" name="monkey" index="2Zhbze" />
       </concept>
       <concept id="887164873055856540" name="SensorLanguage.structure.SensorLot" flags="ng" index="1BZj1s">
         <property id="8958107656749138202" name="dateBegin" index="3ordpD" />
@@ -68,23 +66,35 @@
     </language>
   </registry>
   <node concept="1EbyNe" id="7cTSnSp6Pco">
-    <property role="TrG5h" value="Markov" />
-    <node concept="2hxIlg" id="50bKtf1EBA$" role="3DLZSC" />
-    <node concept="2ZcWbz" id="U9vviLNXFs" role="3DLZSC">
-      <property role="2h_6D0" value="average" />
+    <property role="TrG5h" value="App" />
+    <node concept="2hxIlg" id="50bKtf1EBA$" role="3DLZSC">
       <property role="3DLZWX" value="true" />
+      <property role="2h_6D0" value="stong" />
+    </node>
+    <node concept="2ZcWbz" id="50bKtf1F9kQ" role="3DLZSC">
+      <property role="3DLZWX" value="true" />
+      <property role="2h_6D0" value="average" />
     </node>
     <node concept="1BZjIp" id="55_GFJZU8k$" role="1BZ5on">
       <property role="TrG5h" value="randomlaw" />
     </node>
     <node concept="3IuW4i" id="55_GFJZU8kD" role="1BZ5on">
       <property role="TrG5h" value="csvLaw" />
-      <property role="3IuZox" value="/home/user/Bureau/dataDemo/dataCsv.csv" />
+      <property role="3IuZox" value="/home/user/Bureau/data/dataCsv.csv" />
       <property role="3IuW2x" value="csv" />
       <property role="3IvmcA" value="1" />
       <property role="3Ivmc4" value="8" />
       <property role="3Ivmcr" value="0" />
       <property role="2ay0nK" value="0" />
+    </node>
+    <node concept="3IuW4i" id="50bKtf1JYzo" role="1BZ5on">
+      <property role="3IuW2x" value="json" />
+      <property role="TrG5h" value="jsonLaw" />
+      <property role="3IuZox" value="/home/user/Bureau/data/dataJson" />
+      <property role="3IvmcA" value="sensorName" />
+      <property role="3Ivmc4" value="value" />
+      <property role="3Ivmcr" value="time" />
+      <property role="2ay0nK" value="4" />
     </node>
     <node concept="1_yE45" id="55_GFJZU8kV" role="1BZ5on">
       <property role="TrG5h" value="functionLaw" />
@@ -104,67 +114,105 @@
     <node concept="3nfSkm" id="55_GFJZU8lk" role="1BZ5on">
       <property role="TrG5h" value="markovLaw" />
       <node concept="1xhTNA" id="55_GFJZU8lB" role="3nfZD2">
-        <property role="TrG5h" value="soelil" />
+        <property role="TrG5h" value="sunny" />
         <node concept="1xhTZr" id="55_GFJZU8lC" role="1xhTAv">
           <node concept="1xhTUY" id="55_GFJZU8lD" role="1xhTAp">
             <property role="1xhTAh" value="0.9" />
-            <ref role="1xhTAj" node="55_GFJZU8lB" resolve="soelil" />
+            <ref role="1xhTAj" node="55_GFJZU8lB" resolve="sunny" />
           </node>
           <node concept="1xhTUY" id="7Lh_Re$7J51" role="1xhTAp">
             <property role="1xhTAh" value="0.05" />
-            <ref role="1xhTAj" node="55_GFJZU8lB" resolve="soelil" />
+            <ref role="1xhTAj" node="55_GFJZU8lB" resolve="sunny" />
           </node>
           <node concept="1xhTUY" id="55_GFJZU8lR" role="1xhTAp">
             <property role="1xhTAh" value="0.05" />
-            <ref role="1xhTAj" node="55_GFJZU8lB" resolve="soelil" />
+            <ref role="1xhTAj" node="55_GFJZU8lB" resolve="sunny" />
           </node>
         </node>
       </node>
       <node concept="1xhTNA" id="7Lh_Re$7J4R" role="3nfZD2">
-        <property role="TrG5h" value="pluie" />
+        <property role="TrG5h" value="runny" />
         <node concept="1xhTZr" id="7Lh_Re$7J4S" role="1xhTAv">
           <node concept="1xhTUY" id="7Lh_Re$7J4T" role="1xhTAp">
             <property role="1xhTAh" value="0.4" />
-            <ref role="1xhTAj" node="7Lh_Re$7J4R" resolve="pluie" />
+            <ref role="1xhTAj" node="7Lh_Re$7J4R" resolve="runny" />
           </node>
           <node concept="1xhTUY" id="7Lh_Re$7J55" role="1xhTAp">
             <property role="1xhTAh" value="0.4" />
-            <ref role="1xhTAj" node="7Lh_Re$7J4R" resolve="pluie" />
+            <ref role="1xhTAj" node="7Lh_Re$7J4R" resolve="runny" />
           </node>
           <node concept="1xhTUY" id="7Lh_Re$7J58" role="1xhTAp">
             <property role="1xhTAh" value="0.2" />
-            <ref role="1xhTAj" node="7Lh_Re$7J4R" resolve="pluie" />
+            <ref role="1xhTAj" node="7Lh_Re$7J4R" resolve="runny" />
           </node>
         </node>
       </node>
       <node concept="1xhTNA" id="7Lh_Re$7J5c" role="3nfZD2">
-        <property role="TrG5h" value="nuage" />
+        <property role="TrG5h" value="cloudy" />
         <node concept="1xhTZr" id="7Lh_Re$7J5d" role="1xhTAv">
           <node concept="1xhTUY" id="7Lh_Re$7J5e" role="1xhTAp">
             <property role="1xhTAh" value="0.4" />
-            <ref role="1xhTAj" node="7Lh_Re$7J5c" resolve="nuage" />
+            <ref role="1xhTAj" node="7Lh_Re$7J5c" resolve="cloudy" />
           </node>
           <node concept="1xhTUY" id="7Lh_Re$7J5s" role="1xhTAp">
             <property role="1xhTAh" value="0.5" />
-            <ref role="1xhTAj" node="7Lh_Re$7J5c" resolve="nuage" />
+            <ref role="1xhTAj" node="7Lh_Re$7J5c" resolve="cloudy" />
           </node>
           <node concept="1xhTUY" id="7Lh_Re$7J5v" role="1xhTAp">
             <property role="1xhTAh" value="0.1" />
-            <ref role="1xhTAj" node="7Lh_Re$7J5c" resolve="nuage" />
+            <ref role="1xhTAj" node="7Lh_Re$7J5c" resolve="cloudy" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="1BZj1s" id="U9vviLLEnK" role="1BZjIn">
-      <property role="TrG5h" value="mark" />
-      <property role="1BZj0D" value="1" />
-      <property role="1BZj0F" value="10" />
-      <property role="3ordpD" value="16/02/2018" />
-      <property role="3ordpH" value="00:00:00" />
-      <node concept="1BZj0M" id="U9vviLNIJW" role="1BZjSZ">
+    <node concept="1BZj1s" id="50bKtf1DjLk" role="1BZjIn">
+      <property role="TrG5h" value="garageRandom" />
+      <property role="1BZj0D" value="4" />
+      <property role="1BZj0F" value="1" />
+      <property role="3ordpD" value="16/02/2018 00:00:00" />
+      <property role="3ordpH" value="19/02/2018 00:00:00" />
+      <node concept="1BZj0M" id="50bKtf1JUlT" role="1BZjSZ">
+        <ref role="1_w7El" node="55_GFJZU8kV" resolve="functionLaw" />
+      </node>
+    </node>
+    <node concept="1BZj1s" id="50bKtf1JY_3" role="1BZjIn">
+      <property role="TrG5h" value="jardinCsv" />
+      <property role="1BZj0D" value="5" />
+      <property role="1BZj0F" value="4" />
+      <property role="3ordpD" value="16/02/2018 00:00:00 " />
+      <property role="3ordpH" value="20/02/2018 04:00:00 " />
+      <node concept="1BZj0M" id="50bKtf1JY_9" role="1BZjSZ">
+        <ref role="1_w7El" node="55_GFJZU8kD" resolve="csvLaw" />
+      </node>
+    </node>
+    <node concept="1BZj1s" id="50bKtf1JY_c" role="1BZjIn">
+      <property role="TrG5h" value="parkingJson" />
+      <property role="1BZj0D" value="6" />
+      <property role="1BZj0F" value="13" />
+      <property role="3ordpH" value="20/02/2018 04:00:00 " />
+      <property role="3ordpD" value="16/02/2018 00:00:00 " />
+      <node concept="1BZj0M" id="50bKtf1JY_k" role="1BZjSZ">
+        <ref role="1_w7El" node="50bKtf1JYzo" resolve="jsonLaw" />
+      </node>
+    </node>
+    <node concept="1BZj1s" id="50bKtf1JY_n" role="1BZjIn">
+      <property role="TrG5h" value="salleFunction" />
+      <property role="1BZj0D" value="15" />
+      <property role="1BZj0F" value="13" />
+      <property role="3ordpH" value="16/02/2018 00:00:00 " />
+      <property role="3ordpD" value="12/02/2018 04:00:00" />
+      <node concept="1BZj0M" id="50bKtf1JY_x" role="1BZjSZ">
+        <ref role="1_w7El" node="55_GFJZU8kV" resolve="functionLaw" />
+      </node>
+    </node>
+    <node concept="1BZj1s" id="50bKtf1JY_$" role="1BZjIn">
+      <property role="TrG5h" value="bureauMarkov" />
+      <property role="1BZj0D" value="17" />
+      <property role="1BZj0F" value="22" />
+      <property role="3ordpD" value="20/02/2018 04:00:00" />
+      <property role="3ordpH" value="22/02/2018 00:00:00 " />
+      <node concept="1BZj0M" id="50bKtf1JY_K" role="1BZjSZ">
         <ref role="1_w7El" node="55_GFJZU8lk" resolve="markovLaw" />
-        <ref role="2hDPg2" node="U9vviLNXFs" />
-        <node concept="2ZcWbz" id="U9vviLNIJX" role="2Zhbze" />
       </node>
     </node>
   </node>
