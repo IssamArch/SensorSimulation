@@ -327,7 +327,6 @@ public class map_App {
     System.out.println("              ArrayList<Integer> listeRandom = remplirRandom(" + 12 + ");");
     System.out.println("              ArrayList<Integer> listeMonkey = randomMonkey(" + 1 + "," + "risqueMonkey" + ");");
     System.out.println("              int k = RandomGorilla(" + 12 + "," + "risque" + ");");
-    System.out.println("              System.out.println(k);");
     System.out.println("              for(int t =0; t < " + 12 + ";t++){");
     System.out.println("              List<Measurement> measurements = new ArrayList<>(); ");
     System.out.println("              Map<String,String> listPoly =  new HashMap<>();");
@@ -388,7 +387,6 @@ public class map_App {
     System.out.println("              ArrayList<Integer> listeRandom = remplirRandom(" + 10 + ");");
     System.out.println("              ArrayList<Integer> listeMonkey = randomMonkey(" + 1 + "," + "risqueMonkey" + ");");
     System.out.println("              int k = RandomGorilla(" + 10 + "," + "risque" + ");");
-    System.out.println("              System.out.println(k);");
     System.out.println("              for(int t =0; t < " + 10 + ";t++){");
     System.out.println("              List<Measurement> measurements = new ArrayList<>(); ");
     System.out.println("              Map<String,String> listPoly =  new HashMap<>();");
@@ -449,7 +447,6 @@ public class map_App {
     System.out.println("              ArrayList<Integer> listeRandom = remplirRandom(" + 10 + ");");
     System.out.println("              ArrayList<Integer> listeMonkey = randomMonkey(" + 1 + "," + "risqueMonkey" + ");");
     System.out.println("              int k = RandomGorilla(" + 10 + "," + "risque" + ");");
-    System.out.println("              System.out.println(k);");
     System.out.println("              for(int t =0; t < " + 10 + ";t++){");
     System.out.println("              List<Measurement> measurements = new ArrayList<>(); ");
     System.out.println("              Map<String,String> listPoly =  new HashMap<>();");
@@ -510,7 +507,6 @@ public class map_App {
     System.out.println("              ArrayList<Integer> listeRandom = remplirRandom(" + 10 + ");");
     System.out.println("              ArrayList<Integer> listeMonkey = randomMonkey(" + 1 + "," + "risqueMonkey" + ");");
     System.out.println("              int k = RandomGorilla(" + 10 + "," + "risque" + ");");
-    System.out.println("              System.out.println(k);");
     System.out.println("              for(int t =0; t < " + 10 + ";t++){");
     System.out.println("              List<Measurement> measurements = new ArrayList<>(); ");
     System.out.println("              Map<String,String> listPoly =  new HashMap<>();");
@@ -574,7 +570,6 @@ public class map_App {
     System.out.println("              ArrayList<Integer> listeRandom = remplirRandom(" + 10 + ");");
     System.out.println("              ArrayList<Integer> listeMonkey = randomMonkey(" + 1 + "," + "risqueMonkey" + ");");
     System.out.println("              int k = RandomGorilla(" + 10 + "," + "risque" + ");");
-    System.out.println("              System.out.println(k);");
     System.out.println("              for(int t =0; t < " + 10 + ";t++){");
     System.out.println("              List<Measurement> measurements = new ArrayList<>(); ");
     System.out.println("              Map<String,String> listPoly =  new HashMap<>();");
