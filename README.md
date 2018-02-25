@@ -1,9 +1,29 @@
 # SensorSimulation
 
-to test simulation :
+## author:
+
+<ul>
+    <li>BELHASSEN Issam</li>
+    <li>BALDE Thierno</li>
+    <li>SUIGNARD Thomas</li>
+</ul>
+      
+## test
+
+Rebuild and run the project to generate the code java.
+
+to test simulation in a project maven :
 
 https://github.com/IssamArch/SS_Test
 
-lien vers les scripts java :
+## Technological Stack
 
-https://github.com/06tom06/scripts_dsl.git
+<ul>
+    <li>MPS</li>
+    <li>Maven</li>
+    <li>Docker</li>
+</ul>
+
+
+
+##
