@@ -22,7 +22,14 @@ Graphana allows to visualize the different graphs.
 
 <ul>
     <li>sensors Lot</li>
-    <li>Law</li>
+      <li>
+  <ul> 
+    <li>Random law</li>  
+    <li>Replay csv json</li> 
+    <li>Function law</li> 
+    <li>Markov Law</li>
+  </ul>
+    </li>
     <li>chaos monkey gorilla</li>
 </ul>
       
